@@ -50,7 +50,7 @@
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
       <form class="inputs" action="#">
-        <fieldset class="text-inputs">
+        <fieldset class="inputs-field text-inputs">
           <div class="text-inputs__name">
             <label class="name__label" for="name">Имя:*</label>
             <input class="name__input" type="text" id="name">
@@ -64,7 +64,7 @@
             <input class="age__input" type="text" id="age">
           </div>
         </fieldset>
-        <fieldset class="radio-inputs">
+        <fieldset class="inputs-field radio-inputs">
           <div class="radio-inputs__slimming">
             <input class="slimming__input" type="radio" id="slimming" name="radio-input" checked>
             <label class="slimming__label" for="slimming">Похудение</label>
@@ -78,8 +78,8 @@
             <label class="advice__label" for="advice">Не знаю (Нужен ваш совет)</label>
           </div>
         </fieldset>
-        <fieldset class="contact-inputs">
-          <legend class="contact-inputs__legend">Контактные данные (владельца кота)</legend>
+        <fieldset class="inputs-field contact-inputs">
+          <legend class="inputs-field__title">Контактные данные (владельца кота)</legend>
           <div class="contact-inputs__email">
             <label class="email__label" for="email">E-mail:*</label>
             <input class="email__input" type="email" id="email" placeholder="kuklachev@gmail.com">
@@ -89,11 +89,29 @@
             <input class="phone__input" type="phone" id="phone" placeholder="8 (960) 900-60-90">
           </div>
         </fieldset>
-        <fieldset class="comment-inputs">
-
+        <fieldset class="inputs-field comment-inputs">
+          <legend class="inputs-field__title">
+            Комментарий
+          </legend>
+          <textarea class="comment-inputs__area" name="" cols="30" rows="7"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="aside-checkbox">
+        <fieldset class="inputs-field aside">
+          <legend class="inputs-field__title">Дополнительно</legend>
+          <div class="aside__check">
+            <input class="check__input" type="checkbox" id="sweetener" checked>
+            <label class="check__label" for="sweetener">Сахарозаменитель</label>
+          </div>
+          <div class="aside__check">
+            <input class="check__input" type="checkbox" id="water">
+            <label class="check_label" for="water">Питьевая вода</label>
+          </div>
+          <div class="aside__check">
 
+          </div>
+          <div class="aside__check">
+
+          </div>
         </fieldset>
       </form>
     </section>

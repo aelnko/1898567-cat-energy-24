@@ -1,3 +1,8 @@
 .page-header {
   display:flex;
+  min-width:320px;
+  flex-wrap:wrap;
+  align-items:center;
+  margin:10px 0px 18px 0px;
+  justify-content:space-between;
 }

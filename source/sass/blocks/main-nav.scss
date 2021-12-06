@@ -1,0 +1,9 @@
+.main-nav {
+  margin:0 auto;
+}
+.main-nav__toggle {
+  @include button;
+  background-image:url(../../img/menu_toggle.svg);
+  width:24px;
+  height:18px;
+}

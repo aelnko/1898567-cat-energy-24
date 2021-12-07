@@ -1,5 +1,6 @@
 .main-nav {
   margin:0 auto;
+  display:none;
 }
 .main-nav__toggle {
   @include button;

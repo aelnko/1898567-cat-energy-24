@@ -8,7 +8,7 @@
 </head>
 
 <body class="page-body">
-  <header class="page-body__header page-header">
+  <header class="page-body__header page-header page-header--form">
     <div class="page-header__logo header-logo">
       <a class="header-logo__link">
         <img class="header-logo__icon" src="img/cat-logo.svg" alt="">
@@ -52,31 +52,37 @@
       </p>
       <form class="form-inputs__inputs inputs" action="#" method="post">
         <fieldset class="inputs__field text-inputs">
-          <div class="text-inputs__name name-input">
-            <label class="name-input__label" for="name">Имя:*</label>
-            <input class="name-input__input" type="text" id="name">
+          <div class="text-inputs__name text-input name-input">
+            <label class="text-input__label name-input__label" for="name">Имя:*</label>
+            <input class="text-input__input name-input__input" type="text" id="name">
           </div>
-          <div class="text-inputs__weight weight-input">
-            <label class="weight-input__label" for="weight">Вес (кг):*</label>
-            <input class="weight-input__input" type="text" id="weight">
+          <div class="text-inputs__weight text-input weight-input">
+            <label class="text-input__label weight-input__label" for="weight">Вес (кг):*</label>
+            <input class="text-input__input weight-input__input" type="text" id="weight">
           </div>
-          <div class="text-inputs__age age-input">
-            <label class="age-input__label" for="age">Возраст (лет):</label>
-            <input class="age-input__input" type="text" id="age">
+          <div class="text-inputs__age text-input age-input">
+            <label class="text-input__label age-input__label" for="age">Возраст (лет):</label>
+            <input class="text-input__input age-input__input" type="text" id="age">
           </div>
         </fieldset>
         <fieldset class="inputs__field radio-inputs">
-          <div class="radio-inputs__slimming slimming-input">
-            <input class="slimming-input__input" type="radio" id="slimming" name="radio-input" checked>
-            <label class="slimming-input__label" for="slimming">Похудение</label>
+          <div class="radio-inputs__slimming radio-input slimming-input">
+            <input class="slimming-input__input radio-input__input visually-hidden" type="radio" id="slimming" name="radio-input" checked>
+            <label class="slimming-input__label radio-input__label radio" for="slimming">
+              <span class="radio__label">Похудение</span>
+            </label>
           </div>
-          <div class="radio-inputs__weight-gain weight-gain-input">
-            <input class="weight-gain-input__input" type="radio" id="weight-gain" name="radio-input">
-            <label class="weight-gain-input__label" for="weight-gain">Набор массы</label>
+          <div class="radio-inputs__weight-gain radio-input weight-gain-input">
+            <input class="weight-gain-input__input radio-input__input visually-hidden" type="radio" id="weight-gain" name="radio-input">
+            <label class="weight-gain-input__label radio-input__label radio" for="weight-gain">
+              <span class="radio__label">Набор массы</span>
+            </label>
           </div>
-          <div class="radio-inputs__advice advice-input">
-            <input class="advice-input__input" type="radio" id="advice" name="radio-input">
-            <label class="advice-input__label" for="advice">Не знаю (Нужен ваш совет)</label>
+          <div class="radio-inputs__advice radio-input advice-input">
+            <input class="advice-input__input radio-input__input visually-hidden" type="radio" id="advice" name="radio-input">
+            <label class="advice-input__label radio-input__label radio" for="advice">
+              <span class="radio__label">Не знаю (Нужен ваш совет)</span>
+            </label>
           </div>
         </fieldset>
         <fieldset class="inputs__field contact-inputs">

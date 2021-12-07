@@ -1,0 +1,16 @@
+.radio-input {
+  margin-left:20px;
+}
+.radio-input__label {
+  color:$special_dark-grey-2;
+  font-size:16px;
+  line-height:18px;
+  text-transform:uppercase;
+}
+.radio-input__input {
+  &:checked + .radio {
+    background-image:url(../../img/radiobutton-active.svg);
+    background-repeat:no-repeat;
+    background-position:8.4px 5px;
+  }
+}

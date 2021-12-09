@@ -67,19 +67,22 @@
         </fieldset>
         <fieldset class="inputs__field radio-inputs">
           <div class="radio-inputs__slimming radio-input slimming-input">
-            <input class="slimming-input__input radio-input__input visually-hidden" type="radio" id="slimming" name="radio-input" checked>
+            <input class="slimming-input__input radio-input__input visually-hidden" type="radio" id="slimming"
+              name="radio-input" checked>
             <label class="slimming-input__label radio-input__label radio" for="slimming">
               <span class="radio__label">Похудение</span>
             </label>
           </div>
           <div class="radio-inputs__weight-gain radio-input weight-gain-input">
-            <input class="weight-gain-input__input radio-input__input visually-hidden" type="radio" id="weight-gain" name="radio-input">
+            <input class="weight-gain-input__input radio-input__input visually-hidden" type="radio" id="weight-gain"
+              name="radio-input">
             <label class="weight-gain-input__label radio-input__label radio" for="weight-gain">
               <span class="radio__label">Набор массы</span>
             </label>
           </div>
           <div class="radio-inputs__advice radio-input advice-input">
-            <input class="advice-input__input radio-input__input visually-hidden" type="radio" id="advice" name="radio-input">
+            <input class="advice-input__input radio-input__input visually-hidden" type="radio" id="advice"
+              name="radio-input">
             <label class="advice-input__label radio-input__label radio" for="advice">
               <span class="radio__label">Не знаю (Нужен ваш совет)</span>
             </label>
@@ -100,26 +103,35 @@
           <legend class="comment-inputs__title">
             Комментарий
           </legend>
-          <textarea class="comment-inputs__area" name="" cols="30" rows="7"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="comment-inputs__area" name="" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="inputs__field aside">
           <legend class="aside__title">Дополнительно</legend>
           <div class="aside__check aside-check">
-            <input class="aside-check__input" type="checkbox" id="sweetener" checked>
-            <label class="aside-check__label" for="sweetener">Сахарозаменитель</label>
+            <input class="aside-check__input visually-hidden" type="checkbox" id="sweetener" checked>
+            <label class="aside-check__label check" for="sweetener">
+              <span class="check__label">Сахарозаменитель</span>
+            </label>
           </div>
           <div class="aside__check aside-check">
-            <input class="aside-check__input" type="checkbox" id="water">
-            <label class="aside-check__label" for="water">Питьевая вода</label>
+            <input class="aside-check__input visually-hidden" type="checkbox" id="water">
+            <label class="aside-check__label check" for="water">
+              <span class="check__label">
+                Питьевая вода
+              </span>
+            </label>
           </div>
           <div class="aside__check aside-check">
-            <input class="aside-check__input" type="checkbox" id="milk">
-            <label class="aside-check__label" for="milk">Молоко</label>
+            <input class="aside-check__input visually-hidden" type="checkbox" id="milk">
+            <label class="aside-check__label check" for="milk">
+              <span class="check__label">Молоко</span>
+            </label>
           </div>
           <div class="aside__check aside-check">
-            <input class="aside-check__input" type="checkbox" id="vitamins">
-            <label class="aside-check__label" for="vitamins">Витамины</label>
+            <input class="aside-check__input visually-hidden" type="checkbox" id="vitamins">
+            <label class="aside-check__label check" for="vitamins">
+              <span class="check__label">Витамины</span>
+            </label>
           </div>
         </fieldset>
         <button class="inputs__button" type="submit">Отправить заявку</button>
@@ -129,7 +141,7 @@
       </form>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--form">
     <div class="page-footer__address address">
       <h2 class="address__invitation">
         Приглашаем к сотрудничеству дилеров!

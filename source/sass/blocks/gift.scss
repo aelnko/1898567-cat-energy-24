@@ -1,0 +1,25 @@
+.gift {
+  margin:36px 20px 35px 20px;
+}
+.gift__wrapper {
+  position:relative;
+  background-color:$basic_green;
+  width:279px;
+  height:289px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.gift__bg-image {
+  position:absolute;
+  opacity:20%;
+}
+.gift__description {
+  font-family: "Arial", sans-serif;
+  font-size:16px;
+  line-height:20px;
+  width:161px;
+  text-align:center;
+  color:white;
+}

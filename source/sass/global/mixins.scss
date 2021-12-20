@@ -1,0 +1,7 @@
+@mixin button() {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}

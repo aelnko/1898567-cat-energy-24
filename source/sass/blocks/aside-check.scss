@@ -1,0 +1,7 @@
+.aside-check__input {
+  &:checked + .check {
+    background-image: url("../../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: 7.09px 5.25px;
+  }
+}

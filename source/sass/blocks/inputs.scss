@@ -1,0 +1,30 @@
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs__field {
+  border: none;
+  padding: 0;
+}
+
+.inputs__button {
+  @include button;
+  margin-left: 20px;
+  width: 280px;
+  height: 40px;
+  background-color: $basic_green;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 21px;
+}
+
+.inputs__aside-info {
+  align-self: center;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 32px;
+}

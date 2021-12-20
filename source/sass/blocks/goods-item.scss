@@ -1,0 +1,36 @@
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  margin-right: 20px;
+  border-top: 1px solid #cdcdcd;
+
+  &:nth-of-type(4) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.goods-item__title {
+  margin: 0;
+  text-transform: uppercase;
+  color: #222222;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+
+.goods-item__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.goods-item__amount,
+.goods-item__price {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}

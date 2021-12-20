@@ -1,0 +1,15 @@
+.text-input {
+  margin-left: 20px;
+}
+
+.text-input__label {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+.text-input__input {
+  height: 46px;
+  border: 1px solid #e7e7e7;
+}

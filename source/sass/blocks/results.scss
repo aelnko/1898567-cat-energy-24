@@ -5,7 +5,7 @@
   line-height: 24px;
   text-transform: uppercase;
 
-  &__weight {
+  &--weight {
     padding: 14.5px 42.4px 17.6px 42.7px;
 
     &::before {
@@ -23,7 +23,7 @@
     }
   }
 
-  &__time {
+  &--time {
     padding: 14.5px 21.4px 17.6px 20.7px;
 
     &::before {
@@ -42,8 +42,8 @@
   }
 }
 
-.results__weight,
-.results__time {
+.results--weight,
+.results--time {
   border: 1px solid $special_grey;
   border-radius: 3px;
   position: relative;

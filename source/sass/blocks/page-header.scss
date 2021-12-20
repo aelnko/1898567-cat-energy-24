@@ -1,10 +1,11 @@
 .page-header {
-  display:flex;
-  width:280px;
-  flex-wrap:wrap;
-  align-items:center;
-  padding:10px 20px 17.39px 20px;
+  display: flex;
+  width: 280px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 20px 17.39px 20px;
+
   &--active {
-    border-bottom:1px solid #D9D9D9;
+    border-bottom: 1px solid #d9d9d9;
   }
 }

@@ -1,29 +1,33 @@
 .example {
-  padding:25px 20px 40px 20px;
-  background-color:#EAEAEA;
+  padding: 25px 20px 40px 20px;
+  background-color: #eaeaea;
 }
+
 .example__title {
-  margin:0;
-  font-weight:400;
-  font-size:36px;
-  line-height:40px;
-  margin-bottom:40px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 40px;
 }
+
 .example__description {
-  margin:0;
-  font-family:"Arial", sans-serif;
-  font-size:14px;
-  line-height:18px;
-  margin-bottom:20px;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
 }
+
 .example__results {
-  margin-bottom:32px;
+  margin-bottom: 32px;
 }
+
 .example__spent {
-  text-transform:uppercase;
-  font-size:14px;
-  line-height:20px;
-  margin:0;
-  text-align:center;
-  margin-bottom:40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 40px;
 }

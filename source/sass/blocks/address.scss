@@ -1,18 +1,20 @@
 .address {
-  display:flex;
-  padding:28px 19px 26px 20px;
+  display: flex;
+  padding: 28px 19px 26px 20px;
 }
+
 .address__invitation {
-  margin:0;
-  font-weight:400;
-  font-size:16px;
-  line-height:20px;
-  text-transform:uppercase;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
+
 .address__address {
-  margin:0;
-  font-family:"Arial",sans-serif;
-  font-size:14px;
-  line-height:20px;
-  margin-left:2px;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 2px;
 }

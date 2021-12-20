@@ -1,44 +1,50 @@
 .results {
-  display:flex;
-  justify-content:space-between;
-  font-size:24px;
-  line-height:24px;
-  text-transform:uppercase;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+
   &__weight {
-    padding:14.5px 42.4px 17.6px 42.7px;
+    padding: 14.5px 42.4px 17.6px 42.7px;
+
     &::before {
-      content:"снижение веса";
-      font-size:12px;
-      font-family:"Arial",sans-serif;
-      position:absolute;
-      background-color:#EAEAEA;
-      width:77px;
-      top:45px;
-      left:23px;
-      line-height:100%;
-      text-align:center;
-      text-transform:none;
+      content: "снижение веса";
+      font-size: 12px;
+      font-family: "Arial", sans-serif;
+      position: absolute;
+      background-color: #eaeaea;
+      width: 77px;
+      top: 45px;
+      left: 23px;
+      line-height: 100%;
+      text-align: center;
+      text-transform: none;
     }
   }
+
   &__time {
-    padding:14.5px 21.4px 17.6px 20.7px;
+    padding: 14.5px 21.4px 17.6px 20.7px;
+
     &::before {
-      content:"затрачено времени";
-      font-size:12px;
-      font-family:"Arial",sans-serif;
-      position:absolute;
-      background-color:#EAEAEA;
-      width:78px;
-      top:45px;
-      left:23px;
-      line-height:12px;
-      text-align:center;
-      text-transform:none;}
+      content: "затрачено времени";
+      font-size: 12px;
+      font-family: "Arial", sans-serif;
+      position: absolute;
+      background-color: #eaeaea;
+      width: 78px;
+      top: 45px;
+      left: 23px;
+      line-height: 12px;
+      text-align: center;
+      text-transform: none;
+    }
   }
 }
+
 .results__weight,
 .results__time {
-  border:1px solid $special_grey;
-  border-radius:3px;
-  position:relative;
+  border: 1px solid $special_grey;
+  border-radius: 3px;
+  position: relative;
 }

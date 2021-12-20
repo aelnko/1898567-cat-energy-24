@@ -1,11 +1,12 @@
 .main-nav {
-  margin:0 auto;
-  display:none;
+  margin: 0 auto;
+  display: none;
 }
+
 .main-nav__toggle {
   @include button;
-  background-image:url(../../img/menu_toggle.svg);
-  width:24px;
-  height:18px;
-  margin-left:64px;
+  background-image: url("../../img/menu_toggle.svg");
+  width: 24px;
+  height: 18px;
+  margin-left: 64px;
 }

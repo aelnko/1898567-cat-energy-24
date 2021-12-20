@@ -1,18 +1,20 @@
 .radio {
-  position:relative;
-  cursor:pointer;
+  position: relative;
+  cursor: pointer;
+
   &::before {
-    content:"";
-    width:30px;
-    height:30px;
-    position:absolute;
-    border:1px solid $special_grey;
-    border-radius:50%;
-    margin-right:15px;
-    transform:translateY(-50%);
-    top:50%;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid $special_grey;
+    border-radius: 50%;
+    margin-right: 15px;
+    transform: translateY(-50%);
+    top: 50%;
   }
 }
+
 .radio__label {
-  margin-left:45px;
+  margin-left: 45px;
 }

@@ -1,43 +1,97 @@
-.intro {
-  color: #ffffff;
-  background-color: #68b738;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+@media (min-width: $mobile-width) {
+  .intro {
+    color: #ffffff;
+    background-color: #68b738;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .intro__title {
+    font-weight: 400;
+    line-height: 36px;
+    font-size: 36px;
+    margin: 0;
+    width: 249px;
+    margin-top: 27px;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .intro__subtitle {
+    font-weight: 400;
+    line-height: 14px;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 198px;
+    margin-top: 25px;
+    margin-bottom: 164px;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .intro__image {
+    position: absolute;
+    opacity: 20%;
+    z-index: 1;
+  }
+
+  .intro__decorative-image {
+    position: absolute;
+    top: 167px;
+    z-index: 2;
+  }
 }
 
-.intro__title {
-  font-weight: 400;
-  line-height: 36px;
-  font-size: 36px;
-  margin: 0;
-  width: 249px;
-  margin-top: 27px;
-  z-index: 2;
-  text-align: center;
-}
+@media (min-width: $tablet-width) {
+  .intro {
+    background-color: #ffffff;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    margin-left:117px;
+  }
 
-.intro__subtitle {
-  font-weight: 400;
-  line-height: 14px;
-  font-size: 14px;
-  text-transform: uppercase;
-  width: 198px;
-  margin-top: 25px;
-  margin-bottom: 164px;
-  z-index: 2;
-  text-align: center;
-}
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #000000;
+    width: 414px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 41px;
+  }
 
-.intro__image {
-  position: absolute;
-  opacity: 20%;
-  z-index: 1;
-}
+  .intro__subtitle {
+    font-size: 20px;
+    line-height:20px;
+    font-weight: 400;
+    color: #000000;
+    width:283px;
+    margin:0;
+    margin-bottom: 49px;
+  }
 
-.intro__decorative-image {
-  position: absolute;
-  top: 167px;
-  z-index: 2;
+  .intro__image {
+    @include visually-hidden();
+  }
+
+  .intro__decorative-image {
+    z-index:0;
+  }
+
+  .intro__button {
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: $basic_green;
+    width: 244px;
+    padding: 14px 0;
+    text-align: center;
+    z-index:1;
+  }
 }

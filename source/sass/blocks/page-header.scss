@@ -1,11 +1,17 @@
-.page-header {
-  display: flex;
-  width: 280px;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 10px 20px 17.39px 20px;
+@media (min-width: $mobile-width) {
+  .page-header {
+    display: flex;
+    align-items: center;
 
-  &--active {
-    border-bottom: 1px solid #d9d9d9;
+    &--active {
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding:24px 30px 62px 30px;
+    justify-content:space-between;
   }
 }

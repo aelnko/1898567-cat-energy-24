@@ -1,20 +1,43 @@
-.address {
-  display: flex;
-  padding: 28px 19px 26px 20px;
+@media (min-width: $mobile-width) {
+  .address {
+    display: flex;
+    padding: 28px 19px 26px 20px;
+  }
+
+  .address__invitation {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .address__address {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 2px;
+    color: #444444;
+  }
 }
 
-.address__invitation {
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
+@media (min-width: $tablet-width) {
+  .address {
+    padding: 56px 70px;
+    justify-content: space-between;
+  }
 
-.address__address {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  margin-left: 2px;
+  .address__invitation {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+  }
+
+  .address__address {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+  }
 }

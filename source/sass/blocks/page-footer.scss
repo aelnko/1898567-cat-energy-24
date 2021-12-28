@@ -1,9 +1,20 @@
-.page-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: $mobile-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: column;
 
-  &--active {
-    background-color: $basic_grey;
+    &--active {
+      background-color: $basic_grey;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__contacts {
+    display: flex;
+    padding: 58px 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
   }
 }

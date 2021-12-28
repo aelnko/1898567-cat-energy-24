@@ -69,8 +69,8 @@
     line-height:20px;
     font-weight: 400;
     color: #000000;
-    width:283px;
-    margin:0;
+    width: 283px;
+    margin: 0;
     margin-bottom: 49px;
   }
 
@@ -93,5 +93,27 @@
     padding: 14px 0;
     text-align: center;
     z-index:1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background: linear-gradient(to right, white 50%, #68b738 50%);
+    margin-left: 0;
+    padding-bottom: 175px;
+    padding-left: 190px;
+  }
+
+  .intro__title {
+    margin-top: 82px;
+    margin-bottom: 40px;
+  }
+
+  .intro__subtitle {
+    margin-bottom: 52px;
+  }
+
+  .intro__decorative-image {
+    @include visually-hidden;
   }
 }

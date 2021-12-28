@@ -48,3 +48,30 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .nav-list {
+    margin: 0;
+  }
+
+  .nav-list__link {
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  .nav-list__item {
+    &:nth-of-type(1) {
+      width: 71px;
+      margin-right: 37px;
+    }
+
+    &:nth-of-type(2) {
+      width: 171px;
+      margin-right: 32px;
+    }
+
+    &:nth-of-type(3) {
+      width: 170px;
+    }
+  }
+}

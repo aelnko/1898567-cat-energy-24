@@ -33,3 +33,14 @@
     @include visually-hidden;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .program {
+    padding-top: 82px;
+    margin-bottom: 0;
+  }
+
+  .program__list {
+    flex-direction: row;
+  }
+}

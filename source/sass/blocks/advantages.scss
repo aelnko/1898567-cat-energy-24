@@ -19,6 +19,7 @@
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
+    margin: 0;
   }
 }
 
@@ -41,4 +42,15 @@
     width: 629px;
     flex-wrap: wrap;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding-top: 71px;
+  }
+
+  .advantages__list {
+    width: 1224px;
+  }
+
 }

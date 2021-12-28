@@ -37,7 +37,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: #ffffff;
+    background: linear-gradient(to bottom, #ffffff 70%, #eaeaea 70%);
     border-top: 1px solid #e6e6e6;
     padding-top: 43px;
     padding-left: 30px;
@@ -67,5 +67,32 @@
     line-height: 20px;
     width: 174px;
     text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient(to bottom, #ffffff 25%, #eaeaea 25%);
+    padding-left: 110px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 436px;
+  }
+
+  .example--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__results-wrapper {
+    flex-direction: column;
+    width: 366px;
   }
 }

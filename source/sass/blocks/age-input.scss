@@ -17,3 +17,9 @@
     width: 497px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .age-input__input {
+    width: 436px;
+  }
+}

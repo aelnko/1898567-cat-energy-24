@@ -21,3 +21,9 @@
     width: 536px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .weight-input__input {
+    width: 475px;
+  }
+}

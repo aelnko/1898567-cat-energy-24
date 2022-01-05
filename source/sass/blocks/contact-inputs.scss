@@ -1,15 +1,49 @@
-.contact-inputs {
-  border-top: 2px solid $basic_green;
-  padding-bottom: 23.57px;
-  margin-left: 20px;
+@media (min-width: $mobile-width) {
+  .contact-inputs {
+    border-top: 2px solid $basic_green;
+    padding-bottom: 23.57px;
+    margin-left: 20px;
+  }
+
+  .contact-inputs__title {
+    text-align: left;
+    width: 187px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 35.07px;
+    padding-right: 14px;
+  }
 }
 
-.contact-inputs__title {
-  text-align: left;
-  width: 187px;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 26px;
-  margin-bottom: 35.07px;
-  padding-right: 14px;
+@media (min-width: $tablet-width) {
+  .contact-inputs {
+    padding-bottom: 65px;
+    margin-left: 0;
+  }
+
+  .contact-inputs__title {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    width: 512px;
+    padding-left: 69px;
+    padding-right: 42px;
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-inputs {
+    padding-bottom:0;
+  }
+
+  .contact-inputs__title {
+    padding-left: 110px;
+  }
+
+  .contact-inputs__wrapper {
+    display: flex;
+    margin-bottom: 69px;
+  }
 }

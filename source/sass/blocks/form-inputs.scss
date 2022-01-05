@@ -25,7 +25,6 @@
 
 @media (min-width: $tablet-width) {
   .form-inputs {
-    padding-left: 69px;
     padding-top: 0;
   }
 
@@ -34,6 +33,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 54px;
+    padding-left: 69px;
   }
 
   .form-inputs__description {
@@ -41,6 +41,20 @@
     font-size: 20px;
     line-height: 30px;
     width: 323px;
+    margin-bottom: 66px;
+    padding-left: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-inputs__title {
+    margin-top: 73px;
+    padding-left: 110px;
+    margin-bottom: 56px;
+  }
+
+  .form-inputs__description {
+    padding-left: 110px;
     margin-bottom: 66px;
   }
 }

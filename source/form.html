@@ -9,7 +9,7 @@
 </head>
 
 <body class="page-body">
-  <header class="page-body__header page-header page-header--active">
+  <header class="page-body__header page-header page-header--active page-header--form">
     <div class="page-header__logo header-logo">
       <a class="header-logo__link" href="index.html">
         <img class="header-logo__icon" src="img/cat-logo.svg" alt="">
@@ -25,17 +25,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
-            <a class="nav-list__link" href="index.html">
+            <a class="nav-list__link nav-list__link--form" href="index.html">
               Главная
             </a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="catalog.html">
+            <a class="nav-list__link nav-list__link--form" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="nav-list__item nav-list__item--active">
-            <a class="nav-list__link" href="form.html">
+            <a class="nav-list__link nav-list__link--form" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -52,52 +52,56 @@
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
       <form class="form-inputs__inputs inputs" action="#" method="post">
-        <fieldset class="inputs__field text-inputs">
-          <div class="text-inputs__name text-input name-input">
-            <label class="text-input__label name-input__label" for="name">Имя:*</label>
-            <input class="text-input__input name-input__input" type="text" id="name">
-          </div>
-          <div class="text-inputs__weight text-input weight-input">
-            <label class="text-input__label weight-input__label" for="weight">Вес (кг):*</label>
-            <input class="text-input__input weight-input__input" type="text" id="weight">
-          </div>
-          <div class="text-inputs__age text-input age-input">
-            <label class="text-input__label age-input__label" for="age">Возраст (лет):</label>
-            <input class="text-input__input age-input__input" type="text" id="age">
-          </div>
-        </fieldset>
-        <fieldset class="inputs__field radio-inputs">
-          <div class="radio-inputs--slimming radio-input slimming-input">
-            <input class="slimming-input__input radio-input__input visually-hidden" type="radio" id="slimming"
-              name="radio-input" checked>
-            <label class="slimming-input__label radio-input__label radio" for="slimming">
-              <span class="radio__label">Похудение</span>
-            </label>
-          </div>
-          <div class="radio-inputs--weight-gain radio-input weight-gain-input">
-            <input class="weight-gain-input__input radio-input__input visually-hidden" type="radio" id="weight-gain"
-              name="radio-input">
-            <label class="weight-gain-input__label radio-input__label radio" for="weight-gain">
-              <span class="radio__label">Набор массы</span>
-            </label>
-          </div>
-          <div class="radio-inputs__advice radio-input advice-input">
-            <input class="advice-input__input radio-input__input visually-hidden" type="radio" id="advice"
-              name="radio-input">
-            <label class="advice-input__label radio-input__label radio" for="advice">
-              <span class="radio__label">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </div>
-        </fieldset>
+        <div class="inputs__wrapper--first">
+          <fieldset class="inputs__field text-inputs">
+            <div class="text-inputs__name text-input name-input">
+              <label class="text-input__label name-input__label" for="name">Имя:*</label>
+              <input class="text-input__input name-input__input" type="text" id="name">
+            </div>
+            <div class="text-inputs__weight text-input weight-input">
+              <label class="text-input__label weight-input__label" for="weight">Вес (кг):*</label>
+              <input class="text-input__input weight-input__input" type="text" id="weight">
+            </div>
+            <div class="text-inputs__age text-input age-input">
+              <label class="text-input__label age-input__label" for="age">Возраст (лет):</label>
+              <input class="text-input__input age-input__input" type="text" id="age">
+            </div>
+          </fieldset>
+          <fieldset class="inputs__field radio-inputs">
+            <div class="radio-inputs--slimming radio-input slimming-input">
+              <input class="slimming-input__input radio-input__input visually-hidden" type="radio" id="slimming"
+                name="radio-input" checked>
+              <label class="slimming-input__label radio-input__label radio" for="slimming">
+                <span class="radio__label">Похудение</span>
+              </label>
+            </div>
+            <div class="radio-inputs--weight-gain radio-input weight-gain-input">
+              <input class="weight-gain-input__input radio-input__input visually-hidden" type="radio" id="weight-gain"
+                name="radio-input">
+              <label class="weight-gain-input__label radio-input__label radio" for="weight-gain">
+                <span class="radio__label">Набор массы</span>
+              </label>
+            </div>
+            <div class="radio-inputs__advice radio-input advice-input">
+              <input class="advice-input__input radio-input__input visually-hidden" type="radio" id="advice"
+                name="radio-input">
+              <label class="advice-input__label radio-input__label radio" for="advice">
+                <span class="radio__label">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="inputs__field contact-inputs">
           <legend class="contact-inputs__title">Контактные данные (владельца кота)</legend>
-          <div class="contact-inputs__email email-form">
-            <label class="email-form__label" for="email">E-mail:*</label>
-            <input class="email-form__input" type="email" id="email" placeholder="kuklachev@gmail.com">
-          </div>
-          <div class="contact-inputs__phone phone-form">
-            <label class="phone-form__label" for="phone">Телефон:*</label>
-            <input class="phone-form__input" type="phone" id="phone" placeholder="8 (960) 900-60-90">
+          <div class="contact-inputs__wrapper">
+            <div class="contact-inputs__email email-form">
+              <label class="email-form__label" for="email">E-mail:*</label>
+              <input class="email-form__input" type="email" id="email" placeholder="kuklachev@gmail.com">
+            </div>
+            <div class="contact-inputs__phone phone-form">
+              <label class="phone-form__label" for="phone">Телефон:*</label>
+              <input class="phone-form__input" type="phone" id="phone" placeholder="8 (960) 900-60-90">
+            </div>
           </div>
         </fieldset>
         <fieldset class="inputs__field comment-inputs">
@@ -108,41 +112,45 @@
         </fieldset>
         <fieldset class="inputs__field aside">
           <legend class="aside__title">Дополнительно</legend>
-          <div class="aside__check aside-check">
-            <input class="aside-check__input visually-hidden" type="checkbox" id="sweetener" checked>
-            <label class="aside-check__label check" for="sweetener">
-              <span class="check__label">Сахарозаменитель</span>
-            </label>
-          </div>
-          <div class="aside__check aside-check">
-            <input class="aside-check__input visually-hidden" type="checkbox" id="water">
-            <label class="aside-check__label check" for="water">
-              <span class="check__label">
-                Питьевая вода
-              </span>
-            </label>
-          </div>
-          <div class="aside__check aside-check">
-            <input class="aside-check__input visually-hidden" type="checkbox" id="milk">
-            <label class="aside-check__label check" for="milk">
-              <span class="check__label">Молоко</span>
-            </label>
-          </div>
-          <div class="aside__check aside-check">
-            <input class="aside-check__input visually-hidden" type="checkbox" id="vitamins">
-            <label class="aside-check__label check" for="vitamins">
-              <span class="check__label">Витамины</span>
-            </label>
+          <div class="aside__wrapper">
+            <div class="aside__check aside-check">
+              <input class="aside-check__input visually-hidden" type="checkbox" id="sweetener" checked>
+              <label class="aside-check__label check" for="sweetener">
+                <span class="check__label">Сахарозаменитель</span>
+              </label>
+            </div>
+            <div class="aside__check aside-check">
+              <input class="aside-check__input visually-hidden" type="checkbox" id="water">
+              <label class="aside-check__label check" for="water">
+                <span class="check__label">
+                  Питьевая вода
+                </span>
+              </label>
+            </div>
+            <div class="aside__check aside-check">
+              <input class="aside-check__input visually-hidden" type="checkbox" id="milk">
+              <label class="aside-check__label check" for="milk">
+                <span class="check__label">Молоко</span>
+              </label>
+            </div>
+            <div class="aside__check aside-check">
+              <input class="aside-check__input visually-hidden" type="checkbox" id="vitamins">
+              <label class="aside-check__label check" for="vitamins">
+                <span class="check__label">Витамины</span>
+              </label>
+            </div>
           </div>
         </fieldset>
-        <button class="inputs__button" type="submit">Отправить заявку</button>
-        <p class="inputs__aside-info">
-          * — Обязательные поля
-        </p>
+        <div class="inputs__button-aside-info">
+          <button class="inputs__button" type="submit">Отправить заявку</button>
+          <p class="inputs__aside-info">
+            * — Обязательные поля
+          </p>
+        </div>
       </form>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--active">
     <div class="page-footer__address address">
       <h2 class="address__invitation">
         Приглашаем к сотрудничеству дилеров!
@@ -152,7 +160,9 @@
       </p>
     </div>
     <div class="address__map">
-      <img src="img/map.png" alt="" class="address__map-image">
+      <iframe class="address__map-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4928.41185796724!2d30.325895235020027!3d59.93763504566414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb9217f09%3A0xa078b6b7d5053059!2z0JTQm9Ci!5e0!3m2!1sru!2sru!4v1640798679872!5m2!1sru!2sru"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="page-footer__contacts">
       <a class="page-footer__logo footer-logo" href="index.html">

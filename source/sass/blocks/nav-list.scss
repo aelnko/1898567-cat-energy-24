@@ -60,6 +60,10 @@
   .nav-list__link {
     color: #ffffff;
     font-size: 20px;
+    &--form {
+      color: #111111;
+      font-size: 20px;
+    }
   }
 
   .nav-list__item {

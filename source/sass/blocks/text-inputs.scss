@@ -8,5 +8,12 @@
 @media (min-width: $tablet-width) {
   .text-inputs {
     border-bottom: none;
+    padding-left: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-inputs {
+    padding-left: 110px;
   }
 }

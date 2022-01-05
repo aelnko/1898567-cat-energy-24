@@ -20,5 +20,13 @@
     border: 1px solid #e7e7e7;
     width: 607px;
     padding-left: 28px;
+    margin-left: 69px;
+    margin-bottom: 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio-inputs {
+    margin-bottom: 47px;
   }
 }

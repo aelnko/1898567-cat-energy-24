@@ -1,17 +1,50 @@
-.email-form {
-  margin-bottom: 14.05px;
+@media (min-width: $mobile-width) {
+  .email-form {
+    margin-bottom: 14.05px;
+  }
+
+  .email-form__label {
+    color: $special_dark-grey;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 18px;
+    margin-right: 11px;
+  }
+
+  .email-form__input {
+    padding: 13.45px 51px 15.45px 15px;
+    width: 153px;
+    border: 1px solid $special_grey;
+  }
 }
 
-.email-form__label {
-  color: $special_dark-grey;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 18px;
-  margin-right: 11px;
+@media (min-width: $tablet-width) {
+  .email-form {
+    margin-left: 71px;
+  }
+
+  .email-form__label {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+  .email-form__input {
+    width: 529.76px;
+    padding: 0;
+    padding-left:21.24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
-.email-form__input {
-  padding: 13.45px 51px 15.45px 15px;
-  width: 153px;
-  border: 1px solid $special_grey;
+@media (min-width: $desktop-width) {
+  .email-form {
+    margin-left: 110px;
+    margin-bottom: 0;
+  }
+
+  .email-form__input {
+    width: 467.27px;
+    padding-left: 18.73px;
+  }
 }

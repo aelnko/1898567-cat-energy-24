@@ -13,8 +13,13 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .name-input__input {
     width: 567px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name-input__input {
+    width: 506px;
   }
 }

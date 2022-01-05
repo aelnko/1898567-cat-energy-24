@@ -1,7 +1,7 @@
 @media (min-width:$mobile-width) {
   .main-nav {
     margin: 0 auto;
-    display:none;
+    display: none;
   }
 
   .main-nav__toggle {
@@ -10,6 +10,10 @@
     width: 24px;
     height: 18px;
     margin-left: 64px;
+  }
+
+  .main-nav--shown {
+    display: block;
   }
 }
 

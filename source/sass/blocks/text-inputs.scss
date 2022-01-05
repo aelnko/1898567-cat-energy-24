@@ -1,4 +1,12 @@
-.text-inputs {
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 27px;
+@media (min-width: $mobile-width) {
+  .text-inputs {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 27px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .text-inputs {
+    border-bottom: none;
+  }
 }

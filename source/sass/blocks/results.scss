@@ -67,17 +67,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .results--weight,
-  .results--time {
-    width: 162px;
-  }
-
   .results--weight::before,
   .results--time::before {
     background-color: #eaeaea;
-  }
-
-  .results--weight {
-    padding: 15px 57px 20px 57px;
   }
 }

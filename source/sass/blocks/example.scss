@@ -72,7 +72,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 20%, #eaeaea 20%);
+    background: linear-gradient(to bottom, #ffffff 30%, #eaeaea 30%);
     padding-left: 110px;
     display: flex;
   }
@@ -95,7 +95,6 @@
 
   .example__results-wrapper {
     flex-direction: column;
-    width: 366px;
   }
 
   .example__title-info-wrapper {

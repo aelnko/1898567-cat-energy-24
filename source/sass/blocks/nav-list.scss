@@ -29,25 +29,22 @@
   .nav-list__item {
     border: none;
     padding: 0;
-    font-size:18px;
-    line-height:24px;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 400;
 
-    &--active {
-    }
-
     &:nth-of-type(1) {
-      width:64px;
-      margin-right:34px;
+      width: 64px;
+      margin-right: 34px;
     }
 
     &:nth-of-type(2) {
-      width:154px;
-      margin-right:36px;
+      width: 154px;
+      margin-right: 36px;
     }
 
     &:nth-of-type(3) {
-      width:153px;
+      width: 153px;
     }
   }
 }
@@ -60,6 +57,7 @@
   .nav-list__link {
     color: #ffffff;
     font-size: 20px;
+
     &--desktop {
       color: #111111;
       font-size: 20px;

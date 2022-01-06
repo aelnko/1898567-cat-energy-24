@@ -13,8 +13,8 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    padding:24px 30px 62px 30px;
-    justify-content:space-between;
+    padding: 24px 30px 62px 30px;
+    justify-content: space-between;
   }
 
   .page-header--active {
@@ -24,7 +24,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background:linear-gradient(to right, white 50%, #68b738 50%);
+    background: linear-gradient(to right, #ffffff 50%, #68b738 50%);
     padding: 53px 110px 29px;
   }
 

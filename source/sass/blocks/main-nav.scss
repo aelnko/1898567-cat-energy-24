@@ -1,4 +1,4 @@
-@media (min-width:$mobile-width) {
+@media (min-width: $mobile-width) {
   .main-nav {
     margin: 0 auto;
     display: none;
@@ -17,10 +17,10 @@
   }
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .main-nav {
-    display:block;
-    margin:0;
+    display: block;
+    margin: 0;
   }
 
   .main-nav__toggle {

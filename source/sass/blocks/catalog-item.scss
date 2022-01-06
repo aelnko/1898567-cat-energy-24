@@ -83,3 +83,13 @@
     align-self: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    width: 245px;
+  }
+
+  .catalog-item__button {
+    width: 168px;
+  }
+}

@@ -48,3 +48,24 @@
     margin-right: 124px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gift {
+    margin: 117px 110px 86px 79px;
+  }
+
+  .gift__wrapper {
+    width: 245px;
+    flex-direction: column;
+  }
+
+  .gift__icon {
+    margin-left: 0;
+    margin-top: 55.86px;
+  }
+
+  .gift__description {
+    margin-right: 0;
+    margin-bottom: 42.12px;
+  }
+}

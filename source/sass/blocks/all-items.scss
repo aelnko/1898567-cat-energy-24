@@ -69,3 +69,9 @@
     width: 249px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .all-items__button {
+    width: 169px;
+  }
+}

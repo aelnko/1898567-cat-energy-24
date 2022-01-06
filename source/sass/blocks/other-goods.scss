@@ -42,3 +42,20 @@
     border-right: 1px solid #cdcdcd;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .other-goods {
+    display: flex;
+  }
+
+  .other-goods__title {
+    padding-left: 40px;
+    margin-left: 70px;
+  }
+
+  .other-goods__list {
+    border-left: none;
+    border-right: none;
+    margin-left: 110px;
+  }
+}

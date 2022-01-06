@@ -35,3 +35,18 @@
     margin-bottom: 68px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+    padding-left: 110px;
+    margin-bottom: 84px;
+  }
+
+  .catalog__list {
+    grid-template-columns: 245px 245px 245px 245px;
+    column-gap: 80px;
+    row-gap: 63px;
+    margin-left: 110px;
+    margin-bottom: 76px;
+  }
+}

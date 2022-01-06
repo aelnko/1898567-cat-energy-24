@@ -16,3 +16,9 @@
     line-height: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .order-button {
+    width: 244px;
+  }
+}

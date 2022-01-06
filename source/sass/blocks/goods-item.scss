@@ -1,36 +1,91 @@
-.goods-item {
-  display: flex;
-  flex-direction: column;
-  padding-top: 13px;
-  padding-bottom: 19px;
-  margin-right: 20px;
-  border-top: 1px solid #cdcdcd;
+@media (min-width: $mobile-width) {
+  .goods-item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+    padding-bottom: 19px;
+    margin-right: 20px;
+    border-top: 1px solid #cdcdcd;
 
-  &:nth-of-type(4) {
-    border-bottom: 1px solid #cdcdcd;
+    &:nth-of-type(4) {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .goods-item__title {
+    margin: 0;
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-bottom: 13px;
+  }
+
+  .goods-item__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .goods-item__amount,
+  .goods-item__price {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
-.goods-item__title {
-  margin: 0;
-  text-transform: uppercase;
-  color: #222222;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  margin-bottom: 13px;
-}
+@media (min-width: $tablet-width) {
+  .goods-item {
+    padding: 26px 38px 28px;
+    display: flex;
+    flex-direction: row;
+    width: 632px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 0;
 
-.goods-item__info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
+    &:nth-of-type(2) .goods-item__title {
+       margin-right: 340px;
+    }
 
-.goods-item__amount,
-.goods-item__price {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
+    &:nth-of-type(3) .goods-item__title {
+      margin-right: 420px;
+    }
+
+    &:nth-of-type(2) .goods-item__amount {
+      margin-right: 60px;
+    }
+
+    &:nth-of-type(4) .goods-item__title {
+      margin-right: 323px;
+    }
+  }
+
+  .goods-item__info {
+    justify-content: center;
+  }
+
+  .goods-item__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 244px;
+    margin-bottom: 25px;
+    color: #222222;
+  }
+
+  .goods-item__amount {
+    margin-right: 49px;
+    color: #444444;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .goods-item__price {
+    color: #444444;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

@@ -57,10 +57,11 @@
 @media (min-width: $desktop-width) {
   .inputs__wrapper--first {
     display: flex;
+    justify-content: space-between;
   }
 
   .inputs__button-aside-info {
-    margin-left: 110px;
+    margin-left: 0;
   }
 
   .inputs__button {

@@ -41,11 +41,11 @@
 
 @media (min-width: $desktop-width) {
   .comment-inputs__title {
-    padding-left: 110px;
+    padding-left: 0;
   }
 
   .comment-inputs__area {
-    margin-left: 110px;
+    margin-left: 0;
     width: 1220px;
   }
 }

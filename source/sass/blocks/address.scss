@@ -45,3 +45,11 @@
     text-align: right;
   }
 }
+
+@media (min-width: 1441px) {
+  .address {
+    padding: 56px 0;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

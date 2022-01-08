@@ -101,3 +101,15 @@
     margin-right: 193px;
   }
 }
+
+@media (min-width: 1441px) {
+  .example {
+    padding: 43px 0 0 0;
+  }
+
+  .example__wrapper {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

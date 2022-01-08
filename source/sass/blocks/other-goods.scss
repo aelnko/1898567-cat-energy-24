@@ -46,16 +46,18 @@
 @media (min-width: $desktop-width) {
   .other-goods {
     display: flex;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .other-goods__title {
-    padding-left: 40px;
-    margin-left: 70px;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .other-goods__list {
     border-left: none;
     border-right: none;
-    margin-left: 110px;
+    margin-left: 0;
   }
 }

@@ -37,8 +37,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .catalog__title {
-    padding-left: 110px;
+    padding-left: 0;
     margin-bottom: 84px;
   }
 
@@ -46,7 +51,7 @@
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
     row-gap: 63px;
-    margin-left: 110px;
+    margin-left: 0;
     margin-bottom: 76px;
   }
 }

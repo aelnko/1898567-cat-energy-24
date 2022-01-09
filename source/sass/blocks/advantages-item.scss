@@ -1,71 +1,122 @@
-.advantages-item {
-  margin-bottom: 26px;
-  padding-left: 80px;
-  position: relative;
-  color: $special_dark-grey;
+@media (min-width: $mobile-width) {
+  .advantages-item {
+    position: relative;
+    color: $special_dark-grey;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    margin: 0 0 20px 0;
+  }
 
-  &:nth-of-type(1) {
-    width: 176px;
+  .advantages-item__description {
+    margin: 0;
+    margin-left: 20px;
 
-    &::before {
-      content: "";
+    &:nth-of-type(1) {
+      width: 176px;
+    }
+
+    &:nth-of-type(2) {
+      width: 198px;
+    }
+
+    &:nth-of-type(3) {
+      width: 183px;
+    }
+
+    &:nth-of-type(4) {
+      width: 199px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-item {
+    width: 230px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+
+    &:nth-of-type(1),
+    &:nth-of-type(3) {
+      margin-right: 153px;
+    }
+
+    &:nth-of-type(1)::before {
+      content: "1";
       position: absolute;
-      background-image: url("../../img/icon_leaf.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      top: -1px;
-      width: 60px;
-      height: 60px;
-      background-color: $basic_green;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: "Oswald", sans-serif;
+      color: #f2f2f2;
+      z-index: 1;
+      top: -40px;
+      left: 88px;
+    }
+
+    &:nth-of-type(2)::before {
+      content: "2";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: "Oswald", sans-serif;
+      color: #f2f2f2;
+      z-index: 1;
+      top: -40px;
+      left: 88px;
+    }
+
+    &:nth-of-type(3)::before {
+      content: "3";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: "Oswald", sans-serif;
+      color: #f2f2f2;
+      z-index: 1;
+      top: -40px;
+      left: 88px;
+    }
+
+    &:nth-of-type(4)::before {
+      content: "4";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: "Oswald", sans-serif;
+      color: #f2f2f2;
+      z-index: 1;
+      top: -40px;
+      left: 88px;
     }
   }
 
-  &:nth-of-type(2) {
-    width: 198px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../img/icon_tub.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      top: -1px;
-      width: 60px;
-      height: 60px;
-      background-color: $basic_green;
-    }
+  .advantages-item__icon {
+    margin-bottom: 31px;
+    z-index: 2;
   }
 
-  &:nth-of-type(3) {
-    width: 183px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../img/icon_eat.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      top: -1px;
-      width: 60px;
-      height: 60px;
-      background-color: $basic_green;
-    }
+  .advantages-item__description {
+    margin: 0;
+    z-index: 2;
+    line-height: 24px;
+    font-size: 16px;
   }
+}
 
-  &:nth-of-type(4) {
-    width: 199px;
-    margin-bottom: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../img/icon_alarm.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      top: -1px;
-      width: 60px;
-      height: 60px;
-      background-color: $basic_green;
+@media (min-width: $desktop-width) {
+  .advantages-item {
+    &:nth-of-type(1) {
+      margin-right: 19px;
     }
+
+    &:nth-of-type(3) {
+      margin-right: 95px;
+    }
+
+    margin-right: 95px;
   }
 }

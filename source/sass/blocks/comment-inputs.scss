@@ -1,18 +1,51 @@
-.comment-inputs {
-  border-top: 2px solid $basic_green;
-  margin-left: 20px;
-  padding-bottom: 22.75px;
+@media (min-width: $mobile-width) {
+  .comment-inputs {
+    border-top: 2px solid $basic_green;
+    margin-left: 20px;
+    padding-bottom: 22.75px;
+  }
+
+  .comment-inputs__title {
+    font-size: 24px;
+    line-height: 26px;
+    padding-right: 22px;
+    margin-bottom: 37.73px;
+  }
+
+  .comment-inputs__area {
+    border: 1px solid #e7e7e7;
+    width: 280px;
+    height: 150.52px;
+  }
 }
 
-.comment-inputs__title {
-  font-size: 24px;
-  line-height: 26px;
-  padding-right: 22px;
-  margin-bottom: 37.73px;
+@media (min-width: $tablet-width) {
+  .comment-inputs {
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+
+  .comment-inputs__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 69px;
+    margin-bottom: 76px;
+  }
+
+  .comment-inputs__area {
+    margin-left: 70px;
+    width: 631px;
+    margin-bottom: 65px;
+  }
 }
 
-.comment-inputs__area {
-  border: 1px solid #e7e7e7;
-  width: 280px;
-  height: 150.52px;
+@media (min-width: $desktop-width) {
+  .comment-inputs__title {
+    padding-left: 0;
+  }
+
+  .comment-inputs__area {
+    margin-left: 0;
+    width: 1220px;
+  }
 }

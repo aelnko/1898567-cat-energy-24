@@ -1,11 +1,27 @@
-.copyright {
-  display: flex;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  align-items: center;
-  padding: 22px 0;
+@media (min-width: $mobile-width) {
+  .copyright {
+    display: flex;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    align-items: center;
+    padding: 22px 0;
+    justify-content: center;
+  }
+
+  .copyright__link {
+    margin-right: 140px;
+    color: #444444;
+  }
 }
 
-.copyright__link {
-  margin-right: 140px;
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+    width: 163px;
+    justify-content: space-between;
+  }
+
+  .copyright__link {
+    margin: 0;
+  }
 }

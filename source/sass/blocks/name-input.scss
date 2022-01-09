@@ -1,11 +1,25 @@
-.name-input {
-  margin-bottom: 13px;
+@media (min-width: $mobile-width) {
+  .name-input {
+    margin-bottom: 13px;
+  }
+
+  .name-input__label {
+    margin-right: 13px;
+  }
+
+  .name-input__input {
+    width: 228px;
+  }
 }
 
-.name-input__label {
-  margin-right: 13px;
+@media (min-width: $tablet-width) {
+  .name-input__input {
+    width: 567px;
+  }
 }
 
-.name-input__input {
-  width: 228px;
+@media (min-width: $desktop-width) {
+  .name-input__input {
+    width: 506px;
+  }
 }

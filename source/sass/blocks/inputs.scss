@@ -1,30 +1,71 @@
-.inputs {
-  display: flex;
-  flex-direction: column;
+@media (min-width: $mobile-width) {
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputs__field {
+    border: none;
+    padding: 0;
+  }
+
+  .inputs__button {
+    @include button;
+    margin-left: 20px;
+    width: 280px;
+    height: 40px;
+    background-color: $basic_green;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 21px;
+  }
+
+  .inputs__aside-info {
+    align-self: center;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 32px;
+  }
 }
 
-.inputs__field {
-  border: none;
-  padding: 0;
+@media (min-width: $tablet-width) {
+  .inputs__button {
+    margin-left: 71px;
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .inputs__aside-info {
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 49px;
+    margin-bottom: 0;
+  }
+
+  .inputs__button-aside-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 72px;
+  }
 }
 
-.inputs__button {
-  @include button;
-  margin-left: 20px;
-  width: 280px;
-  height: 40px;
-  background-color: $basic_green;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 21px;
-}
+@media (min-width: $desktop-width) {
+  .inputs__wrapper--first {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.inputs__aside-info {
-  align-self: center;
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 32px;
+  .inputs__button-aside-info {
+    margin-left: 0;
+  }
+
+  .inputs__button {
+    margin-left: 0;
+    width: 568px;
+  }
 }

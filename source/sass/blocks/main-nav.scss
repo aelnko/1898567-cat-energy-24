@@ -1,12 +1,29 @@
-.main-nav {
-  margin: 0 auto;
-  display: none;
+@media (min-width: $mobile-width) {
+  .main-nav {
+    margin: 0 auto;
+    display: none;
+  }
+
+  .main-nav__toggle {
+    @include button;
+    background-image: url("../../img/menu_toggle.svg");
+    width: 24px;
+    height: 18px;
+    margin-left: 64px;
+  }
+
+  .main-nav--shown {
+    display: block;
+  }
 }
 
-.main-nav__toggle {
-  @include button;
-  background-image: url("../../img/menu_toggle.svg");
-  width: 24px;
-  height: 18px;
-  margin-left: 64px;
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+    margin: 0;
+  }
+
+  .main-nav__toggle {
+    @include visually-hidden;
+  }
 }

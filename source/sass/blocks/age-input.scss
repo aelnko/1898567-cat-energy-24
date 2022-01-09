@@ -1,7 +1,25 @@
-.age-input__label {
-  margin-right: 14px;
+@media (min-width: $mobile-width) {
+  .age-input__label {
+    margin-right: 14px;
+  }
+
+  .age-input__input {
+    width: 171px;
+  }
 }
 
-.age-input__input {
-  width: 171px;
+@media (min-width: $tablet-width) {
+  .age-input {
+    margin-bottom: 0;
+  }
+
+  .age-input__input {
+    width: 497px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .age-input__input {
+    width: 436px;
+  }
 }

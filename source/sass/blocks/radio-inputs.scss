@@ -1,13 +1,34 @@
-.radio-inputs {
-  &--slimming {
-    margin-bottom: 13.04px;
-  }
+@media (min-width: $mobile-width) {
+  .radio-inputs {
+    &--slimming {
+      margin-bottom: 13.04px;
+    }
 
-  &--weight-gain {
-    margin-bottom: 12.04px;
+    &--weight-gain {
+      margin-bottom: 12.04px;
+    }
+    padding-bottom: 19.38px;
+    padding-top: 22.22px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 26px;
   }
-  padding-bottom: 19.38px;
-  padding-top: 22.22px;
-  border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .radio-inputs {
+    border-bottom: none;
+    border: 1px solid #e7e7e7;
+    width: 607px;
+    padding-left: 28px;
+    margin-left: 69px;
+    margin-bottom: 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio-inputs {
+    margin-bottom: 47px;
+    margin-left: 0;
+    width: 568px;
+  }
 }

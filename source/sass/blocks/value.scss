@@ -1,6 +1,24 @@
-.value p {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+@media (min-width: $mobile-width) {
+  .value p {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .value {
+    margin-right: 36px;
+  }
+
+  .value p {
+    font-size: 16px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  .value__weight,
+  .value__flavor {
+    margin-bottom: 14px;
+  }
 }

@@ -1,11 +1,29 @@
-.weight-input {
-  margin-bottom: 13px;
+@media (min-width: $mobile-width) {
+  .weight-input {
+    margin-bottom: 13px;
+  }
+
+  .weight-input__label {
+    margin-right: 16px;
+  }
+
+  .weight-input__input {
+    width: 203px;
+  }
 }
 
-.weight-input__label {
-  margin-right: 16px;
+@media (min-width: $tablet-width) {
+  .weight-input {
+    margin-bottom: 20px;
+  }
+
+  .weight-input__input {
+    width: 536px;
+  }
 }
 
-.weight-input__input {
-  width: 203px;
+@media (min-width: $desktop-width) {
+  .weight-input__input {
+    width: 475px;
+  }
 }

@@ -1,33 +1,115 @@
-.example {
-  padding: 25px 20px 40px 20px;
-  background-color: #eaeaea;
+@media (min-width: $mobile-width) {
+  .example {
+    padding: 25px 20px 40px 20px;
+    background-color: #eaeaea;
+  }
+
+  .example__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .example__description {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    color: $special_dark-grey;
+  }
+
+  .example__results {
+    margin-bottom: 32px;
+  }
+
+  .example__spent {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 
-.example__title {
-  margin: 0;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  margin-bottom: 40px;
+@media (min-width: $tablet-width) {
+  .example {
+    background: linear-gradient(to bottom, #ffffff 70%, #eaeaea 70%);
+    border-top: 1px solid #e6e6e6;
+    padding-top: 43px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 708px;
+    margin-bottom: 54px;
+  }
+
+  .example__results-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__spent {
+    font-size: 20px;
+    line-height: 20px;
+    width: 174px;
+    text-align: right;
+  }
 }
 
-.example__description {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 20px;
+@media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient(to bottom, #ffffff 30%, #eaeaea 30%);
+    padding-left: 110px;
+    display: flex;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 436px;
+    margin-bottom: 69px;
+  }
+
+  .example--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__results-wrapper {
+    flex-direction: column;
+  }
+
+  .example__title-info-wrapper {
+    margin-right: 193px;
+  }
 }
 
-.example__results {
-  margin-bottom: 32px;
-}
+@media (min-width: 1441px) {
+  .example {
+    padding: 43px 0 0 0;
+  }
 
-.example__spent {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0;
-  text-align: center;
-  margin-bottom: 40px;
+  .example__wrapper {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

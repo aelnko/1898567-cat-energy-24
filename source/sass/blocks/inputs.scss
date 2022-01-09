@@ -58,10 +58,14 @@
   .inputs__wrapper--first {
     display: flex;
     justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .inputs__button-aside-info {
-    margin-left: 0;
+    width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 82px;
   }
 
   .inputs__button {

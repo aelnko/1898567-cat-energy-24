@@ -1,8 +1,23 @@
 @media (min-width: $mobile-width) {
   .aside {
-    margin-left: 20px;
-    border-top: 2px solid $basic_green;
+    margin: 0;
+    border: none;
     padding-bottom: 34px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 2px;
+      background-color: $basic_green;
+      right: 0;
+      top: 15px;
+    }
+  }
+
+  .aside__container {
+    margin-left: 20px;
   }
 
   .aside__title {
@@ -10,6 +25,9 @@
     line-height: 26px;
     padding-right: 23px;
     margin-bottom: 39px;
+    background-color: #fff;
+    position: relative;
+    width: 141px;
   }
 
   .aside__check {
@@ -20,26 +38,44 @@
 @media (min-width: $tablet-width) {
   .aside {
     margin-left: 0;
+
+    &:before {
+      width: 100%;
+      top: 21px;
+    }
+  }
+
+  .aside__container {
+    margin-left: 30px;
   }
 
   .aside__title {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 70px;
+    padding-left: 40px;
     margin-bottom: 57px;
+    padding-right: 41px;
+    width: 211px;
   }
 
   .aside__wrapper {
     width: 565px;
-    margin-left: 70px;
+    margin-left: 40px;
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .aside__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .aside__title {
-    padding-left: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
   }
 
   .aside__wrapper {

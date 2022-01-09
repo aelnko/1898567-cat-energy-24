@@ -35,12 +35,18 @@
     position: absolute;
     opacity: 20%;
     z-index: 1;
+    top:0;
+    left:0;
   }
 
   .intro__decorative-image {
     position: absolute;
     top: 167px;
     z-index: 2;
+  }
+
+  .intro__button {
+    display: none;
   }
 }
 
@@ -83,14 +89,15 @@
   }
 
   .intro__button {
+    display: inline-block;
     font-weight: 400;
     line-height: 20px;
     font-size: 20px;
     text-transform: uppercase;
     color: #ffffff;
     background-color: $basic_green;
-    width: 244px;
-    padding: 14px 0;
+    // width: 244px;
+    padding: 14px 26px;
     text-align: center;
     z-index: 1;
   }
@@ -101,7 +108,7 @@
     background: linear-gradient(to right, #ffffff 50%, #68b738 50%);
     margin-left: 0;
     padding-bottom: 175px;
-    padding-left: 190px;
+    // padding-left: 190px;
   }
 
   .intro__title {
@@ -115,5 +122,10 @@
 
   .intro__decorative-image {
     @include visually-hidden;
+  }
+
+  .intro__wrapper {
+    width: 920px;
+    margin: 0 auto;
   }
 }

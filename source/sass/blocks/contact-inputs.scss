@@ -5,7 +5,7 @@
     margin: 0;
     position: relative;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       width: 50%;
@@ -28,7 +28,7 @@
     line-height: 26px;
     margin-bottom: 35.07px;
     padding-right: 14px;
-    background-color: #fff;
+    background-color: #ffffff;
     position: relative;
   }
 }
@@ -38,7 +38,7 @@
     padding-bottom: 65px;
     margin-left: 0;
 
-    &:before {
+    &::before {
       width: 100%;
     }
   }

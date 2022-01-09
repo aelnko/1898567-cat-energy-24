@@ -5,7 +5,7 @@
     margin: 0;
     position: relative;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       width: 50%;
@@ -26,9 +26,8 @@
     padding-right: 22px;
     margin-bottom: 37.73px;
     position: relative;
-    background-color: #fff;
+    background-color: #ffffff;
     width: 121px;
-
   }
 
   .comment-inputs__area {
@@ -43,11 +42,12 @@
     margin-left: 0;
     padding-bottom: 0;
 
-    &:before {
+    &::before {
       width: 100%;
       top: 21px;
     }
   }
+
   .comment-inputs__container {
     margin-left: 30px;
   }

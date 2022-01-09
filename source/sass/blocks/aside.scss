@@ -5,7 +5,7 @@
     padding-bottom: 34px;
     position: relative;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       width: 50%;
@@ -25,7 +25,7 @@
     line-height: 26px;
     padding-right: 23px;
     margin-bottom: 39px;
-    background-color: #fff;
+    background-color: #ffffff;
     position: relative;
     width: 141px;
   }
@@ -39,7 +39,7 @@
   .aside {
     margin-left: 0;
 
-    &:before {
+    &::before {
       width: 100%;
       top: 21px;
     }

@@ -47,13 +47,14 @@
   </header>
   <main class="page-main">
     <section class="form-inputs">
-      <div class="form-inputs__wrapper">
-      <h1 class="form-inputs__title">
-        Подбор программы
-      </h1>
-      <p class="form-inputs__description">
-        Заполните анкету, и мы подберем программу питания для вашего кота
-      </p>
+      <div class="form-inputs__info">
+        <h1 class="form-inputs__title">
+          Подбор программы
+        </h1>
+        <p class="form-inputs__description">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+      </div>
       <form class="form-inputs__inputs inputs" action="#" method="post">
         <div class="inputs__wrapper--first">
           <fieldset class="inputs__field text-inputs">
@@ -95,52 +96,58 @@
           </fieldset>
         </div>
         <fieldset class="inputs__field contact-inputs">
-          <legend class="contact-inputs__title">Контактные данные (владельца кота)</legend>
-          <div class="contact-inputs__wrapper">
-            <div class="contact-inputs__email email-form">
-              <label class="email-form__label" for="email">E-mail:*</label>
-              <input class="email-form__input" type="email" id="email" placeholder="kuklachev@gmail.com">
-            </div>
-            <div class="contact-inputs__phone phone-form">
-              <label class="phone-form__label" for="phone">Телефон:*</label>
-              <input class="phone-form__input" type="phone" id="phone" placeholder="8 (960) 900-60-90">
+          <div class="contact-inputs__container">
+            <legend class="contact-inputs__title">Контактные данные (владельца кота)</legend>
+            <div class="contact-inputs__wrapper">
+              <div class="contact-inputs__email email-form">
+                <label class="email-form__label" for="email">E-mail:*</label>
+                <input class="email-form__input" type="email" id="email" placeholder="kuklachev@gmail.com">
+              </div>
+              <div class="contact-inputs__phone phone-form">
+                <label class="phone-form__label" for="phone">Телефон:*</label>
+                <input class="phone-form__input" type="phone" id="phone" placeholder="8 (960) 900-60-90">
+              </div>
             </div>
           </div>
         </fieldset>
         <fieldset class="inputs__field comment-inputs">
-          <legend class="comment-inputs__title">
-            Комментарий
-          </legend>
-          <textarea class="comment-inputs__area" name="" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="comment-inputs__container">
+            <legend class="comment-inputs__title">
+              Комментарий
+            </legend>
+            <textarea class="comment-inputs__area" name="" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <fieldset class="inputs__field aside">
-          <legend class="aside__title">Дополнительно</legend>
-          <div class="aside__wrapper">
-            <div class="aside__check aside-check">
-              <input class="aside-check__input visually-hidden" type="checkbox" id="sweetener" checked>
-              <label class="aside-check__label check" for="sweetener">
-                <span class="check__label">Сахарозаменитель</span>
-              </label>
-            </div>
-            <div class="aside__check aside-check">
-              <input class="aside-check__input visually-hidden" type="checkbox" id="water">
-              <label class="aside-check__label check" for="water">
-                <span class="check__label">
-                  Питьевая вода
-                </span>
-              </label>
-            </div>
-            <div class="aside__check aside-check">
-              <input class="aside-check__input visually-hidden" type="checkbox" id="milk">
-              <label class="aside-check__label check" for="milk">
-                <span class="check__label">Молоко</span>
-              </label>
-            </div>
-            <div class="aside__check aside-check">
-              <input class="aside-check__input visually-hidden" type="checkbox" id="vitamins">
-              <label class="aside-check__label check" for="vitamins">
-                <span class="check__label">Витамины</span>
-              </label>
+          <div class="aside__container">
+            <legend class="aside__title">Дополнительно</legend>
+            <div class="aside__wrapper">
+              <div class="aside__check aside-check">
+                <input class="aside-check__input visually-hidden" type="checkbox" id="sweetener" checked>
+                <label class="aside-check__label check" for="sweetener">
+                  <span class="check__label">Сахарозаменитель</span>
+                </label>
+              </div>
+              <div class="aside__check aside-check">
+                <input class="aside-check__input visually-hidden" type="checkbox" id="water">
+                <label class="aside-check__label check" for="water">
+                  <span class="check__label">
+                    Питьевая вода
+                  </span>
+                </label>
+              </div>
+              <div class="aside__check aside-check">
+                <input class="aside-check__input visually-hidden" type="checkbox" id="milk">
+                <label class="aside-check__label check" for="milk">
+                  <span class="check__label">Молоко</span>
+                </label>
+              </div>
+              <div class="aside__check aside-check">
+                <input class="aside-check__input visually-hidden" type="checkbox" id="vitamins">
+                <label class="aside-check__label check" for="vitamins">
+                  <span class="check__label">Витамины</span>
+                </label>
+              </div>
             </div>
           </div>
         </fieldset>
@@ -151,7 +158,6 @@
           </p>
         </div>
       </form>
-      </div>
     </section>
   </main>
   <footer class="page-footer page-footer--active">

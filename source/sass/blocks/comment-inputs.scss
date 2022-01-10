@@ -1,8 +1,23 @@
 @media (min-width: $mobile-width) {
   .comment-inputs {
-    border-top: 2px solid $basic_green;
-    margin-left: 20px;
+    border: none;
     padding-bottom: 22.75px;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 2px;
+      right: 0;
+      background-color: $basic_green;
+      top: 14px;
+    }
+  }
+
+  .comment-inputs__container {
+    margin-left: 20px;
   }
 
   .comment-inputs__title {
@@ -10,6 +25,9 @@
     line-height: 26px;
     padding-right: 22px;
     margin-bottom: 37.73px;
+    position: relative;
+    background-color: #ffffff;
+    width: 121px;
   }
 
   .comment-inputs__area {
@@ -23,25 +41,43 @@
   .comment-inputs {
     margin-left: 0;
     padding-bottom: 0;
+
+    &::before {
+      width: 100%;
+      top: 21px;
+    }
+  }
+
+  .comment-inputs__container {
+    margin-left: 30px;
   }
 
   .comment-inputs__title {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 69px;
+    padding-left: 39px;
+    padding-right: 39px;
     margin-bottom: 76px;
+    width: 182px;
   }
 
   .comment-inputs__area {
-    margin-left: 70px;
+    margin-left: 40px;
     width: 631px;
     margin-bottom: 65px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .comment-inputs__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .comment-inputs__title {
-    padding-left: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
   }
 
   .comment-inputs__area {

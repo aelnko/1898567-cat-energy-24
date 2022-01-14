@@ -13,9 +13,13 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo header-logo">
         <a class="header-logo__link">
-          <img class="header-logo__icon" src="img/cat-logo.svg" alt="">
+          <picture>
+            <source media="(min-width:1440px)" srcset="img/cat-logo_desktop.svg">
+            <source media="(min-width:768px)" srcset="img/cat-logo_tablet.svg">
+            <img class="header-logo__icon" src="img/cat-logo_mobile.svg" alt="">
+          </picture>
         </a>
-        <a class="header-logo__link">
+        <a class="header-logo__link header-logo__link--mobile">
           <img class="header-logo__icon" src="img/cat-energy-text-logo.svg" alt="">
         </a>
       </div>
@@ -26,17 +30,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item nav-list__item--active">
-              <a class="nav-list__link" href="index.html">
+              <a class="nav-list__link nav-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="catalog.html">
+              <a class="nav-list__link nav-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="form.html">
+              <a class="nav-list__link nav-list__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -64,19 +68,11 @@
       <ul class="program__list">
         <li class="program__item program-item">
           <div class="program-item__title-picture">
-            <svg class="program-item__logo" width="50" height="53" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="25" cy="28" r="25" fill="#68B738" />
-              <g clip-path="url(#b)">
-                <path
-                  d="M35.2 0H35c-.32.19-.59.47-.74.82a8.03 8.03 0 0 0-.67 1.76.84.84 0 0 1-.76.69 3.77 3.77 0 0 0-2.69 1.95c-.37.66-.69 1.35-.95 2.06-.73 1.9-1.29 3.85-1.98 5.77-.32.87-.34.87-1.32.87-1.16 0-1.08-.18-1.1 1.1 0 .41.13.62.56.6.13 0 .33-.07.39.1.05.18-.13.26-.23.36a4.63 4.63 0 0 1-2.23 1.26c-.97.26-1.97.47-2.92.79-2.45.82-4.7 1.96-6.46 3.9a14.44 14.44 0 0 0-2.44 4.04c-1.89 4.46-2.8 9.15-3.51 13.88a97.06 97.06 0 0 0-.75 6.7C7.1 47.75 7 48.88 7 50h17.14c.03-.23-.01-.46-.12-.66a2.58 2.58 0 0 0-1.97-1.58c-.36-.08-.4-.2-.18-.48.36-.48.64-1.02.82-1.6.84-2.47 1.16-5.06 1.57-7.62.23-1.96.83-3.85 1.77-5.59a11.13 11.13 0 0 1 2.87-3.28c.43-.32.45-.32.52.23.05.36.06.74.09 1.11.15 2.44.12 4.88-.1 7.31-.2 1.88-.22 3.78-.07 5.67.2 2.2.59 4.36 1.16 6.49h6.84a2.8 2.8 0 0 0-2.18-2.29c-.64-.1-1.3-.07-1.93.1-.31.08-.44 0-.46-.33-.22-2.73-.04-5.47.51-8.16a91.8 91.8 0 0 0 1.57-9.37c.14-1.27.54-2.5 1.18-3.6.6-1.1 1.14-2.23 1.74-3.33a3.03 3.03 0 0 0 .22-2.67c-.14-.37-.27-.74-.44-1.1-.52-1-1.03-2-1.5-3-.26-.52-.2-.59.36-.6.84 0 .84 0 .86-.85v-.34c0-.35-.14-.55-.52-.51h-.78c-.36 0-.46-.15-.37-.52a3.22 3.22 0 0 1 2.64-2.28 11.3 11.3 0 0 1 3.4.22.51.51 0 0 0 .65-.33 40 40 0 0 1 .66-1.55.52.52 0 0 0-.05-.58c-1.65-2.1-3.43-4.05-5.87-5.3a.77.77 0 0 1-.45-.58c-.14-.74-.35-1.46-.65-2.14A1.8 1.8 0 0 0 35.2 0Z"
-                  fill="#000" />
-              </g>
-              <defs>
-                <clipPath id="b">
-                  <path fill="#fff" transform="translate(7)" d="M0 0h36v50H0z" />
-                </clipPath>
-              </defs>
-            </svg>
+            <picture>
+              <source media="(min-width:1440px)" srcset="img/cat_slimming_desktop.svg">
+              <source media="(min-width:768px)" srcset="img/cat_slimming_tablet.svg">
+              <img src="img/cat_slimming.svg" alt="" class="program-item__slimming-icon">
+            </picture>
             <h2 class="program-item__title">
               Похудение
             </h2>
@@ -91,19 +87,11 @@
         </li>
         <li class="program__item program-item">
           <div class="program-item__title-picture">
-            <svg class="program-item__logo" width="67" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="34.5" cy="25" r="25" fill="#68B738" />
-              <g clip-path="url(#a)">
-                <path
-                  d="M61.55 13.9a7.6 7.6 0 0 1 2.25-2.3c.5-.35.8-.35 1.1.3.4.95.75 1.95.45 3a1.15 1.15 0 0 0 .2 1.05c.3.4.55.8.8 1.15a3.14 3.14 0 0 1 .45 3.1c-.18.5-.22 1.03-.1 1.55.1.5.1 1 0 1.5a1.88 1.88 0 0 1-1.35 1.6 2.6 2.6 0 0 0-1.6 1 .53.53 0 0 1-.45.25c-.6.1-2.1-1.25-2.1-1.85v-.3c.05-1.8-.05-1.95-1.7-2.7a2.2 2.2 0 0 1-.9-.6c-.3-.4-.7-.35-1.15-.2-.45.15-.7.45-.65.95.15 1.21.2 2.43.15 3.65 0 .14.04.28.1.4 1.55 2.25 2.15 4.9 2.9 7.45.6 1.95 1.7 3 3.7 3.15.32.03.64.08.95.15a2.08 2.08 0 0 1 1.7 1.6c.35 1.05.15 1.3-.9 1.3h-3.25c-.42.02-.83-.12-1.15-.4a5.86 5.86 0 0 0-1.7-1 3.63 3.63 0 0 1-1.7-1.3 14.3 14.3 0 0 0-2-2.25c-1.4-1.45-2.9-2.85-4.2-4.35a5.69 5.69 0 0 1-1.6-3.8c0-.45-.1-.65-.6-.45a.96.96 0 0 1-.5.15c-1.4 0-2.1.85-2.6 2.1-.45 1.05-1.05 2.05-1.6 3.1A5.2 5.2 0 0 0 44 33c0 1.2.3 1.6 1.4 2 .7.25 1.35.5 1.7 1.2.4.8.3 1-.55 1.05h-3.4a.94.94 0 0 1-.95-.55l-.9-1.5a3.02 3.02 0 0 1-.35-2.7c.22-.87.23-1.77.05-2.65a4.2 4.2 0 0 1 .85-3.5c.3-.35.3-.5-.2-.6a25.03 25.03 0 0 1-5.95-2.1c-1.6-.6-1.9-.5-2.35 1.15-.4 1.4-.8 2.8-1.1 4.25-.35 1.6.05 3.1.55 4.6.2.6.8.55 1.25.7 1 .3 1.85.7 2.25 1.75.35.8.3.9-.55.9-.85 0-1.7-.05-2.6 0-.76.01-1.5-.23-2.1-.7-2.4-1.6-3.1-4.05-3.3-6.7-.1-1.65-1-2.95-2.05-4.2-.2-.25-.4-.35-.7-.15-1.07.6-2.2 1.1-3.35 1.5a13.35 13.35 0 0 0-6.1 4.4 5.31 5.31 0 0 0-1.1 2.55c-.15.9.1 1.3 1 1.55s1.35.75 1.45 1.7c.05.4-.1.6-.5.6h-4.05a.83.83 0 0 1-.65-.4 4.28 4.28 0 0 1-.95-2.75 25.3 25.3 0 0 1 .45-5.15 3.15 3.15 0 0 1 1.7-2.4c2.95-1.4 4.5-4.05 5.9-6.8.3-.55.05-.65-.45-.6-1.4.2-2.73.75-3.85 1.6a35.3 35.3 0 0 0-4.15 3.55 8.34 8.34 0 0 1-5.15 2.45c-3.65.2-5.35-1.85-5.2-5.15.03-1.13.46-2.2 1.2-3.05a2.13 2.13 0 0 1 2.25-.75c.75.2.95.6.65 1.35-.15.3-.35.55-.5.85-.22.3-.38.64-.5 1-.55 1.5.2 2.55 1.75 2.7 1.65.15 3-.55 4.25-1.55 1.5-1.2 2.85-2.6 4-4.15a10.4 10.4 0 0 1 7.2-4.05c1.15-.15 2.15-.65 3.25-.95 2.06-.63 4.2-.93 6.35-.9a6.5 6.5 0 0 0 2.9-.55c2.45-1 5-1 7.55-.5 2 .4 4 .9 5.95 1.4a8.3 8.3 0 0 0 3.5-.1c2.2-.56 4.44-.9 6.7-1a9.08 9.08 0 0 1 4.3.85c1 .45 1 .45.75 1.4Z"
-                  fill="#000" />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" transform="translate(0 11)" d="M0 0h67v28H0z" />
-                </clipPath>
-              </defs>
-            </svg>
+            <picture>
+              <source media="(min-width:1440px)" srcset="img/cat_weight_desktop.svg">
+              <source media="(min-width:768px)" srcset="img/cat_weight_tablet.svg">
+              <img src="img/cat_weight.svg" alt="" class="program-item__weight-icon">
+            </picture>
             <h2 class="program-item__title">
               Набор массы
             </h2>
@@ -261,8 +249,9 @@
       </p>
     </div>
     <div class="address__map">
-      <iframe class="address__map-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4928.41185796724!2d30.325895235020027!3d59.93763504566414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb9217f09%3A0xa078b6b7d5053059!2z0JTQm9Ci!5e0!3m2!1sru!2sru!4v1640798679872!5m2!1sru!2sru"
+      <iframe
+        class = "address__map-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716140034!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642159469721!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="page-footer__contacts">
@@ -276,7 +265,10 @@
               Мы во Вконтакте
             </span>
             <a href="#" class="social-contacts__link">
-              <img class="page-footer__social-contacts__icon" src="img/vk-logo.svg" alt="">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/vk-logo_tablet.svg">
+                <img class="page-footer__social-contacts__icon" src="img/vk-logo.svg" alt="">
+              </picture>
             </a>
           </li>
           <li class="social-contacts__item">
@@ -284,7 +276,10 @@
               Мы в Инстаграме
             </span>
             <a href="#" class="social-contacts__link">
-              <img class="social-contacts__icon" src="img/ig-logo.svg" alt="">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/ig-logo_tablet.svg">
+                <img class="social-contacts__icon" src="img/ig-logo.svg" alt="">
+              </picture>
             </a>
           </li>
           <li class="social-contacts__item">
@@ -292,7 +287,10 @@
               Мы в Фейсбуке
             </span>
             <a href="#" class="social-contacts__link">
-              <img class="social-contacts__icon" src="img/fb-logo.svg" alt="">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/fb-logo_tablet.svg">
+                <img class="social-contacts__icon" src="img/fb-logo.svg" alt="">
+              </picture>
             </a>
           </li>
         </ul>

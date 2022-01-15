@@ -9,13 +9,17 @@
 </head>
 
 <body class="page-body">
-  <header class="page-body__header page-header page-header--active page-header--form">
+  <header class="page-body__header page-header page-header--form page-header--active">
     <div class="page-header__wrapper">
       <div class="page-header__logo header-logo">
         <a class="header-logo__link">
-          <img class="header-logo__icon" src="img/cat-logo.svg" alt="">
+          <picture>
+            <source media="(min-width:1440px)" srcset="img/cat-logo_desktop.svg">
+            <source media="(min-width:768px" srcset="img/cat-logo_tablet.svg">
+            <img class="header-logo__icon" src="img/cat-logo_mobile.svg" alt="">
+          </picture>
         </a>
-        <a class="header-logo__link">
+        <a class="header-logo__link header-logo__link--mobile">
           <img class="header-logo__icon" src="img/cat-energy-text-logo.svg" alt="">
         </a>
       </div>
@@ -206,9 +210,10 @@
           </button>
         </li>
         <li class="catalog__item all-items">
-          <svg class="all-items__plus-icon" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0" />
-          </svg>
+          <picture>
+            <source media="(min-width:768px)" srcset="img/plus_tablet.svg">
+            <img src="img/plus.svg" alt="">
+          </picture>
           <p class="all-items__title">
             Показать еще 100500 товаров
           </p>
@@ -222,7 +227,7 @@
       </ul>
     </section>
     <section class="other-goods">
-      <div class="other-goods__wrapper">
+      <div class="other-goods__container">
         <fieldset class="other-goods__fieldset">
           <legend class="other-goods__title">
             Дополнительные товары
@@ -280,21 +285,15 @@
         </fieldset>
         <aside class="gift">
           <div class="gift__wrapper">
-            <img src="img/gift-cat.jpg" alt="чехол для котика" width="279" height="289" class="gift__bg-image">
-            <svg class="gift__icon" width="78" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M64.02 34.71H14.03a3.17 3.17 0 0 1-3.18-3.16v-9.47a3.17 3.17 0 0 1 3.18-3.16h49.98a3.17 3.17 0 0 1 3.19 3.16v9.47a3.17 3.17 0 0 1-3.18 3.16ZM14.03 21.35c-.4 0-.74.33-.74.73v9.47c0 .41.33.74.74.74h49.98c.41 0 .75-.33.75-.74v-9.47c0-.4-.34-.73-.75-.73H14.03Z"
-                fill="#fff" />
-              <path
-                d="M57.04 67.15H21a6.11 6.11 0 0 1-6.13-6.09V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v27.56A3.68 3.68 0 0 0 21 64.73h36.04a3.68 3.68 0 0 0 3.7-3.67V33.5a1.22 1.22 0 0 1 2.44 0v27.56a6.11 6.11 0 0 1-6.14 6.09Z"
-                fill="#fff" />
-              <path
-                d="M39.02 67.15c-.67 0-1.22-.54-1.22-1.21V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v32.44c0 .67-.54 1.2-1.22 1.2ZM23.81 21.34a7.8 7.8 0 0 1-3.17-10.6A7.9 7.9 0 0 1 31.3 7.6c5.82 3.13 8.96 11.86 9.09 12.23l-2.3.8c-.03-.08-2.96-8.22-7.95-10.9a5.46 5.46 0 0 0-7.36 2.17 5.39 5.39 0 0 0 2.2 7.32l-1.17 2.13Z"
-                fill="#fff" />
-              <path
-                d="m54.23 21.34-1.16-2.13a5.38 5.38 0 0 0-1.03-9.92 5.43 5.43 0 0 0-4.14.43c-4.98 2.68-7.91 10.82-7.94 10.9l-2.3-.8c.13-.37 3.27-9.1 9.08-12.23a7.86 7.86 0 0 1 11.29 9.1c-.6 2-1.95 3.66-3.8 4.65ZM61.95 50.93H16.09c-.67 0-1.22-.54-1.22-1.21 0-.67.55-1.21 1.22-1.21h45.86c.67 0 1.22.54 1.22 1.21 0 .67-.55 1.21-1.22 1.21Z"
-                fill="#fff" />
-            </svg>
+            <picture>
+              <source media="(min-width:1440px)" srcset="img/gift-cat_desktop.jpg" type="image/jpg">
+              <source media="(min-width:768px)" srcset="img/gift-cat_tablet.jpg" type="image/jpg">
+              <img src="img/gift-cat.jpg" alt="чехол для котика" class="gift__bg-image">
+            </picture>
+            <picture>
+              <source media="(min-width:768px)" srcset="img/icon_gift_tablet.svg">
+              <img src="img/icon_gift.svg" alt="подарок" class="gift__icon">
+            </picture>
             <p class="gift__description">
               Закажите все и получите чехол для кота в подарок!
             </p>
@@ -314,7 +313,7 @@
     </div>
     <div class="address__map">
       <iframe class="address__map-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4928.41185796724!2d30.325895235020027!3d59.93763504566414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb9217f09%3A0xa078b6b7d5053059!2z0JTQm9Ci!5e0!3m2!1sru!2sru!4v1640798679872!5m2!1sru!2sru"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716140034!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642159469721!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="page-footer__contacts">
@@ -328,7 +327,10 @@
               Мы во Вконтакте
             </span>
             <a href="#" class="social-contacts__link">
-              <img class="page-footer__social-contacts__icon" src="img/vk-logo.svg" alt="">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/vk-logo_tablet.svg">
+                <img class="page-footer__social-contacts__icon" src="img/vk-logo.svg" alt="">
+              </picture>
             </a>
           </li>
           <li class="social-contacts__item">
@@ -336,7 +338,10 @@
               Мы в Инстаграме
             </span>
             <a href="#" class="social-contacts__link">
-              <img class="social-contacts__icon" src="img/ig-logo.svg" alt="">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/ig-logo_tablet.svg">
+                <img class="social-contacts__icon" src="img/ig-logo.svg" alt="">
+              </picture>
             </a>
           </li>
           <li class="social-contacts__item">
@@ -344,7 +349,10 @@
               Мы в Фейсбуке
             </span>
             <a href="#" class="social-contacts__link">
-              <img class="social-contacts__icon" src="img/fb-logo.svg" alt="">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/fb-logo_tablet.svg">
+                <img class="social-contacts__icon" src="img/fb-logo.svg" alt="">
+              </picture>
             </a>
           </li>
         </ul>

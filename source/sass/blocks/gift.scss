@@ -5,18 +5,18 @@
 
   .gift__wrapper {
     position: relative;
-    background-color: $basic_green;
     width: 279px;
     height: 289px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
   .gift__bg-image {
     position: absolute;
-    opacity: 20%;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 
   .gift__description {
@@ -26,6 +26,15 @@
     width: 161px;
     text-align: center;
     color: #ffffff;
+    z-index: 2;
+    margin-top: 187px;
+  }
+
+  .gift__icon {
+    z-index: 2;
+    position: absolute;
+    top: 59px;
+    left: 101px;
   }
 }
 
@@ -37,15 +46,20 @@
   .gift__wrapper {
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: flex-start;
+    height: 200px;
   }
 
   .gift__icon {
-    margin-left: 77px;
+    top: 57px;
+    left: 77px;
   }
 
   .gift__description {
-    margin-right: 124px;
+    margin: 0;
+    text-align: left;
+    margin-top: 71px;
+    margin-left: 422px;
   }
 }
 
@@ -57,15 +71,18 @@
   .gift__wrapper {
     width: 245px;
     flex-direction: column;
+    height: 289px;
   }
 
   .gift__icon {
-    margin-left: 0;
-    margin-top: 55.86px;
+    top: 56px;
+    left: 84px;
   }
 
   .gift__description {
-    margin-right: 0;
-    margin-bottom: 42.12px;
+    margin: 0;
+    text-align: center;
+    margin-top: 185px;
+    margin-left: 41px;
   }
 }

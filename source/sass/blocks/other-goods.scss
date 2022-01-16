@@ -72,12 +72,14 @@
 
 @media (min-width: $desktop-width) {
   .other-goods {
+    display: flex;
+
     &::before {
       top: 20px;
     }
   }
 
-  .other-goods__wrapper {
+  .other-goods__container {
     display: flex;
     margin: 0 auto;
     width: 1220px;

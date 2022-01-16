@@ -13,9 +13,13 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo header-logo">
         <a class="header-logo__link">
-          <img class="header-logo__icon" src="img/cat-logo.svg" alt="">
+          <picture>
+            <source media="(min-width:1440px)" srcset="img/cat-logo_desktop.svg">
+            <source media="(min-width:768px)" srcset="img/cat-logo_tablet.svg">
+            <img class="header-logo__icon" src="img/cat-logo_mobile.svg" alt="">
+          </picture>
         </a>
-        <a class="header-logo__link">
+        <a class="header-logo__link header-logo__link--mobile">
           <img class="header-logo__icon" src="img/cat-energy-text-logo.svg" alt="">
         </a>
       </div>
@@ -170,8 +174,9 @@
       </p>
     </div>
     <div class="address__map">
-      <iframe class="address__map-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4928.41185796724!2d30.325895235020027!3d59.93763504566414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb9217f09%3A0xa078b6b7d5053059!2z0JTQm9Ci!5e0!3m2!1sru!2sru!4v1640798679872!5m2!1sru!2sru"
+      <iframe
+        class = "address__map-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716140034!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642159469721!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="page-footer__contacts">
@@ -185,7 +190,10 @@
               Мы во Вконтакте
             </span>
             <a href="#" class="social-contacts__link">
-              <img class="page-footer__social-contacts__icon" src="img/vk-logo.svg" alt="">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/vk-logo_tablet.svg">
+                <img class="page-footer__social-contacts__icon" src="img/vk-logo.svg" alt="">
+              </picture>
             </a>
           </li>
           <li class="social-contacts__item">
@@ -193,7 +201,10 @@
               Мы в Инстаграме
             </span>
             <a href="#" class="social-contacts__link">
-              <img class="social-contacts__icon" src="img/ig-logo.svg" alt="">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/ig-logo_tablet.svg">
+                <img class="social-contacts__icon" src="img/ig-logo.svg" alt="">
+              </picture>
             </a>
           </li>
           <li class="social-contacts__item">
@@ -201,7 +212,10 @@
               Мы в Фейсбуке
             </span>
             <a href="#" class="social-contacts__link">
-              <img class="social-contacts__icon" src="img/fb-logo.svg" alt="">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/fb-logo_tablet.svg">
+                <img class="social-contacts__icon" src="img/fb-logo.svg" alt="">
+              </picture>
             </a>
           </li>
         </ul>

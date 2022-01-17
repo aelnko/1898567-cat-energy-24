@@ -54,8 +54,24 @@
       <div class="intro__wrapper">
         <h1 class="intro__title">Функциональное питание для котов</h1>
         <p class="intro__subtitle">Занялся собой? Займись котом!</p>
-        <img src="img/intro-bg-phone.png" alt="кот" class="intro__image">
-        <img src="img/intro-decorative-image.png" alt="наше питание" class="intro__decorative-image">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/intro-bg-desktop.jpg 1x, img/intro-bg-desktop@2x.jpg 2x"
+            type="image/jpg">
+          <source media="(min-width: 320px)" srcset="img/intro-bg-phone.png 1x, img/intro-bg-phone@2x.jpg 2x"
+            type="image/jpg">
+          <img src="img/intro-bg-phone.png" alt="кот" class="intro__image">
+        </picture>
+        <picture>
+          <source media="(min-width:1440px)"
+            srcset="img/intro-decorative-image-desktop.png 1x, img/intro-decorative-image-desktop@2x.png 2x"
+            type="image/png">
+          <source media="(min-width:768px)"
+            srcset="img/intro-decorative-image-tablet.png 1x, img/intro-decorative-image-tablet@2x.png 2x"
+            type="image/png">
+          <source media="(min-width:320px)"
+            srcset="img/intro-decorative-image.png 1x, img/intro-decorative-image@2x.png 2x" type="image/png">
+          <img src="img/intro-decorative-image.png" alt="наше питание" class="intro__decorative-image">
+        </picture>
         <a class="intro__button" href="form.html">
           Подобрать программу
         </a>
@@ -228,8 +244,18 @@
           </div>
         </div>
         <div class="example__pictures slider">
-          <img src="img/before-mobile.png" width="280" height="232" alt="До" class="slider__before">
-          <img src="img/after-mobile.png" width="243" height="232" alt="После" class="slider__after">
+          <picture>
+            <source media="(min-width:1440px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x" type="image/png">
+            <source media="(min-width:768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x" type="image/png">
+            <source media="(min-width:320px)" srcset="img/before-mobile.png 1x, img/before-mobile@2x.png 2x" type="image/png">
+            <img src="img/before-mobile.png" alt="До" class="slider__before">
+          </picture>
+          <picture>
+            <source media="(min-width:1440px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x" type="image/png">
+            <source media="(min-width:768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x" type="image/png">
+            <source media="(min-width:320px)" srcset="img/after-mobile.png 1x, img/after-mobile@2x.png 2x" type="image/png">
+            <img src="img/after-mobile.png" alt="После" class="slider__after">
+          </picture>
           <div class="slider__text slider-text">
             <p class="slider-text__before">Было</p>
             <div class="slider-text__toggle"></div>
@@ -249,8 +275,7 @@
       </p>
     </div>
     <div class="address__map">
-      <iframe
-        class = "address__map-map"
+      <iframe class="address__map-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716140034!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642159469721!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>

@@ -81,7 +81,7 @@
   }
 
   .intro__image {
-    @include visually-hidden();
+    display: none;
   }
 
   .intro__decorative-image {
@@ -120,12 +120,16 @@
     margin-bottom: 52px;
   }
 
-  .intro__decorative-image {
-    @include visually-hidden;
-  }
-
   .intro__wrapper {
     width: 920px;
     margin: 0 auto;
+  }
+
+  .intro__image {
+    display: block;
+    left: 50%;
+    width: 50%;
+    height: 694px;
+    top: -157px;
   }
 }

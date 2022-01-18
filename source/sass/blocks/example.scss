@@ -1,7 +1,12 @@
 @media (min-width: $mobile-width) {
   .example {
-    padding: 25px 20px 40px 20px;
+    padding: 25px 20px 45px 20px;
     background-color: #eaeaea;
+  }
+
+  .example__wrapper {
+    width: 280px;
+    margin: 0 auto;
   }
 
   .example__title {
@@ -9,7 +14,7 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   .example__description {
@@ -17,8 +22,9 @@
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     color: $special_dark-grey;
+    width: 280px;
   }
 
   .example__results {
@@ -40,8 +46,13 @@
     background: linear-gradient(to bottom, #ffffff 70%, #eaeaea 70%);
     border-top: 1px solid #e6e6e6;
     padding-top: 43px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin: 0 auto;
+    width: 708px;
+    padding: 0;
+  }
+
+  .example__wrapper {
+    width: 708px;
   }
 
   .example__title {

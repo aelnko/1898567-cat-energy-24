@@ -1,10 +1,15 @@
 @media (min-width: $mobile-width) {
   .intro {
     color: #ffffff;
-    background-color: #68b738;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .intro__wrapper {
     position: relative;
   }
 
@@ -17,6 +22,7 @@
     margin-top: 27px;
     z-index: 2;
     text-align: center;
+    position: relative;
   }
 
   .intro__subtitle {
@@ -29,6 +35,8 @@
     margin-bottom: 164px;
     z-index: 2;
     text-align: center;
+    position: relative;
+    margin-left: 25px;
   }
 
   .intro__image {
@@ -50,13 +58,49 @@
   }
 }
 
+@media (min-width: $mobile-width) and (max-width: 767px) {
+  .intro::before {
+    content: "";
+    background-image: url(../../img/intro-bg-phone.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 302px;
+    background-color: #68b738;
+    background-size: auto 302px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/intro-bg-phone@2x.jpg);
+    }
+  }
+
+  .intro__wrapper::before  {
+    content: "";
+    background-image: url(../../img/intro-decorative-image.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 167px;
+    left: -16px;
+    width: 280px;
+    height: 270px;
+    z-index: 1;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .intro {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 117px;
+    margin: 0 auto;
+    width: 708px;
+  }
+
+  .intro__wrapper {
+    height: 810px;
+    padding-left: 87px;
   }
 
   .intro__title {
@@ -85,7 +129,7 @@
   }
 
   .intro__decorative-image {
-    z-index: 0;
+    z-index: 1;
   }
 
   .intro__button {
@@ -99,20 +143,34 @@
     // width: 244px;
     padding: 14px 26px;
     text-align: center;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .intro__wrapper::before {
+    content: "";
+    background-image: url(../../img/intro-decorative-image-tablet.png);
+    width: 709px;
+    height: 609px;
+    top: 201px;
+    left: -91px;
     z-index: 1;
+    position: absolute;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-    background: linear-gradient(to right, #ffffff 50%, #68b738 50%);
     margin-left: 0;
-    padding-bottom: 175px;
+    padding-bottom: 191px;
     // padding-left: 190px;
+    width: 100%;
   }
 
   .intro__title {
-    margin-top: 82px;
+    margin-top: 78px;
     margin-bottom: 40px;
   }
 
@@ -121,8 +179,7 @@
   }
 
   .intro__wrapper {
-    width: 920px;
-    margin: 0 auto;
+    margin-left: 190px;
   }
 
   .intro__image {
@@ -130,6 +187,12 @@
     left: 50%;
     width: 50%;
     height: 694px;
-    top: -157px;
+    top: -145px;
+  }
+
+  .intro__decorative-image {
+    z-index: 1;
+    top: -4px;
+    left: 558px;
   }
 }

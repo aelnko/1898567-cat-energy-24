@@ -15,15 +15,27 @@
   .main-nav--shown {
     display: block;
   }
+
+  .main-nav__wrapper {
+    width: 320px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     display: block;
     margin: 0;
+    z-index: 2;
+    width: auto;
   }
 
   .main-nav__toggle {
     @include visually-hidden;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 478px;
   }
 }

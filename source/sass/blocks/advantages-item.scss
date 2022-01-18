@@ -8,25 +8,26 @@
     margin: 0 0 20px 0;
   }
 
-  .advantages-item__description {
-    margin: 0;
-    margin-left: 20px;
-
-    &:nth-of-type(1) {
+  .advantages-item {
+    &:nth-of-type(1) .advantages-item__description {
       width: 176px;
     }
 
-    &:nth-of-type(2) {
+    &:nth-of-type(2) .advantages-item__description {
       width: 198px;
     }
 
-    &:nth-of-type(3) {
+    &:nth-of-type(3) .advantages-item__description {
       width: 183px;
     }
 
-    &:nth-of-type(4) {
+    &:nth-of-type(4) .advantages-item__description {
       width: 199px;
     }
+  }
+
+  .advantages-item__description {
+    margin-left: 20px;
   }
 }
 

@@ -15,7 +15,7 @@
     color: #ffffff;
     background-color: $basic_green;
     width: 280px;
-    padding: 7px 0;
+    padding: 11px 0;
     text-align: center;
   }
 
@@ -29,6 +29,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .program {
+    padding-top: 0;
+  }
+
   .program__button {
     @include visually-hidden;
   }

@@ -64,6 +64,14 @@
     }
   }
 
+  .catalog-item__picture__wrapper {
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   .catalog-item__info {
     display: flex;
     flex-direction: column;

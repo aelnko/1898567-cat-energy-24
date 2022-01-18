@@ -1,7 +1,13 @@
-.slider {
-  position: relative;
-}
+@media (min-width: $mobile-width) {
+  .slider {
+    position: relative;
+  }
 
-.slider__before {
-  position: absolute;
+  .slider__before {
+    position: absolute;
+  }
+
+  .slider__after {
+    margin-left: 19px;
+  }
 }

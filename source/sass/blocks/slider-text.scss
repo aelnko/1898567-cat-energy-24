@@ -2,18 +2,16 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  justify-content: center;
+  justify-content: flex-start;
   line-height: 20px;
   margin-top: 15px;
 
   &__before {
-    margin: 0;
-    margin-right: 13px;
+    margin: 0 0 0 41px;
   }
 
   &__after {
-    margin: 0;
-    margin-left: 13px;
+    margin: 0 0 0 16px;
   }
 }
 
@@ -23,6 +21,7 @@
   background-color: #ffffff;
   border-radius: 6px;
   position: relative;
+  margin-left: 19px;
 
   &::before {
     content: "";

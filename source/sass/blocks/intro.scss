@@ -85,6 +85,11 @@
     width: 280px;
     height: 270px;
     z-index: 1;
+    background-size: auto 270px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/intro-decorative-image@2x.png);
+    }
   }
 }
 
@@ -122,6 +127,7 @@
     width: 283px;
     margin: 0;
     margin-bottom: 49px;
+    margin-left: 2px;
   }
 
   .intro__image {
@@ -141,10 +147,11 @@
     color: #ffffff;
     background-color: $basic_green;
     // width: 244px;
-    padding: 14px 26px;
+    padding: 17px 26px;
     text-align: center;
     z-index: 2;
     position: relative;
+    margin-left: 3px;
   }
 }
 
@@ -155,7 +162,7 @@
     width: 709px;
     height: 609px;
     top: 201px;
-    left: -91px;
+    left: 0;
     z-index: 1;
     position: absolute;
   }

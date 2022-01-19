@@ -37,7 +37,7 @@
   .address {
     width: 708px;
     margin: 0 auto;
-    padding: 56px 30px;
+    padding: 61px 30px;
     justify-content: space-between;
   }
 
@@ -45,6 +45,7 @@
     font-size: 20px;
     line-height: 26px;
     width: 172px;
+    margin-left: 40px;
   }
 
   .address__address {
@@ -52,6 +53,13 @@
     line-height: 20px;
     width: 160px;
     text-align: right;
+    margin-left: 0;
+    margin-right: 40px;
+    margin-top: -4px;
+  }
+
+  .address__map {
+    height: 400px;
   }
 }
 

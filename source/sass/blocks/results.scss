@@ -58,12 +58,44 @@
     background-color: #ffffff;
   }
 
+  .results--weight,
+  .results--time {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
   .results--weight {
     margin-right: 42px;
+    padding: 15px 46px 20px 57px;
+
+    &::before {
+      font-size: 14px;
+      line-height: 14px;
+      width: 97px;
+      top: 63px;
+      padding: 0 10px;
+    }
+  }
+
+  .results--weight__text {
+    width: 57px;
+  }
+
+  .results--time__text {
+    width: 102px;
   }
 
   .results--time {
     margin-right: 167px;
+    padding: 15px 28px 20px 30px;
+
+    &::before {
+      font-size: 14px;
+      line-height: 14px;
+      width: 107px;
+      top: 63px;
+      padding: 0 3px;
+    }
   }
 }
 

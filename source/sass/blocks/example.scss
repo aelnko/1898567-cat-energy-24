@@ -43,22 +43,28 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 70%, #eaeaea 70%);
+    background: linear-gradient(to bottom, #ffffff 57.5%, #eaeaea 57.5%);
     border-top: 1px solid #e6e6e6;
     padding-top: 43px;
     margin: 0 auto;
-    width: 708px;
-    padding: 0;
+    width: 100%;
+    padding: 0 0 64px 0;
   }
 
   .example__wrapper {
     width: 708px;
+    margin: 0 auto;
+    padding-top: 43px;
   }
 
   .example__title {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 63px;
+  }
+
+  .example__title-info-wrapper {
+    margin-bottom: 51px;
   }
 
   .example__description {
@@ -75,9 +81,14 @@
 
   .example__spent {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 27px;
     width: 174px;
     text-align: right;
+    margin-top: 9px;
+  }
+
+  .example__spent__wrapper {
+    margin-top: 10px;
   }
 }
 

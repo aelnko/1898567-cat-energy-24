@@ -1,6 +1,7 @@
 @media (min-width: $mobile-width) {
   .page-header {
-    padding: 10px 20px 12px;
+    padding-top: 10px;
+    padding-bottom: 12px;
     width: 280px;
     margin: 0 auto;
 
@@ -27,9 +28,9 @@
 
   .page-header__wrapper {
     width: 100%;
-    // padding: 24px 30px 62px;
+    align-items: flex-start;
     padding-top: 24px;
-    padding-bottom: 62px;
+    padding-bottom: 59px;
   }
 
   .page-header--active {

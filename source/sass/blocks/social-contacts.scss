@@ -33,15 +33,24 @@
     margin: 0;
     width: 128px;
     justify-content: space-between;
+    margin-right: 132px;
   }
 
   .social-contacts__item {
     &:nth-of-type(1) {
-      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 8px;
+      margin-right: 6px;
     }
 
     &:nth-of-type(2) {
-      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 3px;
+    }
+
+    &:nth-of-type(3) {
+      margin-left: 0;
+      margin-top: -7px;
     }
   }
 }

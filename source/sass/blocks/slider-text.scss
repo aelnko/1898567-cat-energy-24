@@ -1,36 +1,91 @@
-.slider-text {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  justify-content: flex-start;
-  line-height: 20px;
-  margin-top: 15px;
+@media (min-width: $mobile-width) {
+  .slider-text {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: flex-start;
+    line-height: 20px;
+    margin-top: 20px;
 
-  &__before {
-    margin: 0 0 0 41px;
+    &__before {
+      @include button;
+      margin: 0 0 0 35px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__after {
+      @include button;
+      margin: 0 0 0 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
-  &__after {
-    margin: 0 0 0 16px;
+  .slider-text__toggle {
+    width: 85.58px;
+    height: 14px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    position: relative;
+    margin-left: 12px;
+    border: 1px solid $special_grey;
+
+    &::before {
+      content: "";
+      width: 35.66px;
+      height: 6px;
+      background-color: $basic_green;
+      position: absolute;
+      border-radius: 6px;
+      top: 4px;
+      left: 6px;
+    }
   }
 }
 
-.slider-text__toggle {
-  width: 85.58px;
-  height: 14px;
-  background-color: #ffffff;
-  border-radius: 6px;
-  position: relative;
-  margin-left: 19px;
+@media (min-width: $tablet-width) {
+  .slider-text {
+    margin-top: 34px;
+    margin-left: 30px;
+  }
 
-  &::before {
-    content: "";
-    width: 35.66px;
+  .slider-text__before,
+  .slider-text__after {
+    font-size: 20px;
+  }
+
+  .slider-text__after {
+    margin-left: 18px;
+  }
+
+  .slider-text__toggle {
+    width: 426px;
     height: 6px;
-    background-color: $basic_green;
-    position: absolute;
-    border-radius: 6px;
-    top: 4px;
-    left: 6px;
+    background-color: #dcdcdc;
+    border: none;
+    margin-left: 18px;
+
+    &::before {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      left: 196px;
+      top: -13px;
+      cursor: pointer;
+      outline: 1px solid #cdcdcd;
+      outline-offset: -1px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: #68b738;
+      border-radius: 50%;
+      left: 209px;
+    }
   }
 }

@@ -95,8 +95,9 @@
 @media (min-width: $desktop-width) {
   .example {
     background: linear-gradient(to bottom, #ffffff 30%, #eaeaea 30%);
-    padding-left: 110px;
     display: flex;
+    border-top: none;
+    padding-bottom: 0;
   }
 
   .example__title {
@@ -110,9 +111,22 @@
     margin-bottom: 69px;
   }
 
-  .example--wrapper {
+  .example__wrapper {
     display: flex;
-    flex-direction: column;
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 0;
+    margin-top: 6px;
+  }
+
+  .example__spent {
+    margin-top: 23px;
+  }
+
+  .example__spent__wrapper {
+    display: block;
+    margin-top: -28px;
+    margin-right: -153px;
   }
 
   .example__results-wrapper {
@@ -121,17 +135,5 @@
 
   .example__title-info-wrapper {
     margin-right: 193px;
-  }
-}
-
-@media (min-width: 1441px) {
-  .example {
-    padding: 43px 0 0 0;
-  }
-
-  .example__wrapper {
-    display: flex;
-    width: 1220px;
-    margin: 0 auto;
   }
 }

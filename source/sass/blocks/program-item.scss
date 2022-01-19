@@ -131,6 +131,7 @@
     line-height: 24px;
     width: 340px;
     margin-bottom: 52px;
+    color: #000000;
   }
 
   .program-item__button {
@@ -148,18 +149,63 @@
 
 @media (min-width: $desktop-width) {
   .program-item {
-    width: 570px;
-    padding: 0;
+    padding: 41px 51px 55px 52px;
+    width: 467px;
 
     &:nth-of-type(1),
     &:nth-of-type(2) {
       margin-top: 0;
-      padding: 0;
     }
 
     &:nth-of-type(2) {
-      width: 570px;
       margin-left: 80px;
+      padding: 47px 61px 55px 33px;
+      width: 476px;
     }
+
+    &:nth-of-type(1) .program-item__title {
+      margin-top: -1px;
+    }
+
+    &:nth-of-type(2) .program-item__title {
+      margin-top: -9px;
+    }
+  }
+
+  .program-item__title-picture {
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  .program-item__slimming-icon,
+  .program-item__weight-icon {
+    position: static;
+  }
+
+  .program-item__slimming-icon {
+    margin-right: 62px;
+  }
+
+  .program-item__weight-icon {
+    margin-right: 47px;
+  }
+
+  .program-item {
+    &:nth-of-type(1) .program-item__description {
+      width: 467px;
+    }
+
+    &:nth-of-type(2) .program-item__description {
+      width: 457px;
+      margin-left: 19px;
+    }
+
+    &:nth-of-type(2) .program-item__button {
+      margin-left: 19px;
+    }
+  }
+
+  .program-item__description {
+    margin-bottom: 27px;
   }
 }

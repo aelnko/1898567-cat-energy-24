@@ -54,3 +54,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social-contacts {
+    margin-right: 0;
+  }
+}

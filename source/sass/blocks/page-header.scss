@@ -40,8 +40,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding: 53px 110px 29px;
-    margin: 0;
+    margin: 0 auto;
     width: 1220px;
   }
 
@@ -50,7 +49,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
+    padding-top: 53px;
+    padding-bottom: 28px;
   }
 
   .page-header--active {
@@ -59,19 +59,5 @@
 
   .page-header--form {
     padding-bottom: 0;
-  }
-}
-
-@media (min-width: 1441px) {
-  .page-header {
-    padding: 53px 0 29px;
-  }
-
-  .page-header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1220px;
-    margin: 0 auto;
   }
 }

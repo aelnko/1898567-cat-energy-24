@@ -23,6 +23,10 @@
     color: #444444;
   }
 
+  .address__address br {
+    display: none;
+  }
+
   .address__map {
     height: 362px;
   }
@@ -58,15 +62,26 @@
     margin-top: -4px;
   }
 
+  .address__address br {
+    display: block;
+  }
+
   .address__map {
     height: 400px;
   }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: $desktop-width) {
   .address {
-    padding: 56px 0;
-    width: 1220px;
-    margin: 0 auto;
+    position: absolute;
+    background-color: #ffffff;
+    width: 405px;
+    padding: 59px 80px;
+    top: 95px;
+    left: 110px;
+  }
+
+  .address__invitation {
+    margin-left: 0;
   }
 }

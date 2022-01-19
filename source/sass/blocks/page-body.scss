@@ -22,7 +22,7 @@ body {
       width: 50%;
       height: 694px;
       background-position-x: right;
-      background-size: auto 694px;
+      background-size: cover;
 
       @media (min-resolution: 2dppx) {
         background-image: url(../../img/intro-bg-desktop@2x.jpg);

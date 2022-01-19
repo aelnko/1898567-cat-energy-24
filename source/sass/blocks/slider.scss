@@ -44,3 +44,10 @@
     margin-left: 0px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider {
+    margin-top: -45px;
+    margin-left: -58px;
+  }
+}

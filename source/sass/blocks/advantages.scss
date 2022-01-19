@@ -53,21 +53,15 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding-top: 71px;
-  }
-
-  .advantages__list {
-    width: 1224px;
-  }
-}
-
-@media (min-width: 1441px) {
-  .advantages {
-    margin: 0;
+    padding-top: 49px;
+    width: 1220px;
   }
 
   .advantages__wrapper {
-    margin: 0 auto;
-    width: 1224px;
+    margin-left: -21px;
+  }
+
+  .advantages__list {
+    width: 1300px;
   }
 }

@@ -19,3 +19,9 @@
     margin: 0 156px 0 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer-logo {
+    margin: 0;
+  }
+}

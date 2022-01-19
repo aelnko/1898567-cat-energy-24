@@ -178,7 +178,8 @@
     margin-left: 0;
     padding-bottom: 191px;
     // padding-left: 190px;
-    width: 100%;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .intro__title {
@@ -188,10 +189,29 @@
 
   .intro__subtitle {
     margin-bottom: 52px;
+    margin-left: -1px;
   }
 
   .intro__wrapper {
-    margin-left: 190px;
+    margin-left: 80px;
+    padding-left: 0;
+    height: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../img/intro-decorative-image-desktop.png);
+      width: 552px;
+      height: 499px;
+      z-index: 1;
+      top: -4px;
+      left: 368px;
+      background-size: auto 499px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../../img/intro-decorative-image-desktop@2x.png);
+      }
+    }
   }
 
   .intro__image {
@@ -206,5 +226,9 @@
     z-index: 1;
     top: -4px;
     left: 558px;
+  }
+
+  .intro__button {
+    margin-left: 0;
   }
 }

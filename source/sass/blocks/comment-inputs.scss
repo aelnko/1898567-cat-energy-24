@@ -1,7 +1,7 @@
 @media (min-width: $mobile-width) {
   .comment-inputs {
     border: none;
-    padding-bottom: 22.75px;
+    padding-bottom: 20px;
     margin: 0;
     position: relative;
 
@@ -17,7 +17,8 @@
   }
 
   .comment-inputs__container {
-    margin-left: 20px;
+    width: 280px;
+    margin: 0 auto;
   }
 
   .comment-inputs__title {
@@ -28,12 +29,13 @@
     position: relative;
     background-color: #ffffff;
     width: 121px;
+    margin-left: -2px;
   }
 
   .comment-inputs__area {
     border: 1px solid #e7e7e7;
-    width: 280px;
-    height: 150.52px;
+    width: 274px;
+    height: 143px;
   }
 }
 

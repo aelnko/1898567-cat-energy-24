@@ -71,6 +71,16 @@
     }
   }
 
+  .nav-list__link {
+    &:hover {
+      opacity: 70%;
+    }
+
+    &:active {
+      opacity: 40%;
+    }
+  }
+
   .nav-list__item {
     &:nth-of-type(1) {
       width: 71px;
@@ -85,6 +95,19 @@
 
     &:nth-of-type(3) {
       width: 170px;
+    }
+  }
+
+  .nav-list__item--active {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #ffffff;
+      width: 71px;
+      height: 2px;
+      top: 32px;
     }
   }
 }

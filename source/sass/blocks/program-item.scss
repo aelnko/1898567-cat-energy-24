@@ -208,4 +208,17 @@
   .program-item__description {
     margin-bottom: 27px;
   }
+
+  .program-item__button {
+    &:hover::after {
+      background-image: url(../../img/icon_arrow-hover.svg);
+      width: 50px;
+      background-repeat: no-repeat;
+    }
+
+    &:active,
+    &:active::after {
+      opacity: 30%;
+    }
+  }
 }

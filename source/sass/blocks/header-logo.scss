@@ -19,3 +19,19 @@
     @include visually-hidden;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header-logo__link {
+    cursor: pointer;
+  }
+
+  .header-logo__link {
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:active {
+      opacity: 60%;
+    }
+  }
+}

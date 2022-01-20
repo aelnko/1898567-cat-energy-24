@@ -1,6 +1,12 @@
 @media (min-width: $mobile-width) {
   .form-inputs {
-    padding-top: 27px;
+    padding-top: 28px;
+  }
+
+  .form-inputs__info {
+    margin-bottom: 39px;
+    width: 280px;
+    margin: 0 auto 39px auto;
   }
 
   .form-inputs__title {
@@ -8,18 +14,15 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
-    margin-left: 20px;
-    margin-bottom: 37px;
+    margin-bottom: 36px;
   }
 
   .form-inputs__description {
     margin: 0;
-    margin-left: 20px;
     line-height: 18px;
     font-size: 14px;
     text-transform: uppercase;
     width: 226px;
-    margin-bottom: 39px;
   }
 }
 

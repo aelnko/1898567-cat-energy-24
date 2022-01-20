@@ -1,6 +1,10 @@
 @media (min-width: $mobile-width) {
   .phone-form {
     margin-bottom: 14.05px;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    justify-content: space-between;
   }
 
   .phone-form__label {
@@ -8,13 +12,12 @@
     font-size: 16px;
     text-transform: uppercase;
     line-height: 18px;
-    margin-right: 8px;
   }
 
   .phone-form__input {
     border: 1px solid $special_grey;
-    padding-left: 16.24px;
-    width: 187.76px;
+    padding: 14px 0 13px 4px;
+    width: 198px
   }
 }
 

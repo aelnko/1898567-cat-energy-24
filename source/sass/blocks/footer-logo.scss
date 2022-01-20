@@ -24,4 +24,14 @@
   .footer-logo {
     margin: 0;
   }
+
+  .footer-logo {
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:active {
+      opacity: 60%;
+    }
+  }
 }

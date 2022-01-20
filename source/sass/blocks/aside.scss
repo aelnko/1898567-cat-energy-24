@@ -2,7 +2,7 @@
   .aside {
     margin: 0;
     border: none;
-    padding-bottom: 34px;
+    padding-bottom: 19px;
     position: relative;
 
     &::before {
@@ -12,26 +12,28 @@
       height: 2px;
       background-color: $basic_green;
       right: 0;
-      top: 15px;
+      top: 14px;
     }
   }
 
   .aside__container {
-    margin-left: 20px;
+    width: 280px;
+    margin: 0 auto;
   }
 
   .aside__title {
     font-size: 24px;
     line-height: 26px;
     padding-right: 23px;
-    margin-bottom: 39px;
+    margin-bottom: 37px;
     background-color: #ffffff;
     position: relative;
     width: 141px;
+    margin-left: -2px;
   }
 
   .aside__check {
-    margin-bottom: 13px;
+    margin-bottom: 18px;
   }
 }
 

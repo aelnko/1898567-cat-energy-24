@@ -1,6 +1,9 @@
 @media (min-width: $mobile-width) {
   .text-input {
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .text-input__label {
@@ -11,7 +14,7 @@
   }
 
   .text-input__input {
-    height: 46px;
+    height: 41px;
     border: 1px solid #e7e7e7;
   }
 }

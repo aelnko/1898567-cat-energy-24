@@ -1,7 +1,7 @@
 @media (min-width: $mobile-width) {
   .contact-inputs {
     border: none;
-    padding-bottom: 23.57px;
+    padding-bottom: 11px;
     margin: 0;
     position: relative;
 
@@ -12,12 +12,13 @@
       height: 2px;
       background-color: $basic_green;
       right: 0;
-      top: 27px;
+      top: 16px;
     }
   }
 
   .contact-inputs__container {
-    margin-left: 20px;
+    width: 280px;
+    margin: 0 auto;
   }
 
   .contact-inputs__title {
@@ -25,11 +26,12 @@
     width: 187px;
     font-size: 24px;
     font-weight: 400;
-    line-height: 26px;
-    margin-bottom: 35.07px;
+    line-height: 27px;
+    margin-bottom: 34px;
     padding-right: 14px;
     background-color: #ffffff;
     position: relative;
+    margin-left: -2px;
   }
 }
 

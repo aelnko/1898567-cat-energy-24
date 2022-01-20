@@ -49,7 +49,7 @@
       </nav>
     </div>
   </header>
-  <main class="page-main">
+  <main class="page-main page-main--form">
     <section class="form-inputs">
       <div class="form-inputs__info">
         <h1 class="form-inputs__title">
@@ -76,26 +76,28 @@
             </div>
           </fieldset>
           <fieldset class="inputs__field radio-inputs">
-            <div class="radio-inputs--slimming radio-input slimming-input">
-              <input class="slimming-input__input radio-input__input visually-hidden" type="radio" id="slimming"
-                name="radio-input" checked>
-              <label class="slimming-input__label radio-input__label radio" for="slimming">
-                <span class="radio__label">Похудение</span>
-              </label>
-            </div>
-            <div class="radio-inputs--weight-gain radio-input weight-gain-input">
-              <input class="weight-gain-input__input radio-input__input visually-hidden" type="radio" id="weight-gain"
-                name="radio-input">
-              <label class="weight-gain-input__label radio-input__label radio" for="weight-gain">
-                <span class="radio__label">Набор массы</span>
-              </label>
-            </div>
-            <div class="radio-inputs__advice radio-input advice-input">
-              <input class="advice-input__input radio-input__input visually-hidden" type="radio" id="advice"
-                name="radio-input">
-              <label class="advice-input__label radio-input__label radio" for="advice">
-                <span class="radio__label">Не знаю (Нужен ваш совет)</span>
-              </label>
+            <div class="radio-inputs__wrapper">
+              <div class="radio-inputs--slimming radio-input slimming-input">
+                <input class="slimming-input__input radio-input__input visually-hidden" type="radio" id="slimming"
+                  name="radio-input" checked>
+                <label class="slimming-input__label radio-input__label radio" for="slimming">
+                  <span class="radio__label">Похудение</span>
+                </label>
+              </div>
+              <div class="radio-inputs--weight-gain radio-input weight-gain-input">
+                <input class="weight-gain-input__input radio-input__input visually-hidden" type="radio" id="weight-gain"
+                  name="radio-input">
+                <label class="weight-gain-input__label radio-input__label radio" for="weight-gain">
+                  <span class="radio__label">Набор массы</span>
+                </label>
+              </div>
+              <div class="radio-inputs__advice radio-input advice-input">
+                <input class="advice-input__input radio-input__input visually-hidden" type="radio" id="advice"
+                  name="radio-input">
+                <label class="advice-input__label radio-input__label radio" for="advice">
+                  <span class="radio__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </div>
             </div>
           </fieldset>
         </div>
@@ -174,15 +176,14 @@
       </p>
     </div>
     <div class="address__map">
-      <iframe
-        class = "address__map-map"
+      <iframe class="address__map-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716140034!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642159469721!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="page-footer__contacts">
       <div class="page-footer__contacts__wrapper">
         <a class="page-footer__logo footer-logo" href="index.html">
-          <img class="footer-logo__icon" src="img/cat-energy-text-logo.svg">
+          <img class="footer-logo__icon" src="img/footer-logo.svg">
         </a>
         <ul class="page-footer__social-contacts social-contacts">
           <li class="social-contacts__item">
@@ -190,10 +191,9 @@
               Мы во Вконтакте
             </span>
             <a href="#" class="social-contacts__link">
-              <picture>
-                <source media="(min-width:768px)" srcset="img/vk-logo_tablet.svg">
-                <img class="page-footer__social-contacts__icon" src="img/vk-logo.svg" alt="">
-              </picture>
+              <svg class="social-contacts__icon social-contacts__icon--vk" width="30" height="22">
+                <use xlink:href="img/social-icons.svg#vk-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social-contacts__item">
@@ -201,10 +201,9 @@
               Мы в Инстаграме
             </span>
             <a href="#" class="social-contacts__link">
-              <picture>
-                <source media="(min-width:768px)" srcset="img/ig-logo_tablet.svg">
-                <img class="social-contacts__icon" src="img/ig-logo.svg" alt="">
-              </picture>
+              <svg class="social-contacts__icon social-contacts__icon--ig" width="23" height="23">
+                <use xlink:href="img/social-icons.svg#ig-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social-contacts__item">
@@ -212,10 +211,9 @@
               Мы в Фейсбуке
             </span>
             <a href="#" class="social-contacts__link">
-              <picture>
-                <source media="(min-width:768px)" srcset="img/fb-logo_tablet.svg">
-                <img class="social-contacts__icon" src="img/fb-logo.svg" alt="">
-              </picture>
+              <svg class="social-contacts__icon social-contacts__icon--fb" width="28" height="33">
+                <use xlink:href="img/social-icons.svg#fb-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>

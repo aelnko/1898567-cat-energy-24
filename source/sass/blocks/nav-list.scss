@@ -36,6 +36,7 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    position: relative;
 
     &:nth-of-type(1) {
       width: 64px;
@@ -50,6 +51,28 @@
     &:nth-of-type(3) {
       width: 153px;
       margin: 0;
+    }
+  }
+
+  .nav-list__item--active:nth-of-type(1) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      width: 64px;
+      height: 2px;
+      top: 32px;
+    }
+  }
+
+  .nav-list__item--active:nth-of-type(3) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      width: 152px;
+      height: 2px;
+      top: 30px;
     }
   }
 }
@@ -98,9 +121,7 @@
     }
   }
 
-  .nav-list__item--active {
-    position: relative;
-
+  .nav-list__item--active:nth-of-type(1) {
     &::before {
       content: "";
       position: absolute;

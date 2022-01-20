@@ -23,7 +23,9 @@
 
 @media (min-width: $tablet-width) {
   .email-form {
-    margin-left: 41px;
+    width: 632px;
+    margin-left: 7px;
+    margin-bottom: 20px;
   }
 
   .email-form__label {
@@ -32,11 +34,10 @@
   }
 
   .email-form__input {
-    width: 529.76px;
-    padding: 0;
+    width: 528px;
     padding-left: 21.24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 16px;
+    padding-bottom: 18px;
   }
 }
 

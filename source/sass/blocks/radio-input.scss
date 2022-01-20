@@ -17,4 +17,14 @@
   .radio-input {
     margin: 0;
   }
+
+  .radio-input__label {
+    font-size: 20px;
+  }
+
+  .radio-input__input:checked + .radio::before {
+    background-image: url(../../img/radiobutton-active-tablet.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }

@@ -23,8 +23,9 @@
 
 @media (min-width: $tablet-width) {
   .phone-form {
-    margin-left: 41px;
     margin-bottom: 0;
+    width: 632px;
+    margin-left: 4px;
   }
 
   .phone-form__label {
@@ -33,11 +34,10 @@
   }
 
   .phone-form__input {
-    padding: 0;
     padding-left: 20.62px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 514.38px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 510px;
   }
 }
 

@@ -40,7 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .inputs__button {
-    margin-left: 71px;
+    margin-left: -51px;
     width: 282px;
     height: 52px;
     font-size: 20px;
@@ -50,14 +50,18 @@
   .inputs__aside-info {
     font-size: 16px;
     line-height: 16px;
-    margin-left: 49px;
-    margin-bottom: 0;
+    margin-left: 61px;
+    margin-bottom: 4px;
   }
 
   .inputs__button-aside-info {
     display: flex;
     align-items: center;
     margin-bottom: 72px;
+    margin-top: 22px;
+    width: 523px;
+    margin: 22px auto 72px auto;
+    flex-direction: row;
   }
 }
 

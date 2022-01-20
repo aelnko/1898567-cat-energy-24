@@ -27,10 +27,24 @@
   .radio-inputs {
     border-bottom: none;
     border: 1px solid #e7e7e7;
-    width: 607px;
-    padding-left: 28px;
-    margin-left: 69px;
-    margin-bottom: 71px;
+    width: 628px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .radio-inputs__wrapper {
+    width: 600px;
+    padding: 34px 0 29px 28px;
+  }
+
+  .radio-inputs {
+    &--slimming {
+      margin-bottom: 29px;
+    }
+
+    &--weight-gain {
+      margin-bottom: 29px;
+    }
   }
 }
 

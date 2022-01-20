@@ -33,3 +33,9 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .text-input {
+    width: 569px;
+  }
+}

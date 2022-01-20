@@ -73,6 +73,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .aside {
+    margin-top: -3px;
+  }
+
   .aside__container {
     width: 1220px;
     margin: 0 auto;

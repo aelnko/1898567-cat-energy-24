@@ -8,7 +8,7 @@
       width: 50%;
       height: 2px;
       background-color: $basic_green;
-      top: 38px;
+      top: 40px;
       z-index: 1;
       right: 0;
     }
@@ -22,11 +22,16 @@
     margin-top: 25px;
   }
 
+  .other-goods__container {
+    width: 320px;
+    margin: 0 auto;
+  }
+
   .other-goods__title {
     font-size: 24px;
     line-height: 24px;
     padding-right: 22px;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
     background-color: #ffffff;
     padding-left: 19px;
     z-index: 2;

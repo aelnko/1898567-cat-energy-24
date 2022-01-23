@@ -4,6 +4,10 @@
     font-size: 12px;
     line-height: 16px;
   }
+
+  .value {
+    text-align: right
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -86,9 +86,10 @@
 @media (min-width: $desktop-width) {
   .other-goods {
     display: flex;
+    margin-top: 0;
 
     &::before {
-      top: 20px;
+      top: 23px;
     }
   }
 
@@ -100,7 +101,7 @@
 
   .other-goods__title {
     padding: 0 35px 0 40px;
-    margin-left: -34px;
+    margin-left: -39px;
     background-color: #ffffff;
   }
 

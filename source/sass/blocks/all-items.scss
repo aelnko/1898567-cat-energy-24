@@ -75,7 +75,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .all-items {
+    margin-top: 82px;
+    padding-top: 49px;
+  }
+
   .all-items__button {
     width: 169px;
+  }
+
+  .all-items__plus-icon {
+    margin-bottom: 45px;
+  }
+
+  .all-items__title {
+    margin-bottom: 24px;
   }
 }

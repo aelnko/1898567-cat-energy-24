@@ -21,4 +21,10 @@
   .order-button {
     width: 244px;
   }
+
+  .goods-item {
+    &:nth-of-type(2) .order-button {
+      margin-left: -1px;
+    }
+  }
 }

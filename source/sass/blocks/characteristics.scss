@@ -57,3 +57,23 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .characteristics__weight {
+      &::before {
+      width: 169px;
+    }
+  }
+
+  .characteristics__flavor {
+    &::before {
+      width: 169px;
+    }
+  }
+
+  .characteristics__price {
+    &::before {
+      width: 169px;
+    }
+  }
+}

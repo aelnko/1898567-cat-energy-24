@@ -143,6 +143,13 @@
     }
   }
 
+  .nav-list__item--active:nth-of-type(2) {
+    &::before {
+      width: 170px;
+      top: 32px;
+    }
+  }
+
   .nav-list__item--active:nth-of-type(3) {
     &::before {
       width: 165px;

@@ -117,14 +117,90 @@
   .catalog-item {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 0 0 38px 0;
     width: 324px;
-    background: linear-gradient(#ffffff 20%, #f2f2f2 20%);
+    background: linear-gradient(#ffffff 16%, #f2f2f2 16%);
     margin-bottom: 0;
+    border: none;
 
     &:not(:nth-of-type(1)) {
       border-top: none;
       padding-top: 0;
+    }
+
+    &:nth-of-type(2) {
+      padding-bottom: 0;
+    }
+
+    &:nth-of-type(7) {
+      padding-bottom: 38px;
+    }
+
+    &:nth-of-type(1) .catalog-item__picture__wrapper {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    &:nth-of-type(1) .catalog-item__info--wrapper {
+      margin-bottom: 20px;
+    }
+
+    &:nth-of-type(2) .catalog-item__picture__wrapper {
+      margin-top: 12px;
+      margin-bottom: 3px;
+    }
+
+    &:nth-of-type(2) .catalog-item__title {
+      margin-bottom: 21px;
+    }
+
+    &:nth-of-type(2) .catalog-item__info--wrapper {
+      margin-bottom: 20px;
+    }
+
+    &:nth-of-type(3) .catalog-item__picture__wrapper {
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+
+    &:nth-of-type(3) .catalog-item__info--wrapper {
+      margin-bottom: 18px;
+    }
+
+    &:nth-of-type(4) .catalog-item__picture__wrapper {
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+
+    &:nth-of-type(4) .catalog-item__info--wrapper {
+      margin-bottom: 18px;
+    }
+
+    &:nth-of-type(5) .catalog-item__picture__wrapper {
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+
+    &:nth-of-type(5) .catalog-item__info--wrapper {
+      margin-bottom: 18px;
+    }
+
+    &:nth-of-type(6) .catalog-item__picture__wrapper {
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+
+    &:nth-of-type(6) .catalog-item__info--wrapper {
+      margin-bottom: 18px;
+    }
+
+    &:nth-of-type(7) .catalog-item__picture__wrapper {
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+
+    &:nth-of-type(7) .catalog-item__info--wrapper {
+      margin-bottom: 18px;
     }
   }
 
@@ -141,13 +217,18 @@
     flex-direction: column;
   }
 
+  .catalog-item__info--wrapper {
+    margin-bottom: 21px;
+    margin-left: 37px;
+  }
+
   .catalog-item__title {
     align-self: center;
     font-size: 20px;
     line-height: 24px;
     width: 130px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   .catalog-item__button {

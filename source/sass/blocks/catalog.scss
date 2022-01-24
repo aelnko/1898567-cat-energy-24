@@ -24,21 +24,33 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   .catalog__title {
     font-size: 60px;
     line-height: 60px;
-    padding-left: 30px;
     padding-bottom: 0;
     margin-bottom: 82px;
     border-bottom: none;
+    width: 100%;
+    margin-top: 1px;
+    margin-left: 30px;
+  }
+
+  .catalog__wrapper {
+    width: 768px;
+    border-top: none;
   }
 
   .catalog__list {
     display: grid;
     grid-template-columns: 324px 324px;
     gap: 60px;
-    margin-left: 30px;
-    margin-bottom: 68px;
+    width: 708px;
+    margin: 0 auto;
   }
 }
 

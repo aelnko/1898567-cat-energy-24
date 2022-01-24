@@ -65,6 +65,17 @@
     }
   }
 
+  .nav-list__item--active:nth-of-type(2) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      width: 153px;
+      height: 2px;
+      top: 30px;
+    }
+  }
+
   .nav-list__item--active:nth-of-type(3) {
     &::before {
       content: "";

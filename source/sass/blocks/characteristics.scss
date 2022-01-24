@@ -7,11 +7,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .characteristics {
-    margin-left: 37.5px;
-    margin-bottom: 42px;
-  }
-
   .characteristics p {
     font-size: 16px;
     line-height: 16px;
@@ -20,6 +15,45 @@
 
   .characteristics__weight,
   .characteristics__flavor {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
+  }
+
+  .characteristics__weight {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 1px;
+      background-color: #cdcdcd;
+      top: 22px;
+    }
+  }
+
+  .characteristics__flavor {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 1px;
+      background-color: #cdcdcd;
+      top: 22px;
+    }
+  }
+
+  .characteristics__price {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 1px;
+      background-color: #cdcdcd;
+      top: 22px;
+    }
   }
 }

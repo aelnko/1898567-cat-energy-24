@@ -23,8 +23,8 @@
           <img class="header-logo__icon" src="img/cat-energy-text-logo.svg" alt="">
         </a>
       </div>
-      <button class="main-nav__toggle">
-        <span class="visually-hidden main-nav__close-toggle--visually-hidden">Открыть меню</span>
+      <button class="page-header__nav-toggle nav-toggle">
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="page-header__nav main-nav main-nav--no-js">
         <div class="main-nav__wrapper">
@@ -152,7 +152,7 @@
           <h2 class="example__title">
             Живой пример
           </h2>
-          <div class="example--wrapper">
+          <div class="example__container">
             <p class="example__description">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
               без
@@ -160,13 +160,13 @@
             </p>
             <div class="example__results-wrapper">
               <div class="example__results results">
-                <div class="results--weight">
-                  <p class="results--weight__text">
+                <div class="results__weight">
+                  <p class="results__weight__text">
                     5 кг
                   </p>
                 </div>
-                <div class="results--time">
-                  <p class="results--time__text">
+                <div class="results__time">
+                  <p class="results__time__text">
                     60 дней
                   </p>
                 </div>
@@ -220,15 +220,15 @@
         Санкт-Петербург
       </p>
     </div>
-    <div class="address__map">
-      <iframe class="address__map-map"
+    <div class="page-footer__map map">
+      <iframe class="map__container"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716140034!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642159469721!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="page-footer__contacts">
       <div class="page-footer__contacts__wrapper">
         <a class="page-footer__logo footer-logo" href="index.html">
-          <img class="footer-logo__icon" src="img/footer-logo.svg">
+          <img class="footer-logo__icon" alt="Кэт Энерджи" src="img/footer-logo.svg">
         </a>
         <ul class="page-footer__social-contacts social-contacts">
           <li class="social-contacts__item">
@@ -273,8 +273,8 @@
       </div>
     </div>
   </footer>
+  <script src="js/nav-button.js"></script>
+  <script src="js/slider.js"></script>
 </body>
-<script src="js/nav-button.js"></script>
-<script src="js/slider.js"></script>
 
 </html>

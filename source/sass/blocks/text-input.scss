@@ -16,15 +16,13 @@
   .text-input__input {
     height: 41px;
     border: 1px solid #e7e7e7;
-  }
 
-  .text-input__input {
     &:hover {
       outline: 1px solid #cdcdcd;
     }
 
     &:focus,
-    &:active  {
+    &:active {
       outline: 2px solid #444444;
     }
 

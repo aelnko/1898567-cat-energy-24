@@ -17,10 +17,8 @@
   .phone-form__input {
     border: 1px solid $special_grey;
     padding: 14px 0 13px 4px;
-    width: 198px
-  }
+    width: 198px;
 
-  .phone-form__input {
     &:hover {
       outline: 1px solid #cdcdcd;
     }

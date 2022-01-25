@@ -76,7 +76,7 @@
       cursor: pointer;
       outline: 1px solid #cdcdcd;
       outline-offset: -1px;
-      box-shadow: 0 1px 3px 0 rgba(0,0,0,0.16);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
     }
 
     &::after {
@@ -88,11 +88,9 @@
       border-radius: 50%;
       left: 209px;
     }
-  }
 
-  .slider-text__toggle {
     &:hover::before {
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.19);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
     }
 
     &:active::before {
@@ -104,7 +102,7 @@
 @media (min-width: $desktop-width) {
   .slider-text__toggle {
     &:hover::before {
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.19);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
     }
 
     &:active::before {

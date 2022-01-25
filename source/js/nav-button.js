@@ -12,4 +12,3 @@ navButton.onclick = function () {
     buttonText.textContent = "Открыть меню";
   }
 };
-

@@ -9,16 +9,13 @@
   }
 
   .copyright__link {
-    margin-right: 140px;
     color: #444444;
     display: flex;
     align-items: center;
     width: 281px;
     margin: 0 auto;
     justify-content: space-between;
-  }
 
-  .copyright__link {
     &:hover .copyright__logo {
       fill: #68b738;
     }

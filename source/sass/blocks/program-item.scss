@@ -69,11 +69,9 @@
       left: 101px;
       top: 21px;
     }
-  }
 
-  .program-item__button {
     &:hover::after {
-      background-image: url(../../img/icon_arrow-hover.svg);
+      background-image: url("../../img/icon_arrow-hover.svg");
       width: 50px;
       background-repeat: no-repeat;
     }
@@ -94,6 +92,25 @@
       width: 656px;
       margin-top: 30px;
       padding: 77px 0 56px 52px;
+    }
+
+    &:nth-of-type(1) .program-item__title,
+    &:nth-of-type(2) .program-item__title {
+      margin-left: 1px;
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &:nth-of-type(2) .program-item__description {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(2) .program-item__button {
+      margin-left: 0;
+
+      &::after {
+        left: 130px;
+      }
     }
   }
 
@@ -116,27 +133,6 @@
   .program-item__weight-icon {
     left: 360px;
     top: 14px;
-  }
-
-  .program-item {
-    &:nth-of-type(1) .program-item__title,
-    &:nth-of-type(2) .program-item__title {
-      margin-left: 1px;
-      font-size: 36px;
-      line-height: 36px;
-    }
-
-    &:nth-of-type(2) .program-item__description {
-      margin-left: 0;
-    }
-
-    &:nth-of-type(2) .program-item__button {
-      margin-left: 0;
-
-      &::after {
-        left: 130px;
-      }
-    }
   }
 
   .program-item__description {
@@ -183,6 +179,19 @@
     &:nth-of-type(2) .program-item__title {
       margin-top: -9px;
     }
+
+    &:nth-of-type(1) .program-item__description {
+      width: 467px;
+    }
+
+    &:nth-of-type(2) .program-item__description {
+      width: 457px;
+      margin-left: 19px;
+    }
+
+    &:nth-of-type(2) .program-item__button {
+      margin-left: 19px;
+    }
   }
 
   .program-item__title-picture {
@@ -203,28 +212,13 @@
     margin-right: 47px;
   }
 
-  .program-item {
-    &:nth-of-type(1) .program-item__description {
-      width: 467px;
-    }
-
-    &:nth-of-type(2) .program-item__description {
-      width: 457px;
-      margin-left: 19px;
-    }
-
-    &:nth-of-type(2) .program-item__button {
-      margin-left: 19px;
-    }
-  }
-
   .program-item__description {
     margin-bottom: 27px;
   }
 
   .program-item__button {
     &:hover::after {
-      background-image: url(../../img/icon_arrow-hover.svg);
+      background-image: url("../../img/icon_arrow-hover.svg");
       width: 50px;
       background-repeat: no-repeat;
     }

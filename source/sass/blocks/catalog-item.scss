@@ -35,9 +35,7 @@
     &:nth-of-type(6) {
       padding-bottom: 24px;
     }
-  }
 
-  .catalog-item {
     &:nth-of-type(2) .catalog-item__title {
       margin-bottom: 14px;
     }
@@ -49,35 +47,7 @@
     &:nth-of-type(7) .catalog-item__info {
       margin-bottom: 2px;
     }
-  }
 
-  .catalog-item__title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    width: 76px;
-    margin: 0;
-    margin-bottom: 13px;
-  }
-
-  .catalog-item__button {
-    @include button;
-    grid-column: span 2;
-    height: 40px;
-    background-color: $basic_green;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 20px;
-    margin-left: -1px;
-  }
-
-  .catalog-item__picture__wrapper {
-    justify-self: center;
-    align-self: center;
-  }
-
-  .catalog-item {
     &:nth-of-type(1) .catalog-item__picture__wrapper {
       margin-top: 12px;
     }
@@ -107,12 +77,26 @@
     }
   }
 
-  .catalog-item__info--wrapper {
-    display: flex;
-    justify-content: space-between;
+  .catalog-item__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 76px;
+    margin: 0;
+    margin-bottom: 13px;
   }
 
   .catalog-item__button {
+    @include button;
+    grid-column: span 2;
+    height: 40px;
+    background-color: $basic_green;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: -1px;
+
     &:hover {
       background-color: #5eaa2f;
     }
@@ -121,6 +105,16 @@
       background-color: #5eaa2f;
       color: rgba(255, 255, 255, 0.3);
     }
+  }
+
+  .catalog-item__picture__wrapper {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .catalog-item__info--wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -251,9 +245,7 @@
 @media (min-width: $desktop-width) {
   .catalog-item {
     width: 245px;
-  }
 
-  .catalog-item {
     &:nth-of-type(1) .catalog-item__picture__wrapper,
     &:nth-of-type(3) .catalog-item__picture__wrapper {
       margin-top: -2px;

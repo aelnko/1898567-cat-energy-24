@@ -22,7 +22,7 @@
 
   .aside-check__input {
     &:checked + .check::before {
-      background-image: url(../../img/tick-tablet.svg);
+      background-image: url("../../img/tick-tablet.svg");
     }
   }
 }

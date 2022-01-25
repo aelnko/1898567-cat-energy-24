@@ -61,7 +61,7 @@
 @media (min-width: $mobile-width) and (max-width: 767px) {
   .intro::before {
     content: "";
-    background-image: url(../../img/intro-bg-phone.jpg);
+    background-image: url("../../img/intro-bg-phone.jpg");
     background-repeat: no-repeat;
     position: absolute;
     z-index: 1;
@@ -71,13 +71,13 @@
     background-size: auto 302px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/intro-bg-phone@2x.jpg);
+      background-image: url("../../img/intro-bg-phone@2x.jpg");
     }
   }
 
-  .intro__wrapper::before  {
+  .intro__wrapper::before {
     content: "";
-    background-image: url(../../img/intro-decorative-image.png);
+    background-image: url("../../img/intro-decorative-image.png");
     background-repeat: no-repeat;
     position: absolute;
     top: 167px;
@@ -88,7 +88,7 @@
     background-size: auto 270px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/intro-decorative-image@2x.png);
+      background-image: url("../../img/intro-decorative-image@2x.png");
     }
   }
 }
@@ -146,21 +146,18 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: $basic_green;
-    // width: 244px;
     padding: 17px 26px;
     text-align: center;
     z-index: 2;
     position: relative;
     margin-left: 3px;
-  }
 
-  .intro__button {
     &:hover {
       background-color: #5eaa2f;
     }
 
     &:active {
-      color: rgba(255,255,255,0.3);
+      color: rgba(255, 255, 255, 0.3);
       background-color: #5eaa2f;
     }
   }
@@ -169,7 +166,7 @@
 @media (min-width: $tablet-width) and (max-width: 1439px) {
   .intro__wrapper::before {
     content: "";
-    background-image: url(../../img/intro-decorative-image-tablet.png);
+    background-image: url("../../img/intro-decorative-image-tablet.png");
     width: 709px;
     height: 609px;
     top: 201px;
@@ -179,16 +176,14 @@
     background-size: auto 609px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/intro-decorative-image-tablet@2x.png);
+      background-image: url("../../img/intro-decorative-image-tablet@2x.png");
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-    margin-left: 0;
     padding-bottom: 191px;
-    // padding-left: 190px;
     width: 1220px;
     margin: 0 auto;
   }
@@ -211,7 +206,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url(../../img/intro-decorative-image-desktop.png);
+      background-image: url("../../img/intro-decorative-image-desktop.png");
       width: 552px;
       height: 499px;
       z-index: 1;
@@ -220,7 +215,7 @@
       background-size: auto 499px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../../img/intro-decorative-image-desktop@2x.png);
+        background-image: url("../../img/intro-decorative-image-desktop@2x.png");
       }
     }
   }
@@ -241,15 +236,13 @@
 
   .intro__button {
     margin-left: 0;
-  }
 
-  .intro__button {
     &:hover {
       background-color: #5eaa2f;
     }
 
     &:active {
-      color: rgba(255,255,255,0.3);
+      color: rgba(255, 255, 255, 0.3);
       background-color: #5eaa2f;
     }
   }

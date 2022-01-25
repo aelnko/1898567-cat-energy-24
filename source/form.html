@@ -23,7 +23,7 @@
           <img class="header-logo__icon" src="img/cat-energy-text-logo.svg" alt="">
         </a>
       </div>
-      <button class="main-nav__toggle">
+      <button class="page-header__nav-toggle nav-toggle">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="page-header__nav main-nav">
@@ -60,7 +60,7 @@
         </p>
       </div>
       <form class="form-inputs__inputs inputs" action="#" method="post">
-        <div class="inputs__wrapper--first">
+        <div class="inputs__wrapper__first">
           <fieldset class="inputs__field text-inputs">
             <div class="text-inputs__name text-input name-input">
               <label class="text-input__label name-input__label" for="name">Имя:*</label>
@@ -77,14 +77,14 @@
           </fieldset>
           <fieldset class="inputs__field radio-inputs">
             <div class="radio-inputs__wrapper">
-              <div class="radio-inputs--slimming radio-input slimming-input">
+              <div class="radio-inputs__slimming radio-input slimming-input">
                 <input class="slimming-input__input radio-input__input visually-hidden" type="radio" id="slimming"
                   name="radio-input" checked>
                 <label class="slimming-input__label radio-input__label radio" for="slimming">
                   <span class="radio__label">Похудение</span>
                 </label>
               </div>
-              <div class="radio-inputs--weight-gain radio-input weight-gain-input">
+              <div class="radio-inputs__weight-gain radio-input weight-gain-input">
                 <input class="weight-gain-input__input radio-input__input visually-hidden" type="radio" id="weight-gain"
                   name="radio-input">
                 <label class="weight-gain-input__label radio-input__label radio" for="weight-gain">
@@ -103,7 +103,7 @@
         </div>
         <fieldset class="inputs__field contact-inputs">
           <div class="contact-inputs__container">
-            <legend class="contact-inputs__title">Контактные данные (владельца кота)</legend>
+            <h2 class="contact-inputs__title">Контактные данные (владельца кота)</h2>
             <div class="contact-inputs__wrapper">
               <div class="contact-inputs__email email-form">
                 <label class="email-form__label" for="email">E-mail:*</label>
@@ -111,22 +111,22 @@
               </div>
               <div class="contact-inputs__phone phone-form">
                 <label class="phone-form__label" for="phone">Телефон:*</label>
-                <input class="phone-form__input" type="phone" id="phone" placeholder="8 (960) 900-60-90">
+                <input class="phone-form__input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
               </div>
             </div>
           </div>
         </fieldset>
         <fieldset class="inputs__field comment-inputs">
           <div class="comment-inputs__container">
-            <legend class="comment-inputs__title">
+            <h2 class="comment-inputs__title">
               Комментарий
-            </legend>
-            <textarea class="comment-inputs__area" name="" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </h2>
+            <textarea class="comment-inputs__area" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="inputs__field aside">
           <div class="aside__container">
-            <legend class="aside__title">Дополнительно</legend>
+            <h2 class="aside__title">Дополнительно</h2>
             <div class="aside__wrapper">
               <div class="aside__check aside-check">
                 <input class="aside-check__input visually-hidden" type="checkbox" id="sweetener" checked>
@@ -178,15 +178,15 @@
         Санкт-Петербург
       </p>
     </div>
-    <div class="address__map">
-      <iframe class="address__map-map"
+    <div class="page-footer__map map">
+      <iframe class="map__container"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716140034!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642159469721!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="page-footer__contacts">
       <div class="page-footer__contacts__wrapper">
         <a class="page-footer__logo footer-logo" href="index.html">
-          <img class="footer-logo__icon" src="img/footer-logo.svg">
+          <img class="footer-logo__icon" alt="Кэт Энерджи" src="img/footer-logo.svg">
         </a>
         <ul class="page-footer__social-contacts social-contacts">
           <li class="social-contacts__item">
@@ -231,7 +231,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/nav-button.js"></script>
 </body>
-<script src="js/nav-button.js"></script>
 
 </html>

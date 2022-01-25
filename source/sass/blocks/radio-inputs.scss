@@ -1,10 +1,10 @@
 @media (min-width: $mobile-width) {
   .radio-inputs {
-    &--slimming {
+    &__slimming {
       margin-bottom: 19px;
     }
 
-    &--weight-gain {
+    &__weight-gain {
       margin-bottom: 18px;
     }
 
@@ -31,11 +31,11 @@
     margin: 0 auto;
     padding: 0;
 
-    &--slimming {
+    &__slimming {
       margin-bottom: 29px;
     }
 
-    &--weight-gain {
+    &__weight-gain {
       margin-bottom: 29px;
     }
   }

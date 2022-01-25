@@ -4,7 +4,7 @@
     display: none;
   }
 
-  .main-nav__toggle {
+  .nav-toggle {
     @include button;
     width: 24px;
     height: 18px;
@@ -23,7 +23,7 @@
     }
   }
 
-  .main-nav__toggle--close {
+  .nav-toggle--close {
     &::before {
       box-shadow: none;
       transform: rotate(45deg);
@@ -76,7 +76,7 @@
     width: 440px;
   }
 
-  .main-nav__toggle {
+  .nav-toggle {
     @include visually-hidden;
   }
 }

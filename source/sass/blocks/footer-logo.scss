@@ -8,6 +8,16 @@
     padding-bottom: 30px;
     border-bottom: 1px solid #d9d9d9;
   }
+
+  .footer-logo {
+    &:hover .footer-logo__icon {
+      opacity: 80%;
+    }
+
+    &:active .footer-logo__icon {
+      opacity: 60%;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

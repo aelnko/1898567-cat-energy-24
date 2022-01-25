@@ -18,6 +18,16 @@
   .header-logo__link--mobile {
     @include visually-hidden;
   }
+
+  .header-logo__link {
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:active {
+      opacity: 60%;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

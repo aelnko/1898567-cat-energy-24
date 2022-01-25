@@ -19,6 +19,17 @@
     text-align: center;
   }
 
+  .program__button {
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
   .program__list {
     list-style-type: none;
     display: flex;

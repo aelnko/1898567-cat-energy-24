@@ -38,6 +38,17 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  .all-items__button {
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: rgba(68, 68, 68, 30%);
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

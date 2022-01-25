@@ -153,6 +153,17 @@
     position: relative;
     margin-left: 3px;
   }
+
+  .intro__button {
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255,255,255,0.3);
+      background-color: #5eaa2f;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: 1439px) {

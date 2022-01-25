@@ -37,6 +37,17 @@
     width: 274px;
     height: 143px;
   }
+
+  .comment-inputs__area {
+    &:hover {
+      outline: 1px solid #cdcdcd;
+    }
+
+    &:active,
+    &:focus {
+      outline: 2px solid #444444;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

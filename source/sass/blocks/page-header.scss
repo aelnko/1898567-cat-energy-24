@@ -2,8 +2,7 @@
   .page-header {
     padding-top: 10px;
     padding-bottom: 12px;
-    width: 280px;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .page-header__wrapper {
@@ -12,6 +11,11 @@
     justify-content: space-between;
     width: 280px;
     flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .page-header--active {
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 

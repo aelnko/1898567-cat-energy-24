@@ -11,6 +11,32 @@
   .copyright__link {
     margin-right: 140px;
     color: #444444;
+    display: flex;
+    align-items: center;
+    width: 281px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .copyright__link {
+    &:hover .copyright__logo {
+      fill: #68b738;
+    }
+
+    &:active .copyright__link-text {
+      opacity: 30%;
+    }
+
+    &:active .copyright__logo {
+      fill: #68b738;
+      opacity: 30%;
+    }
+  }
+
+  .copyright__logo {
+    width: 27px;
+    height: 34px;
+    fill: #666666;
   }
 }
 

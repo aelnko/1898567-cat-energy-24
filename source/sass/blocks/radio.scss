@@ -19,6 +19,16 @@
   .radio__label {
     margin-left: 45px;
   }
+
+  .radio-input__input {
+    &:hover + .radio::before {
+      outline: 1px solid #bababa;
+    }
+
+    &:disabled + .radio {
+      opacity: 30%;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

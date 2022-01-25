@@ -17,6 +17,21 @@
     height: 41px;
     border: 1px solid #e7e7e7;
   }
+
+  .text-input__input {
+    &:hover {
+      outline: 1px solid #cdcdcd;
+    }
+
+    &:focus,
+    &:active  {
+      outline: 2px solid #444444;
+    }
+
+    &:invalid {
+      outline: 2px solid #ff8282;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

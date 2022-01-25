@@ -19,6 +19,21 @@
     padding: 14px 0 13px 4px;
     width: 198px
   }
+
+  .phone-form__input {
+    &:hover {
+      outline: 1px solid #cdcdcd;
+    }
+
+    &:active,
+    &:focus {
+      outline: 2px solid #444444;
+    }
+
+    &:invalid {
+      outline: 2px solid #ff8282;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

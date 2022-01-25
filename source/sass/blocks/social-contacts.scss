@@ -34,6 +34,26 @@
     stroke: #666666;
     fill: transparent;
   }
+
+  .social-contacts__link:hover .social-contacts__icon--vk,
+  .social-contacts__link:hover .social-contacts__icon--ig {
+    fill: #68b738;
+  }
+
+  .social-contacts__link:hover .social-contacts__icon--fb {
+    stroke: #68b738;
+  }
+
+  .social-contacts__link:active .social-contacts__icon--vk,
+  .social-contacts__link:active .social-contacts__icon--ig {
+    fill: #68b738;
+    opacity: 50%;
+  }
+
+  .social-contacts__link:active .social-contacts__icon--fb {
+    stroke: #68b738;
+    opacity: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {

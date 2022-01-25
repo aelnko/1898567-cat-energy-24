@@ -1,16 +1,25 @@
 @media (min-width: $mobile-width) {
   .radio-inputs {
     &--slimming {
-      margin-bottom: 13.04px;
+      margin-bottom: 19px;
     }
 
     &--weight-gain {
-      margin-bottom: 12.04px;
+      margin-bottom: 18px;
     }
-    padding-bottom: 19.38px;
-    padding-top: 22.22px;
+
+    padding-bottom: 21px;
+    padding-top: 26px;
+    border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
     margin-bottom: 26px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .radio-inputs__wrapper {
+    width: 280px;
+    margin: 0 auto;
   }
 }
 
@@ -18,17 +27,30 @@
   .radio-inputs {
     border-bottom: none;
     border: 1px solid #e7e7e7;
-    width: 607px;
-    padding-left: 28px;
-    margin-left: 69px;
-    margin-bottom: 71px;
+    width: 628px;
+    margin: 0 auto;
+    padding: 0;
+
+    &--slimming {
+      margin-bottom: 29px;
+    }
+
+    &--weight-gain {
+      margin-bottom: 29px;
+    }
+  }
+
+  .radio-inputs__wrapper {
+    width: 600px;
+    padding: 34px 0 29px 28px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .radio-inputs {
     margin-bottom: 47px;
-    margin-left: 0;
+    margin-left: 81px;
     width: 568px;
+    height: 196px;
   }
 }

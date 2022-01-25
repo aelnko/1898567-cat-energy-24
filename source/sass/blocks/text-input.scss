@@ -1,6 +1,9 @@
 @media (min-width: $mobile-width) {
   .text-input {
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .text-input__label {
@@ -11,18 +14,41 @@
   }
 
   .text-input__input {
-    height: 46px;
+    height: 41px;
     border: 1px solid #e7e7e7;
+
+    &:hover {
+      outline: 1px solid #cdcdcd;
+    }
+
+    &:focus,
+    &:active {
+      outline: 2px solid #444444;
+    }
+
+    &:invalid {
+      outline: 2px solid #ff8282;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .text-input {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+  }
+
+  .text-input__input {
+    height: 49px;
   }
 
   .text-input__label {
     font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-input {
+    width: 569px;
   }
 }

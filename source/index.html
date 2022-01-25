@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body class="page-body page-body--index">
   <header class="page-body__header page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo header-logo">
@@ -24,9 +24,9 @@
         </a>
       </div>
       <button class="main-nav__toggle">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden main-nav__close-toggle--visually-hidden">Открыть меню</span>
       </button>
-      <nav class="page-header__nav main-nav">
+      <nav class="page-header__nav main-nav main-nav--no-js">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item nav-list__item--active">
@@ -54,8 +54,6 @@
       <div class="intro__wrapper">
         <h1 class="intro__title">Функциональное питание для котов</h1>
         <p class="intro__subtitle">Занялся собой? Займись котом!</p>
-        <img src="img/intro-bg-phone.png" alt="кот" class="intro__image">
-        <img src="img/intro-decorative-image.png" alt="наше питание" class="intro__decorative-image">
         <a class="intro__button" href="form.html">
           Подобрать программу
         </a>
@@ -113,87 +111,35 @@
         </h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages-item">
-            <svg class="advantages-item__icon" width="61" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill="#68B738" d="M.5 0h60v60H.5z" />
-              <g clip-path="url(#leaf)">
-                <path
-                  d="M43.34 16.77a.95.95 0 0 0-.9-.77h-.01c-4.94.03-16.95.92-21.8 8.38-2.51 3.88-2.73 8.91-.64 14.96l.07.13a25.93 25.93 0 0 0-1.04 3.32c-.11.54.21 1.07.72 1.19l.2.02c.43 0 .81-.32.9-.79.03-.1 2.42-10.37 10.86-16.38.43-.3.55-.92.26-1.38a.9.9 0 0 0-1.3-.28c-4.79 3.4-7.74 8-9.47 11.65-1.24-4.57-.92-8.37.99-11.3 3.74-5.77 12.62-7.16 17.98-7.45-1.15 1.8-2.41 5.1-2.41 10.93 0 3.12-.83 5.52-2.47 7.14-2.62 2.6-6.88 2.83-10 2.58-.51-.04-.96.38-1 .93-.04.55.35 1.03.86 1.07.63.05 1.3.08 1.98.08 3.18 0 6.87-.66 9.43-3.2 2.04-2 3.07-4.9 3.07-8.6 0-9.1 3.22-11.1 3.23-11.1.4-.21.6-.68.5-1.13Z"
-                  fill="#fff" />
-              </g>
-              <defs>
-                <clipPath id="leaf">
-                  <path fill="#fff" transform="translate(15.5 14)" d="M0 0h30v32H0z" />
-                </clipPath>
-              </defs>
-            </svg>
+            <picture>
+              <source media="(min-width:768px)" srcset="img/icon_leaf-tablet.svg">
+              <img src="img/icon_leaf.svg" alt="" class="advantages-item__icon">
+            </picture>
             <p class="advantages-item__description">Функциональное питание содержит только полезные питательные
               вещества.
             </p>
           </li>
           <li class="advantages__item advantages-item">
-            <svg class="advantages-item__icon" width="61" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill="#68B738" d="M.5 0h60v60H.5z" />
-              <g clip-path="url(#tub)" fill="#fff">
-                <path
-                  d="M36.28 31.47c-1.71 0-3.1 1.48-3.1 3.3 0 1.83 1.4 3.3 3.1 3.3 1.7 0 3.08-1.47 3.08-3.3 0-1.82-1.38-3.3-3.08-3.3Zm0 5.02c-.89 0-1.6-.77-1.6-1.71 0-.95.71-1.72 1.6-1.72.88 0 1.6.77 1.6 1.72 0 .94-.72 1.7-1.6 1.7ZM27.1 12.99c-1.75 0-3.18 1.52-3.18 3.4 0 1.89 1.43 3.41 3.19 3.41s3.18-1.52 3.18-3.4c0-1.89-1.42-3.41-3.18-3.41Zm0 5.48c-1.06 0-1.93-.93-1.93-2.07 0-1.15.87-2.07 1.94-2.07 1.07 0 1.93.92 1.93 2.07 0 1.14-.86 2.07-1.93 2.07ZM23.73 30.61c-1.3 0-2.34 1.12-2.34 2.5 0 1.39 1.04 2.5 2.34 2.5 1.3 0 2.34-1.11 2.34-2.5 0-1.38-1.05-2.5-2.34-2.5Zm-.23 1.89c-.46 0 1.16 1.1 1.16.61 0-.49-1.62.39-1.16.39.46 0 1.06-.88 1.06-.39 0 .5-.6-.61-1.06-.61ZM34 22.76s3.04-.84 6.18 1.5c.9.76 1.76 1.33 1.15 2.12-.34.34-.64.66-1.72-.53A6.92 6.92 0 0 0 34 24.41c-1.13.24-1.96.55-3.56 2.15a8.27 8.27 0 0 1-6.5 2.5c-2.52-.24-3.84-1.27-5.24-2.55-.3-.42-.3-.87-.12-1.13.17-.26.83-.52 1.2-.13.37.4 2.1 1.97 3.82 2.07 1.72.1 3.44.21 5.74-1.96 2.3-2.18 3.46-2.34 4.66-2.6Z" />
-                <mask id="tub-mask">
-                  <path
-                    d="M44.15 39.82V21.16c0-.58-.38-.65-.53-.66h-.5c-.5 0-.54.56-.54.74V39.84a2.68 2.68 0 0 1-.82 1.89c-.81.7-1.62.6-1.62.6s-20.18 0-20.66-.03a2.3 2.3 0 0 1-1.6-1c-.57-.8-.46-1.85-.46-1.85V21.3c0-.83-.67-.8-.67-.8h-.3c-.54 0-.6.58-.6.77v18.54c0 1.33.46 2.4 1.55 3.33 1.1.94 2.38.86 2.38.86h20.58c.86 0 1.98-.42 2.91-1.56.93-1.14.88-2.63.88-2.63Z" />
-                </mask>
-                <path
-                  d="M44.15 39.82V21.16c0-.58-.38-.65-.53-.66h-.5c-.5 0-.54.56-.54.74V39.84a2.68 2.68 0 0 1-.82 1.89c-.81.7-1.62.6-1.62.6s-20.18 0-20.66-.03a2.3 2.3 0 0 1-1.6-1c-.57-.8-.46-1.85-.46-1.85V21.3c0-.83-.67-.8-.67-.8h-.3c-.54 0-.6.58-.6.77v18.54c0 1.33.46 2.4 1.55 3.33 1.1.94 2.38.86 2.38.86h20.58c.86 0 1.98-.42 2.91-1.56.93-1.14.88-2.63.88-2.63Z" />
-                <path
-                  d="M44.15 39.82h-20v.38l.01.39 19.99-.77Zm-.53-19.32L44.33.51h-.71v20Zm-1.04.74-20-.15V21.24h20Zm0 .06h-20 20Zm0 18.54-19.99-.76v.02l19.99.74Zm-.82 1.89 13.03 15.16.44-.37.4-.4-13.87-14.4Zm-1.62.6 2.26-19.87-1.13-.13h-1.13v20Zm-20.66-.03-3.4 19.71 1.14.2 1.15.06 1.11-19.97Zm-1.6-1L1.53 52.82 17.89 41.3Zm-.46-1.85 19.9 2.1.1-1.05v-1.05h-20Zm-.67-18.95v20h.39l.38-.01-.77-19.99Zm-.9.78-20-.29V21.28h20Zm1.55 21.87L4.38 58.33 17.4 43.15Zm2.38.86V24h-.65l-.64.04 1.29 19.96Zm23.5-1.56L58.75 55.1 43.28 42.45Zm20.87-2.63V21.16h-40v18.66h40Zm0-18.66A20.54 20.54 0 0 0 44.34.52L42.9 40.48a19.46 19.46 0 0 1-18.76-19.33h40ZM43.62.5h-.5v40h.5V.5Zm-.5 0a20.47 20.47 0 0 0-18.7 12.12c-1.8 4-1.83 7.56-1.84 8.47l40 .3c0 .73-.02 3.91-1.67 7.6a19.47 19.47 0 0 1-17.8 11.51V.5ZM22.58 21.24v.05h40v-.04h-40Zm0 .05v.01h40-40Zm0 .02v10.51a8664.75 8664.75 0 0 1 0 7.25c0 .8 0 .45.01.01l39.97 1.52c.02-.51.02-1.37.02-1.45a1362.33 1362.33 0 0 0 0-7.34V21.3l-40 .02Zm.01 17.79c.05-1.35.38-7.05 5.28-11.77l27.77 28.8a22.68 22.68 0 0 0 6.92-15.54l-39.97-1.5Zm6.13-12.54a17.51 17.51 0 0 1 12.43-4.2 19.31 19.31 0 0 1 1.17.1h.06s.02 0-2.24 19.87a2063.4 2063.4 0 0 0-2.24 19.88h.02a42.98 42.98 0 0 0 1.28.1 21.38 21.38 0 0 0 5.56-.45A22.49 22.49 0 0 0 54.8 56.9L28.72 26.56Zm11.42 15.77v-20h-3.16a17380.76 17380.76 0 0 1-16.39-.02c-1.07 0-.61 0 0 .03l-2.22 39.93c.97.06 7.17.06 11.6.06h10.16v-20ZM22.88 22.6c.43.08 2.52.43 4.93 1.66 2.57 1.3 4.78 3.2 6.4 5.51L1.55 52.83c5 7.08 11.87 8.72 14.55 9.18l6.79-39.42Zm11.34 7.18a17.34 17.34 0 0 1 3.13 11.4 18.52 18.52 0 0 1-.03.28v.08c0 .01 0 .02-19.9-2.08a3223.4 3223.4 0 0 0-19.89-2.08v.03a19.88 19.88 0 0 0-.11 1.94 22.66 22.66 0 0 0 4.12 13.48l32.68-23.05Zm3.2 9.68V21.3h-40v18.14h40Zm0-18.14A20.74 20.74 0 0 0 17.78.53 20.46 20.46 0 0 0 16 .52c-.01 0-.03 0 .75 19.98.77 19.99.76 19.99.75 19.99h-.07a28.23 28.23 0 0 1-1.65-.01A19.35 19.35 0 0 1-2.58 21.3h40ZM16.75.51h-.3v40h.3V.5Zm-.3 0A20.52 20.52 0 0 0-2.18 12.34 21.17 21.17 0 0 0-4.14 21l40 .58c-.02.76-.05 4-1.8 7.72A19.44 19.44 0 0 1 16.45 40.5V.5Zm-20.6 20.77V39.82h40V21.28h-40Zm0 18.54c0 7.06 2.92 13.7 8.53 18.51l26.05-30.35a15.63 15.63 0 0 1 4 5.37 15.72 15.72 0 0 1 1.42 6.47h-40Zm8.53 18.51a23.59 23.59 0 0 0 16.56 5.65H21l.03-.01h.01c.01 0 .02 0-1.26-19.96a2530.9 2530.9 0 0 1-1.26-19.96h.1a16.03 16.03 0 0 1 1.95-.02 16.39 16.39 0 0 1 9.86 3.95L4.38 58.33Zm15.4-14.32v20H40.41l-.1-40H19.77v20ZM40.4 64c7.1-.02 13.8-3.34 18.35-8.9L27.8 29.8A16.17 16.17 0 0 1 40.3 24l.11 40Zm18.36-8.91a23.97 23.97 0 0 0 5.38-15.11 21.8 21.8 0 0 0-.02-.9v-.04l-19.98.77-19.99.76v-.09a17.13 17.13 0 0 1 .27-3.65c.28-1.4 1.03-4.2 3.35-7.03L58.77 55.1Z"
-                  mask="url(#tub-mask)" />
-              </g>
-              <defs>
-                <clipPath id="tub">
-                  <path fill="#fff" transform="translate(15.5 13)" d="M0 0h29v31H0z" />
-                </clipPath>
-              </defs>
-            </svg>
+            <picture>
+              <source media="(min-width:768px)" srcset="img/icon_tub-tablet.svg">
+              <img src="img/icon_tub.svg" alt="" class="advantages-item__icon">
+            </picture>
             <p class="advantages-item__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
               готово.</p>
           </li>
           <li class="advantages__item advantages-item">
-            <svg class="advantages-item__icon" width="61" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill="#68B738" d="M.5 0h60v60H.5z" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M37.12 15.08a1 1 0 0 1 1.09.21c.9.91 2.1 2.88 3.06 5.92A42.6 42.6 0 0 1 43 34a1 1 0 0 1-1 1h-3.5v9a1 1 0 1 1-2 0V16a1 1 0 0 1 .62-.92ZM38.5 33H41a39.62 39.62 0 0 0-1.64-11.19 22.4 22.4 0 0 0-.86-2.3V33ZM24.5 15a1 1 0 0 1 1 1v28a1 1 0 1 1-2 0V16a1 1 0 0 1 1-1Z"
-                fill="#fff" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M20 15a1 1 0 0 1 1 1v5.5c0 .56.2 1.32.7 1.92.48.56 1.31 1.08 2.8 1.08a1 1 0 1 1 0 2 5.41 5.41 0 0 1-4.33-1.8A5.07 5.07 0 0 1 19 21.5V16a1 1 0 0 1 1-1Z"
-                fill="#fff" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M29 15a1 1 0 0 0-1 1v5.5c0 .56-.2 1.32-.7 1.92-.48.56-1.31 1.08-2.8 1.08a1 1 0 0 0 0 2c2.01 0 3.43-.73 4.33-1.8A5.07 5.07 0 0 0 30 21.5V16a1 1 0 0 0-1-1Z"
-                fill="#fff" />
-            </svg>
+            <picture>
+              <source media="(min-width:768px)" srcset="img/icon_eat-tablet.svg">
+              <img src="img/icon_eat.svg" alt="" class="advantages-item__icon">
+            </picture>
             <p class="advantages-item__description">Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
           <li class="advantages__item advantages-item">
-            <svg class="advantages-item__icon" width="61" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill="#68B738" d="M.5 0h60v60H.5z" />
-              <circle cx="35.7" cy="24.33" fill="#fff" r="1.09" />
-              <circle cx="24.83" cy="24.33" fill="#fff" r="1.09" />
-              <circle cx="24.83" cy="37.35" fill="#fff" r="1.09" />
-              <circle cx="30.27" cy="39.52" fill="#fff" r="1.09" />
-              <circle cx="21.57" cy="30.77" fill="#fff" r="1.09" />
-              <circle cx="38.97" cy="30.77" fill="#fff" r="1.09" />
-              <circle cx="35.7" cy="37.35" fill="#fff" r="1.09" />
-              <mask id="alarm" fill="#fff">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M35.42 42.06c.41-.2.9-.13 1.22.2l1.82 1.87a.68.68 0 0 0 .98-.95l-1.36-1.4c-.42-.43-.36-1.14.1-1.55a12.75 12.75 0 0 0 4.32-9.62C42.5 23.65 37.02 18 30.27 18c-6.76 0-12.23 5.65-12.23 12.61 0 3.82 1.64 7.24 4.23 9.55.45.4.51 1.11.1 1.55l-1.44 1.47a.68.68 0 1 0 .97.95l1.88-1.93c.32-.33.82-.4 1.23-.2a11.88 11.88 0 0 0 10.41.06Zm-5.15-.23c6 0 10.87-5.02 10.87-11.22 0-6.19-4.87-11.2-10.87-11.2-6 0-10.88 5.01-10.88 11.2 0 6.2 4.87 11.22 10.88 11.22ZM29.5 30.3V22.94a.78.78 0 1 1 1.56 0v8.18a.8.8 0 0 1-.8.8.76.76 0 0 1-.76-.75V30.3Z" />
-              </mask>
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M35.42 42.06c.41-.2.9-.13 1.22.2l1.82 1.87a.68.68 0 0 0 .98-.95l-1.36-1.4c-.42-.43-.36-1.14.1-1.55a12.75 12.75 0 0 0 4.32-9.62C42.5 23.65 37.02 18 30.27 18c-6.76 0-12.23 5.65-12.23 12.61 0 3.82 1.64 7.24 4.23 9.55.45.4.51 1.11.1 1.55l-1.44 1.47a.68.68 0 1 0 .97.95l1.88-1.93c.32-.33.82-.4 1.23-.2a11.88 11.88 0 0 0 10.41.06Zm-5.15-.23c6 0 10.87-5.02 10.87-11.22 0-6.19-4.87-11.2-10.87-11.2-6 0-10.88 5.01-10.88 11.2 0 6.2 4.87 11.22 10.88 11.22ZM29.5 30.3V22.94a.78.78 0 1 1 1.56 0v8.18a.8.8 0 0 1-.8.8.76.76 0 0 1-.76-.75V30.3Z"
-                fill="#fff" />
-              <path
-                d="m23.78 42.2 2.87 2.79-2.87-2.8Zm1.23-.2 1.76-3.58L25.01 42Zm-3.1 2.13-2.87-2.8 2.86 2.8Zm-.98-.95 2.86 2.79-2.86-2.8Zm17.15-1.4-2.86 2.8 2.86-2.8Zm.1-1.55-2.63-3 2.63 3Zm-15.9-.07-2.67 2.99 2.66-2.99Zm.08 1.55-2.86-2.8 2.86 2.8Zm17.08 1.47 2.87-2.8-2.87 2.8Zm-.98.95 2.87-2.8-2.87 2.8Zm-1.82-1.88-2.87 2.8 2.87-2.8Zm-1.22-.2-1.73-3.6 1.73 3.6Zm-1.65 3 1.83 1.87 5.73-5.58-1.83-1.88-5.73 5.58Zm8.54-4.66-1.36-1.4-5.73 5.59 1.36 1.39 5.73-5.58Zm-1.5 2.85a16.75 16.75 0 0 0 5.69-12.63h-8a8.75 8.75 0 0 1-2.95 6.61l5.27 6.02Zm5.69-12.63C46.5 21.56 39.35 14 30.27 14v8c4.43 0 8.23 3.74 8.23 8.61h8ZM30.27 14c-9.08 0-16.23 7.56-16.23 16.61h8c0-4.87 3.8-8.61 8.23-8.61v-8ZM14.04 30.61c0 4.98 2.14 9.48 5.57 12.54l5.32-5.97a8.75 8.75 0 0 1-2.9-6.57h-8Zm5.46 8.3-1.44 1.48 5.73 5.58 1.44-1.47-5.73-5.59Zm5.27 8.01 1.88-1.93-5.73-5.58-1.88 1.93 5.73 5.58Zm-1.52-1.32a15.88 15.88 0 0 0 7.02 1.63v-8c-1.26 0-2.44-.3-3.5-.81l-3.52 7.18Zm7.02 1.63c2.45 0 4.79-.56 6.88-1.57l-3.46-7.2c-1.04.5-2.2.77-3.42.77v8Zm0-1.4c8.33 0 14.87-6.93 14.87-15.22h-8c0 4.1-3.2 7.22-6.87 7.22v8ZM45.14 30.6c0-8.28-6.54-15.2-14.87-15.2v8c3.68 0 6.87 3.1 6.87 7.2h8Zm-14.87-15.2c-8.33 0-14.88 6.92-14.88 15.2h8c0-4.1 3.2-7.2 6.88-7.2v-8ZM15.39 30.6c0 8.29 6.55 15.22 14.88 15.22v-8c-3.68 0-6.88-3.11-6.88-7.22h-8Zm11.68-.31v.54h8v-.54h-8Zm0 .54v.28h8v-.28h-8Zm6.44.33v-.33h-8v.33h8Zm0-.33v-.54h-8v.54h8Zm0-.54v-3.8h-8v3.8h8Zm0-3.8v-3.56h-8v3.56h8Zm-6.44-3.56v3.56h8v-3.56h-8Zm0 3.56v3.8h8v-3.8h-8Zm3.22-8.34a4.78 4.78 0 0 0-4.78 4.78h8a3.22 3.22 0 0 1-3.22 3.22v-8Zm-3.22 12.96a3.2 3.2 0 0 1 3.2-3.2v8a4.8 4.8 0 0 0 4.8-4.8h-8ZM26.65 45c-1 1.02-2.4 1.1-3.4.6l3.52-7.17a5.06 5.06 0 0 0-5.85.99l5.73 5.58Zm-8.59 1.93a4.68 4.68 0 0 0 6.71 0l-5.73-5.58a3.32 3.32 0 0 1 4.75 0l-5.73 5.58Zm0-6.53a4.68 4.68 0 0 0 0 6.53l5.73-5.58a3.32 3.32 0 0 1 0 4.63l-5.73-5.58Zm22.89-1.4a2.93 2.93 0 0 1-.13 4.25l-5.27-6.02a5.08 5.08 0 0 0-.33 7.36l5.73-5.59ZM30.29 26.16a3.22 3.22 0 0 1-3.22-3.22h8a4.78 4.78 0 0 0-4.78-4.78v8ZM19.6 43.15a2.93 2.93 0 0 1-.11-4.24l5.73 5.59a5.07 5.07 0 0 0-.3-7.32l-5.32 5.97Zm22.7 3.77a4.68 4.68 0 0 0 0-6.53l-5.73 5.58a3.32 3.32 0 0 1 0-4.63l5.73 5.58Zm-6.71 0a4.68 4.68 0 0 0 6.7 0l-5.72-5.58a3.32 3.32 0 0 1 4.75 0l-5.73 5.58Zm-5.33-19a3.24 3.24 0 0 1 3.24 3.25h-8a4.76 4.76 0 0 0 4.76 4.76v-8Zm9.23 11.54a5.06 5.06 0 0 0-5.8-1l3.45 7.2c-1 .49-2.4.4-3.38-.62l5.73-5.58Z"
-                fill="#fff" mask="url(#alarm)" />
-              <path fill="#fff" d="M29.5 19v-4H31v4z" />
-              <rect x="22.5" y="15" width="15.5" height="1.5" rx=".75" fill="#fff" />
-            </svg>
+            <picture>
+              <source media="(min-width:768px)" srcset="img/icon_alarm-tablet.svg">
+              <img src="img/icon_alarm.svg" alt="" class="advantages-item__icon">
+            </picture>
             <p class="advantages-item__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
           </li>
@@ -215,25 +161,48 @@
             <div class="example__results-wrapper">
               <div class="example__results results">
                 <div class="results--weight">
-                  5 кг
+                  <p class="results--weight__text">
+                    5 кг
+                  </p>
                 </div>
                 <div class="results--time">
-                  60 дней
+                  <p class="results--time__text">
+                    60 дней
+                  </p>
                 </div>
               </div>
               <p class="example__spent">
-                Затраты на питание: 15 000 РУБ.
+                Затраты на питание:
+                <span class="example__spent__wrapper">15 000 РУБ.</span>
               </p>
             </div>
           </div>
         </div>
         <div class="example__pictures slider">
-          <img src="img/before-mobile.png" width="280" height="232" alt="До" class="slider__before">
-          <img src="img/after-mobile.png" width="243" height="232" alt="После" class="slider__after">
+          <div class="slider__picture-wrapper">
+            <picture>
+              <source media="(min-width:1440px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x"
+                type="image/png">
+              <source media="(min-width:768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x"
+                type="image/png">
+              <source media="(min-width:320px)" srcset="img/before-mobile.png 1x, img/before-mobile@2x.png 2x"
+                type="image/png">
+              <img src="img/before-mobile.png" alt="До" class="slider__before">
+            </picture>
+            <picture>
+              <source media="(min-width:1440px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x"
+                type="image/png">
+              <source media="(min-width:768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x"
+                type="image/png">
+              <source media="(min-width:320px)" srcset="img/after-mobile.png 1x, img/after-mobile@2x.png 2x"
+                type="image/png">
+              <img src="img/after-mobile.png" alt="После" class="slider__after">
+            </picture>
+          </div>
           <div class="slider__text slider-text">
-            <p class="slider-text__before">Было</p>
+            <button class="slider-text__before">Было</button>
             <div class="slider-text__toggle"></div>
-            <p class="slider-text__after">Стало</p>
+            <button class="slider-text__after">Стало</button>
           </div>
         </div>
       </div>
@@ -245,19 +214,21 @@
         Приглашаем к сотрудничеству дилеров!
       </h2>
       <p class="address__address">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        ул. Большая Конюшенная, д. 19/8
+        <br>
+        <br>
+        Санкт-Петербург
       </p>
     </div>
     <div class="address__map">
-      <iframe
-        class = "address__map-map"
+      <iframe class="address__map-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716140034!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642159469721!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="page-footer__contacts">
       <div class="page-footer__contacts__wrapper">
         <a class="page-footer__logo footer-logo" href="index.html">
-          <img class="footer-logo__icon" src="img/cat-energy-text-logo.svg">
+          <img class="footer-logo__icon" src="img/footer-logo.svg">
         </a>
         <ul class="page-footer__social-contacts social-contacts">
           <li class="social-contacts__item">
@@ -265,10 +236,9 @@
               Мы во Вконтакте
             </span>
             <a href="#" class="social-contacts__link">
-              <picture>
-                <source media="(min-width:768px)" srcset="img/vk-logo_tablet.svg">
-                <img class="page-footer__social-contacts__icon" src="img/vk-logo.svg" alt="">
-              </picture>
+              <svg class="social-contacts__icon social-contacts__icon--vk" width="30" height="22">
+                <use xlink:href="img/social-icons.svg#vk-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social-contacts__item">
@@ -276,10 +246,9 @@
               Мы в Инстаграме
             </span>
             <a href="#" class="social-contacts__link">
-              <picture>
-                <source media="(min-width:768px)" srcset="img/ig-logo_tablet.svg">
-                <img class="social-contacts__icon" src="img/ig-logo.svg" alt="">
-              </picture>
+              <svg class="social-contacts__icon social-contacts__icon--ig" width="23" height="23">
+                <use xlink:href="img/social-icons.svg#ig-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social-contacts__item">
@@ -287,22 +256,17 @@
               Мы в Фейсбуке
             </span>
             <a href="#" class="social-contacts__link">
-              <picture>
-                <source media="(min-width:768px)" srcset="img/fb-logo_tablet.svg">
-                <img class="social-contacts__icon" src="img/fb-logo.svg" alt="">
-              </picture>
+              <svg class="social-contacts__icon social-contacts__icon--fb" width="28" height="33">
+                <use xlink:href="img/social-icons.svg#fb-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="htmlacademy.ru">
-            HTML Academy
-          </a>
-          <a href="#" class="copyright__link-logo">
-            <svg class="copyright__logo" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"
-                fill="#666" />
+            <span class="copyright__link-text">HTML Academy</span>
+            <svg class="copyright__logo">
+              <use xlink:href="img/social-icons.svg#html-academy-icon"></use>
             </svg>
           </a>
         </div>
@@ -311,5 +275,6 @@
   </footer>
 </body>
 <script src="js/nav-button.js"></script>
+<script src="js/slider.js"></script>
 
 </html>

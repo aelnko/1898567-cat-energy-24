@@ -15,8 +15,17 @@
     color: #ffffff;
     background-color: $basic_green;
     width: 280px;
-    padding: 7px 0;
+    padding: 11px 0;
     text-align: center;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .program__list {
@@ -29,6 +38,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .program {
+    padding-top: 0;
+    margin-top: -20px;
+  }
+
   .program__button {
     @include visually-hidden;
   }
@@ -36,7 +50,7 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    padding-top: 82px;
+    padding-top: 96px;
     margin-bottom: 0;
   }
 

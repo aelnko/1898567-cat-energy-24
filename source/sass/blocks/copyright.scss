@@ -4,13 +4,36 @@
     font-family: "Arial", sans-serif;
     font-size: 16px;
     align-items: center;
-    padding: 22px 0;
+    padding: 18px 0;
     justify-content: center;
   }
 
   .copyright__link {
-    margin-right: 140px;
     color: #444444;
+    display: flex;
+    align-items: center;
+    width: 281px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    &:hover .copyright__logo {
+      fill: #68b738;
+    }
+
+    &:active .copyright__link-text {
+      opacity: 30%;
+    }
+
+    &:active .copyright__logo {
+      fill: #68b738;
+      opacity: 30%;
+    }
+  }
+
+  .copyright__logo {
+    width: 27px;
+    height: 34px;
+    fill: #666666;
   }
 }
 
@@ -19,6 +42,7 @@
     padding: 0;
     width: 163px;
     justify-content: space-between;
+    margin-top: -5px;
   }
 
   .copyright__link {

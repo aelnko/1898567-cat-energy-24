@@ -21,19 +21,29 @@
   .page-footer__contacts__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 708px;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: $desktop-width) {
+  .page-footer {
+    position: relative;
+    margin-top: -19px;
+  }
+
+  .page-footer--active {
+    margin-top: 0;
+  }
+
   .page-footer__contacts {
-    padding: 58px 0;
+    padding: 58px 110px;
   }
 
   .page-footer__contacts__wrapper {
     width: 1220px;
     margin: 0 auto;
+    justify-content: space-between;
   }
 }

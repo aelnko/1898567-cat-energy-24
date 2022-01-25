@@ -1,10 +1,15 @@
 @media (min-width: $mobile-width) {
   .intro {
     color: #ffffff;
-    background-color: #68b738;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .intro__wrapper {
     position: relative;
   }
 
@@ -17,6 +22,7 @@
     margin-top: 27px;
     z-index: 2;
     text-align: center;
+    position: relative;
   }
 
   .intro__subtitle {
@@ -29,6 +35,8 @@
     margin-bottom: 164px;
     z-index: 2;
     text-align: center;
+    position: relative;
+    margin-left: 25px;
   }
 
   .intro__image {
@@ -50,13 +58,54 @@
   }
 }
 
+@media (min-width: $mobile-width) and (max-width: 767px) {
+  .intro::before {
+    content: "";
+    background-image: url("../../img/intro-bg-phone.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 302px;
+    background-color: #68b738;
+    background-size: auto 302px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/intro-bg-phone@2x.jpg");
+    }
+  }
+
+  .intro__wrapper::before {
+    content: "";
+    background-image: url("../../img/intro-decorative-image.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 167px;
+    left: -16px;
+    width: 280px;
+    height: 270px;
+    z-index: 1;
+    background-size: auto 270px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/intro-decorative-image@2x.png");
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .intro {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 117px;
+    margin: 0 auto;
+    width: 708px;
+  }
+
+  .intro__wrapper {
+    height: 810px;
+    padding-left: 87px;
   }
 
   .intro__title {
@@ -78,14 +127,15 @@
     width: 283px;
     margin: 0;
     margin-bottom: 49px;
+    margin-left: 2px;
   }
 
   .intro__image {
-    @include visually-hidden();
+    display: none;
   }
 
   .intro__decorative-image {
-    z-index: 0;
+    z-index: 1;
   }
 
   .intro__button {
@@ -96,36 +146,104 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: $basic_green;
-    // width: 244px;
-    padding: 14px 26px;
+    padding: 17px 26px;
     text-align: center;
+    z-index: 2;
+    position: relative;
+    margin-left: 3px;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5eaa2f;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .intro__wrapper::before {
+    content: "";
+    background-image: url("../../img/intro-decorative-image-tablet.png");
+    width: 709px;
+    height: 609px;
+    top: 201px;
+    left: 0;
     z-index: 1;
+    position: absolute;
+    background-size: auto 609px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/intro-decorative-image-tablet@2x.png");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-    background: linear-gradient(to right, #ffffff 50%, #68b738 50%);
-    margin-left: 0;
-    padding-bottom: 175px;
-    // padding-left: 190px;
+    padding-bottom: 191px;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .intro__title {
-    margin-top: 82px;
+    margin-top: 78px;
     margin-bottom: 40px;
   }
 
   .intro__subtitle {
     margin-bottom: 52px;
-  }
-
-  .intro__decorative-image {
-    @include visually-hidden;
+    margin-left: -1px;
   }
 
   .intro__wrapper {
-    width: 920px;
-    margin: 0 auto;
+    margin-left: 80px;
+    padding-left: 0;
+    height: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/intro-decorative-image-desktop.png");
+      width: 552px;
+      height: 499px;
+      z-index: 1;
+      top: -4px;
+      left: 368px;
+      background-size: auto 499px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/intro-decorative-image-desktop@2x.png");
+      }
+    }
+  }
+
+  .intro__image {
+    display: block;
+    left: 50%;
+    width: 50%;
+    height: 694px;
+    top: -145px;
+  }
+
+  .intro__decorative-image {
+    z-index: 1;
+    top: -4px;
+    left: 558px;
+  }
+
+  .intro__button {
+    margin-left: 0;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5eaa2f;
+    }
   }
 }

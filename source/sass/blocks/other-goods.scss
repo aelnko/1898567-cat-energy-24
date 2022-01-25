@@ -8,7 +8,7 @@
       width: 50%;
       height: 2px;
       background-color: $basic_green;
-      top: 38px;
+      top: 40px;
       z-index: 1;
       right: 0;
     }
@@ -22,11 +22,16 @@
     margin-top: 25px;
   }
 
+  .other-goods__container {
+    width: 320px;
+    margin: 0 auto;
+  }
+
   .other-goods__title {
     font-size: 24px;
     line-height: 24px;
     padding-right: 22px;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
     background-color: #ffffff;
     padding-left: 19px;
     z-index: 2;
@@ -43,10 +48,17 @@
 
 @media (min-width: $tablet-width) {
   .other-goods {
+    margin-top: 68px;
+
     &::before {
-      top: 20px;
+      top: 22px;
       width: 100%;
     }
+  }
+
+  .other-goods__container {
+    width: 768px;
+    margin: 0 auto;
   }
 
   .other-goods__fieldset {
@@ -60,6 +72,7 @@
     margin-left: 30px;
     padding-left: 37px;
     margin-bottom: 80px;
+    padding-right: 36px;
   }
 
   .other-goods__list {
@@ -73,9 +86,10 @@
 @media (min-width: $desktop-width) {
   .other-goods {
     display: flex;
+    margin-top: 0;
 
     &::before {
-      top: 20px;
+      top: 23px;
     }
   }
 
@@ -87,7 +101,7 @@
 
   .other-goods__title {
     padding: 0 35px 0 40px;
-    margin-left: -34px;
+    margin-left: -39px;
     background-color: #ffffff;
   }
 

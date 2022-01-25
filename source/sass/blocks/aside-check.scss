@@ -1,9 +1,9 @@
 @media (min-width: $mobile-width) {
   .aside-check__input {
-    &:checked + .check {
+    &:checked + .check::before {
       background-image: url("../../img/tick.svg");
       background-repeat: no-repeat;
-      background-position: 7.09px 5.25px;
+      background-position: 50% 50%;
     }
   }
 }
@@ -11,12 +11,18 @@
 @media (min-width: $tablet-width) {
   .aside-check {
     &:nth-of-type(1) {
-      margin-right: 124px;
-      margin-bottom: 32px;
+      margin-right: 125px;
+      margin-bottom: 49px;
     }
 
     &:nth-of-type(3) {
       margin-right: 218px;
+    }
+  }
+
+  .aside-check__input {
+    &:checked + .check::before {
+      background-image: url("../../img/tick-tablet.svg");
     }
   }
 }

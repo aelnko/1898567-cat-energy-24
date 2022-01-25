@@ -3,10 +3,9 @@
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 0;
     padding-top: 20px;
-    padding-bottom: 21px;
+    padding-bottom: 18px;
     border-bottom: 1px solid #d9d9d9;
     width: 280px;
     margin: 0 auto;
@@ -14,12 +13,46 @@
 
   .social-contacts__item {
     &:nth-of-type(1) {
-      margin-right: 36.78px;
+      margin-left: 73px;
     }
 
     &:nth-of-type(2) {
-      margin-right: 39.42px;
+      margin-left: 36px;
     }
+
+    &:nth-of-type(3) {
+      margin-left: 33px;
+    }
+  }
+
+  .social-contacts__icon--vk,
+  .social-contacts__icon--ig {
+    fill: #666666;
+  }
+
+  .social-contacts__icon--fb {
+    stroke: #666666;
+    fill: transparent;
+  }
+
+  .social-contacts__link:hover .social-contacts__icon--vk,
+  .social-contacts__link:hover .social-contacts__icon--ig {
+    fill: #68b738;
+  }
+
+  .social-contacts__link:hover .social-contacts__icon--fb {
+    stroke: #68b738;
+  }
+
+  .social-contacts__link:active .social-contacts__icon--vk,
+  .social-contacts__link:active .social-contacts__icon--ig {
+    fill: #68b738;
+    opacity: 50%;
+  }
+
+  .social-contacts__link:active .social-contacts__icon--fb {
+    stroke: #68b738;
+    opacity: 50%;
   }
 }
 
@@ -30,15 +63,50 @@
     margin: 0;
     width: 128px;
     justify-content: space-between;
+    margin-right: 132px;
   }
 
   .social-contacts__item {
     &:nth-of-type(1) {
-      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 8px;
+      margin-right: 6px;
     }
 
     &:nth-of-type(2) {
-      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 3px;
     }
+
+    &:nth-of-type(3) {
+      margin-left: 0;
+      margin-top: -7px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-contacts {
+    margin-right: 0;
+  }
+
+  .social-contacts__link:hover .social-contacts__icon--vk,
+  .social-contacts__link:hover .social-contacts__icon--ig {
+    fill: #68b738;
+  }
+
+  .social-contacts__link:hover .social-contacts__icon--fb {
+    stroke: #68b738;
+  }
+
+  .social-contacts__link:active .social-contacts__icon--vk,
+  .social-contacts__link:active .social-contacts__icon--ig {
+    fill: #68b738;
+    opacity: 50%;
+  }
+
+  .social-contacts__link:active .social-contacts__icon--fb {
+    stroke: #68b738;
+    opacity: 50%;
   }
 }

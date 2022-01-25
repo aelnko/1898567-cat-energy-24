@@ -1,14 +1,10 @@
 @media (min-width: $mobile-width) {
   .weight-input {
-    margin-bottom: 13px;
-  }
-
-  .weight-input__label {
-    margin-right: 16px;
+    margin-bottom: 14px;
   }
 
   .weight-input__input {
-    width: 203px;
+    width: 198px;
   }
 }
 
@@ -18,12 +14,12 @@
   }
 
   .weight-input__input {
-    width: 536px;
+    width: 528px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .weight-input__input {
-    width: 475px;
+    width: 468px;
   }
 }

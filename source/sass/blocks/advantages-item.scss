@@ -5,28 +5,31 @@
     display: flex;
     padding: 0;
     align-items: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 16px 0;
+
+    &:nth-of-type(1) .advantages-item__description {
+      width: 176px;
+      margin-top: -4px;
+    }
+
+    &:nth-of-type(2) .advantages-item__description {
+      width: 198px;
+      margin-top: -4px;
+    }
+
+    &:nth-of-type(3) .advantages-item__description {
+      width: 183px;
+      margin-top: -6px;
+    }
+
+    &:nth-of-type(4) .advantages-item__description {
+      width: 199px;
+      margin-top: -7px;
+    }
   }
 
   .advantages-item__description {
-    margin: 0;
     margin-left: 20px;
-
-    &:nth-of-type(1) {
-      width: 176px;
-    }
-
-    &:nth-of-type(2) {
-      width: 198px;
-    }
-
-    &:nth-of-type(3) {
-      width: 183px;
-    }
-
-    &:nth-of-type(4) {
-      width: 199px;
-    }
   }
 }
 
@@ -42,7 +45,11 @@
 
     &:nth-of-type(1),
     &:nth-of-type(3) {
-      margin-right: 153px;
+      margin-right: 154px;
+    }
+
+    &:nth-of-type(1) {
+      margin-bottom: 37px;
     }
 
     &:nth-of-type(1)::before {
@@ -53,8 +60,8 @@
       font-family: "Oswald", sans-serif;
       color: #f2f2f2;
       z-index: 1;
-      top: -40px;
-      left: 88px;
+      top: -39px;
+      left: 119px;
     }
 
     &:nth-of-type(2)::before {
@@ -66,7 +73,7 @@
       color: #f2f2f2;
       z-index: 1;
       top: -40px;
-      left: 88px;
+      left: 113px;
     }
 
     &:nth-of-type(3)::before {
@@ -78,7 +85,7 @@
       color: #f2f2f2;
       z-index: 1;
       top: -40px;
-      left: 88px;
+      left: 112px;
     }
 
     &:nth-of-type(4)::before {
@@ -90,12 +97,32 @@
       color: #f2f2f2;
       z-index: 1;
       top: -40px;
-      left: 88px;
+      left: 114px;
+    }
+
+    &:nth-of-type(1) .advantages-item__description {
+      width: 201px;
+      margin-top: 0;
+    }
+
+    &:nth-of-type(2) .advantages-item__description {
+      width: 227px;
+      margin-top: 0;
+    }
+
+    &:nth-of-type(3) .advantages-item__description {
+      width: 209px;
+      margin-top: 0;
+    }
+
+    &:nth-of-type(4) .advantages-item__description {
+      width: 245px;
+      margin-top: 0;
     }
   }
 
   .advantages-item__icon {
-    margin-bottom: 31px;
+    margin-bottom: 27px;
     z-index: 2;
   }
 
@@ -110,7 +137,7 @@
 @media (min-width: $desktop-width) {
   .advantages-item {
     &:nth-of-type(1) {
-      margin-right: 19px;
+      margin-right: 95px;
     }
 
     &:nth-of-type(3) {

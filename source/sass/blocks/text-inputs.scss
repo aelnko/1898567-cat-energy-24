@@ -1,19 +1,17 @@
 @media (min-width: $mobile-width) {
   .text-inputs {
-    border-bottom: 1px solid #d9d9d9;
-    padding-bottom: 27px;
+    padding-bottom: 23px;
+    width: 280px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $tablet-width) {
   .text-inputs {
     border-bottom: none;
-    padding-left: 69px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .text-inputs {
-    padding-left: 0;
+    width: 630px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    margin-bottom: 54px;
   }
 }

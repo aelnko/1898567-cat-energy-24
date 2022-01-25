@@ -1,6 +1,6 @@
 @media (min-width: $mobile-width) {
   .name-input {
-    margin-bottom: 13px;
+    margin-bottom: 14px;
   }
 
   .name-input__label {
@@ -8,18 +8,19 @@
   }
 
   .name-input__input {
-    width: 228px;
+    width: 223px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .name-input__input {
-    width: 567px;
+    width: 559px;
+    height: 49px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .name-input__input {
-    width: 506px;
+    width: 520px;
   }
 }

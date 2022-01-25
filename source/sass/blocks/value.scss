@@ -4,6 +4,10 @@
     font-size: 12px;
     line-height: 16px;
   }
+
+  .value {
+    text-align: right;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -19,6 +23,6 @@
 
   .value__weight,
   .value__flavor {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }

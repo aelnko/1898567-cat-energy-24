@@ -5,8 +5,8 @@
 
     &::before {
       content: "";
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
       position: absolute;
       border: 1px solid $special_grey;
       transform: translateY(-50%);
@@ -15,15 +15,34 @@
   }
 
   .check__label {
-    margin-left: 48px;
+    margin-left: 46px;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+  }
+
+  .aside-check__input {
+    &:hover + .check::before {
+      border: 1px solid #bababa;
+    }
+
+    &:disabled + .check {
+      opacity: 30%;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .check__label {
     font-size: 20px;
+    margin-left: 59px;
+  }
+
+  .check {
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+    }
   }
 }

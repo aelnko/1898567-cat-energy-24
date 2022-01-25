@@ -11,7 +11,6 @@
 
   .inputs__button {
     @include button;
-    margin-left: 20px;
     width: 280px;
     height: 40px;
     background-color: $basic_green;
@@ -19,6 +18,14 @@
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 21px;
+  }
+
+  .inputs__button-aside-info {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .inputs__aside-info {
@@ -33,7 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .inputs__button {
-    margin-left: 71px;
+    margin-left: -51px;
     width: 282px;
     height: 52px;
     font-size: 20px;
@@ -43,14 +50,16 @@
   .inputs__aside-info {
     font-size: 16px;
     line-height: 16px;
-    margin-left: 49px;
-    margin-bottom: 0;
+    margin-left: 61px;
+    margin-bottom: 4px;
   }
 
   .inputs__button-aside-info {
     display: flex;
     align-items: center;
-    margin-bottom: 72px;
+    width: 523px;
+    margin: 22px auto 72px auto;
+    flex-direction: row;
   }
 }
 
@@ -69,7 +78,12 @@
   }
 
   .inputs__button {
-    margin-left: 0;
     width: 568px;
+    margin-top: -2px;
+    margin-left: 1px;
+  }
+
+  .inputs__aside-info {
+    margin-left: 80px;
   }
 }

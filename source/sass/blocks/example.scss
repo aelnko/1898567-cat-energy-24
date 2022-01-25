@@ -1,7 +1,12 @@
 @media (min-width: $mobile-width) {
   .example {
-    padding: 25px 20px 40px 20px;
+    padding: 25px 20px 45px 20px;
     background-color: #eaeaea;
+  }
+
+  .example__wrapper {
+    width: 280px;
+    margin: 0 auto;
   }
 
   .example__title {
@@ -9,7 +14,7 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   .example__description {
@@ -17,8 +22,9 @@
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     color: $special_dark-grey;
+    width: 280px;
   }
 
   .example__results {
@@ -37,17 +43,27 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 70%, #eaeaea 70%);
+    background: linear-gradient(to bottom, #ffffff 57.5%, #eaeaea 57.5%);
     border-top: 1px solid #e6e6e6;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0 64px 0;
+  }
+
+  .example__wrapper {
+    width: 708px;
+    margin: 0 auto;
     padding-top: 43px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   .example__title {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 63px;
+  }
+
+  .example__title-info-wrapper {
+    margin-bottom: 51px;
   }
 
   .example__description {
@@ -64,17 +80,23 @@
 
   .example__spent {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 27px;
     width: 174px;
     text-align: right;
+    margin-top: 9px;
+  }
+
+  .example__spent__wrapper {
+    margin-top: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 30%, #eaeaea 30%);
-    padding-left: 110px;
+    background: linear-gradient(to bottom, #ffffff 23%, #eaeaea 23%);
     display: flex;
+    border-top: none;
+    padding-bottom: 0;
   }
 
   .example__title {
@@ -88,9 +110,22 @@
     margin-bottom: 69px;
   }
 
-  .example--wrapper {
+  .example__wrapper {
     display: flex;
-    flex-direction: column;
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 0;
+    margin-top: 6px;
+  }
+
+  .example__spent {
+    margin-top: 23px;
+  }
+
+  .example__spent__wrapper {
+    display: block;
+    margin-top: -28px;
+    margin-right: -153px;
   }
 
   .example__results-wrapper {
@@ -99,17 +134,5 @@
 
   .example__title-info-wrapper {
     margin-right: 193px;
-  }
-}
-
-@media (min-width: 1441px) {
-  .example {
-    padding: 43px 0 0 0;
-  }
-
-  .example__wrapper {
-    display: flex;
-    width: 1220px;
-    margin: 0 auto;
   }
 }

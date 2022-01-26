@@ -5,6 +5,17 @@
     align-items: center;
     width: 280px;
     justify-content: space-between;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/icon_phone.svg");
+      width: 20px;
+      height: 20.5px;
+      left: 247px;
+      top: 13px;
+    }
   }
 
   .phone-form__label {
@@ -16,8 +27,10 @@
 
   .phone-form__input {
     border: 1px solid $special_grey;
-    padding: 14px 0 13px 4px;
-    width: 198px;
+    padding-left: 15px;
+    padding-top: 17px;
+    padding-bottom: 11px;
+    width: 185px;
 
     &:hover {
       outline: 1px solid #cdcdcd;
@@ -31,6 +44,14 @@
     &:invalid {
       outline: 2px solid #ff8282;
     }
+
+    &::placeholder {
+      font-family: "Oswald", sans-serif;
+      font-size: 16px;
+      line-height: 18px;
+      color: #444444;
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -39,6 +60,11 @@
     margin-bottom: 0;
     width: 632px;
     margin-left: 4px;
+
+    &::before {
+      left: 597px;
+      top: 16px;
+    }
   }
 
   .phone-form__label {
@@ -47,10 +73,14 @@
   }
 
   .phone-form__input {
-    padding-left: 20.62px;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-left: 19px;
+    padding-top: 21px;
+    padding-bottom: 14px;
     width: 510px;
+
+    &::placeholder {
+      font-size: 20px;
+    }
   }
 }
 
@@ -58,10 +88,16 @@
   .phone-form {
     margin-left: 78px;
     margin-bottom: 0;
+
+    &::before {
+      left: 534px;
+    }
   }
 
   .phone-form__input {
-    width: 453.81px;
-    padding-left: 18.19px;
+    width: 450px;
+    padding-left: 18px;
+    padding-top: 22px;
+    padding-bottom: 13px;
   }
 }

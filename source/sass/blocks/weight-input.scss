@@ -4,7 +4,10 @@
   }
 
   .weight-input__input {
-    width: 198px;
+    width: 186px;
+    padding-left: 13px;
+    padding-top: 18px;
+    padding-bottom: 11px;
   }
 }
 
@@ -14,12 +17,18 @@
   }
 
   .weight-input__input {
-    width: 528px;
+    width: 510px;
+    padding-left: 20px;
+    padding-top: 24px;
+    padding-bottom: 11px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .weight-input__input {
-    width: 468px;
+    width: 451px;
+    padding-left: 19px;
+    padding-top: 22px;
+    padding-bottom: 13px;
   }
 }

@@ -27,6 +27,18 @@
     &:nth-of-type(2) .program-item__button {
       margin-left: 7px;
     }
+
+    &:nth-of-type(1) .program-item__picture {
+      background-image: url("../../img/cat_slimming.svg");
+      width: 50px;
+      height: 53px;
+    }
+
+    &:nth-of-type(2) .program-item__picture {
+      background-image: url("../../img/cat_weight.svg");
+      width: 67px;
+      height: 50px;
+    }
   }
 
   .program-item__title-picture {
@@ -112,27 +124,30 @@
         left: 130px;
       }
     }
+
+    &:nth-of-type(1) .program-item__picture {
+      background-image: url("../../img/cat_slimming_tablet.svg");
+      width: 200px;
+      height: 211px;
+      position: absolute;
+      left: 394px;
+      top: 4px;
+    }
+
+    &:nth-of-type(2) .program-item__picture {
+      background-image: url("../../img/cat_weight_tablet.svg");
+      width: 268px;
+      height: 200px;
+      position: absolute;
+      left: 360px;
+      top: 14px;
+    }
   }
 
   .program-item__title-picture {
     display: block;
     position: relative;
     margin-bottom: 24px;
-  }
-
-  .program-item__slimming-icon,
-  .program-item__weight-icon {
-    position: absolute;
-  }
-
-  .program-item__slimming-icon {
-    left: 394px;
-    top: 4px;
-  }
-
-  .program-item__weight-icon {
-    left: 360px;
-    top: 14px;
   }
 
   .program-item__description {
@@ -192,6 +207,22 @@
     &:nth-of-type(2) .program-item__button {
       margin-left: 19px;
     }
+
+    &:nth-of-type(1) .program-item__picture {
+      background-image: url("../../img/cat_slimming_desktop.svg");
+      width: 100px;
+      height: 106px;
+      position: static;
+      margin-right: 62px;
+    }
+
+    &:nth-of-type(2) .program-item__picture {
+      background-image: url("../../img/cat_weight_desktop.svg");
+      width: 134px;
+      height: 100px;
+      position: static;
+      margin-right: 47px;
+    }
   }
 
   .program-item__title-picture {
@@ -202,14 +233,6 @@
   .program-item__slimming-icon,
   .program-item__weight-icon {
     position: static;
-  }
-
-  .program-item__slimming-icon {
-    margin-right: 62px;
-  }
-
-  .program-item__weight-icon {
-    margin-right: 47px;
   }
 
   .program-item__description {

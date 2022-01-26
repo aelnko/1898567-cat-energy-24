@@ -1,6 +1,9 @@
 @media (min-width: $mobile-width) {
   .age-input__input {
-    width: 166px;
+    width: 153px;
+    padding-left: 15px;
+    padding-top: 17px;
+    padding-bottom: 11px;
   }
 }
 
@@ -10,12 +13,18 @@
   }
 
   .age-input__input {
-    width: 489px;
+    width: 472px;
+    padding-top: 22px;
+    padding-left: 19px;
+    padding-bottom: 13px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .age-input__input {
-    width: 429px;
+    width: 414px;
+    padding-top: 22px;
+    padding-left: 17.5px;
+    padding-bottom: 13px;
   }
 }

@@ -36,8 +36,10 @@
 
   .comment-inputs__area {
     border: 1px solid #e7e7e7;
-    width: 274px;
-    height: 143px;
+    width: 262px;
+    height: 135px;
+    padding-left: 14px;
+    padding-top: 8px;
 
     &:hover {
       outline: 1px solid #cdcdcd;
@@ -46,6 +48,14 @@
     &:active,
     &:focus {
       outline: 2px solid #444444;
+    }
+
+    &::placeholder {
+      font-family: "Oswald", sans-serif;
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #444444;
     }
   }
 }
@@ -77,9 +87,17 @@
   }
 
   .comment-inputs__area {
-    width: 627px;
-    height: 167px;
+    width: 608px;
+    height: 161px;
     margin-bottom: 65px;
+    padding-left: 19px;
+    padding-top: 8px;
+    margin-left: 2px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -93,10 +111,13 @@
     padding-left: 40px;
     padding-right: 40px;
     margin-left: -40px;
+    margin-bottom: 74px;
   }
 
   .comment-inputs__area {
     margin-left: 0;
-    width: 1220px;
+    width: 1199px;
+    padding-left: 18px;
+    padding-top: 9px;
   }
 }

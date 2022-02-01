@@ -5,26 +5,26 @@
     display: flex;
     padding: 0;
     align-items: center;
-    margin: 0 0 16px 0;
+    margin: 0 0 20px 0;
 
     &:nth-of-type(1) .advantages-item__description {
       width: 176px;
-      margin-top: -4px;
+      margin-top: -2px;
     }
 
     &:nth-of-type(2) .advantages-item__description {
       width: 198px;
-      margin-top: -4px;
+      margin-top: -1px;
     }
 
     &:nth-of-type(3) .advantages-item__description {
       width: 183px;
-      margin-top: -6px;
+      margin-top: -1px;
     }
 
     &:nth-of-type(4) .advantages-item__description {
       width: 199px;
-      margin-top: -7px;
+      margin-top: -1px;
     }
   }
 
@@ -60,12 +60,12 @@
 @media (min-width: $tablet-width) {
   .advantages-item {
     width: 230px;
-    height: 280px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
+    height: auto;
 
     &:nth-of-type(1),
     &:nth-of-type(3) {
@@ -73,7 +73,7 @@
     }
 
     &:nth-of-type(1) {
-      margin-bottom: 37px;
+      margin-bottom: 133px;
     }
 
     &:nth-of-type(1)::before {
@@ -81,7 +81,7 @@
       position: absolute;
       font-size: 280px;
       line-height: 280px;
-      font-family: "Oswald", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       color: #f2f2f2;
       z-index: 1;
       top: -39px;
@@ -93,7 +93,7 @@
       position: absolute;
       font-size: 280px;
       line-height: 280px;
-      font-family: "Oswald", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       color: #f2f2f2;
       z-index: 1;
       top: -40px;
@@ -105,7 +105,7 @@
       position: absolute;
       font-size: 280px;
       line-height: 280px;
-      font-family: "Oswald", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       color: #f2f2f2;
       z-index: 1;
       top: -40px;
@@ -117,7 +117,7 @@
       position: absolute;
       font-size: 280px;
       line-height: 280px;
-      font-family: "Oswald", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       color: #f2f2f2;
       z-index: 1;
       top: -40px;
@@ -146,7 +146,7 @@
   }
 
   .advantages-item__icon {
-    margin-bottom: 27px;
+    margin-bottom: 33px;
     z-index: 2;
   }
 

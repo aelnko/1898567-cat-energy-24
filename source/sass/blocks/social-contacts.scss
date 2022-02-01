@@ -5,7 +5,7 @@
     align-items: center;
     padding: 0;
     padding-top: 20px;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #d9d9d9;
     width: 280px;
     margin: 0 auto;
@@ -14,6 +14,7 @@
   .social-contacts__item {
     &:nth-of-type(1) {
       margin-left: 73px;
+      margin-top: -3px;
     }
 
     &:nth-of-type(2) {
@@ -25,14 +26,26 @@
     }
   }
 
-  .social-contacts__icon--vk,
+  .social-contacts__icon--vk {
+    width: 23px;
+    height: 16px;
+  }
+
   .social-contacts__icon--ig {
-    fill: #666666;
+    width: 16px;
+    height: 16px;
   }
 
   .social-contacts__icon--fb {
+    width: 22px;
+    height: 22px;
     stroke: #666666;
     fill: transparent;
+  }
+
+  .social-contacts__icon--vk,
+  .social-contacts__icon--ig {
+    fill: #666666;
   }
 
   .social-contacts__link:hover .social-contacts__icon--vk,
@@ -64,6 +77,7 @@
     width: 128px;
     justify-content: space-between;
     margin-right: 132px;
+    margin-top: 2px;
   }
 
   .social-contacts__item {
@@ -71,6 +85,7 @@
       margin-left: 0;
       margin-bottom: 8px;
       margin-right: 6px;
+      margin-top: 0;
     }
 
     &:nth-of-type(2) {
@@ -83,11 +98,26 @@
       margin-top: -7px;
     }
   }
+
+  .social-contacts__icon--vk {
+    width: 30px;
+    height: 22px;
+  }
+
+  .social-contacts__icon--ig {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-contacts__icon--fb {
+    width: 28px;
+    height: 33px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .social-contacts {
-    margin-right: 0;
+    margin-right: -27px;
   }
 
   .social-contacts__link:hover .social-contacts__icon--vk,

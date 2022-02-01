@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
 </head>
 
 <body class="page-body">
@@ -23,7 +24,7 @@
           <img class="header-logo__icon" src="img/cat-energy-text-logo.svg" alt="">
         </a>
       </div>
-      <button class="page-header__nav-toggle nav-toggle">
+      <button class="page-header__nav-toggle nav-toggle nav-toggle--no-js">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="page-header__nav main-nav main-nav--no-js">
@@ -81,21 +82,21 @@
                 <input class="slimming-input__input radio-input__input visually-hidden" type="radio" id="slimming"
                   name="radio-input" checked>
                 <label class="slimming-input__label radio-input__label radio" for="slimming">
-                  <span class="radio__label">Похудение</span>
+                  Похудение
                 </label>
               </div>
               <div class="radio-inputs__weight-gain radio-input weight-gain-input">
                 <input class="weight-gain-input__input radio-input__input visually-hidden" type="radio" id="weight-gain"
                   name="radio-input">
                 <label class="weight-gain-input__label radio-input__label radio" for="weight-gain">
-                  <span class="radio__label">Набор массы</span>
+                  Набор массы
                 </label>
               </div>
               <div class="radio-inputs__advice radio-input advice-input">
                 <input class="advice-input__input radio-input__input visually-hidden" type="radio" id="advice"
                   name="radio-input">
                 <label class="advice-input__label radio-input__label radio" for="advice">
-                  <span class="radio__label">Не знаю (Нужен ваш совет)</span>
+                  Не знаю (Нужен ваш совет)
                 </label>
               </div>
             </div>
@@ -131,27 +132,25 @@
               <div class="aside__check aside-check">
                 <input class="aside-check__input visually-hidden" type="checkbox" id="sweetener" checked>
                 <label class="aside-check__label check" for="sweetener">
-                  <span class="check__label">Сахарозаменитель</span>
+                  Сахарозаменитель
                 </label>
               </div>
               <div class="aside__check aside-check">
                 <input class="aside-check__input visually-hidden" type="checkbox" id="water">
                 <label class="aside-check__label check" for="water">
-                  <span class="check__label">
-                    Питьевая вода
-                  </span>
+                  Питьевая вода
                 </label>
               </div>
               <div class="aside__check aside-check">
                 <input class="aside-check__input visually-hidden" type="checkbox" id="milk">
                 <label class="aside-check__label check" for="milk">
-                  <span class="check__label">Молоко</span>
+                  Молоко
                 </label>
               </div>
               <div class="aside__check aside-check">
                 <input class="aside-check__input visually-hidden" type="checkbox" id="vitamins">
                 <label class="aside-check__label check" for="vitamins">
-                  <span class="check__label">Витамины</span>
+                  Витамины
                 </label>
               </div>
             </div>
@@ -173,9 +172,7 @@
       </h2>
       <p class="address__address">
         ул. Большая Конюшенная, д. 19/8
-        <br>
-        <br>
-        Санкт-Петербург
+        <span class="address__address-city">Санкт-Петербург</span>
       </p>
     </div>
     <div class="page-footer__map map">
@@ -222,6 +219,7 @@
         </ul>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="htmlacademy.ru">
+            <span class="visually-hidden">переход на сайт HTML Academy</span>
             <span class="copyright__link-text">HTML Academy</span>
             <svg class="copyright__logo">
               <use xlink:href="img/social-icons.svg#html-academy-logo"></use>

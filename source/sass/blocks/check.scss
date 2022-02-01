@@ -2,6 +2,11 @@
   .check {
     position: relative;
     cursor: pointer;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-left: 45px;
+    display: block;
 
     &::before {
       content: "";
@@ -9,6 +14,7 @@
       height: 28px;
       position: absolute;
       border: 1px solid $special_grey;
+      left: 0;
       transform: translateY(-50%);
       top: 50%;
     }
@@ -39,10 +45,29 @@
   }
 
   .check {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 60px;
+
     &::before {
       content: "";
       width: 40px;
       height: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .check {
+    padding-left: 60px;
+    display: block;
+    width: 221px;
+    box-sizing: border-box;
+
+    &::before {
+      left: 0;
+      top: -5px;
+      transform: none;
     }
   }
 }

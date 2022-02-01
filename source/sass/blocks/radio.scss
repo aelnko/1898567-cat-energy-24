@@ -2,6 +2,9 @@
   .radio {
     position: relative;
     cursor: pointer;
+    padding-left: 45px;
+    display: block;
+    line-height: 18px;
 
     &::before {
       content: "";
@@ -13,6 +16,7 @@
       margin-right: 15px;
       transform: translateY(-50%);
       top: 50%;
+      left: 0;
     }
   }
 
@@ -33,6 +37,8 @@
 
 @media (min-width: $tablet-width) {
   .radio {
+    padding-left: 60px;
+
     &::before {
       content: "";
       width: 40px;

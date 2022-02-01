@@ -17,8 +17,8 @@
         position: absolute;
         background-color: #eaeaea;
         width: 77px;
-        top: 45px;
-        left: 23px;
+        top: 46px;
+        left: 22px;
         line-height: 100%;
         text-align: center;
         text-transform: none;
@@ -35,8 +35,8 @@
         position: absolute;
         background-color: #eaeaea;
         width: 78px;
-        top: 45px;
-        left: 23px;
+        top: 46px;
+        left: 22px;
         line-height: 12px;
         text-align: center;
         text-transform: none;
@@ -46,7 +46,7 @@
 
   .results__weight,
   .results__time {
-    border: 1px solid $special_grey;
+    outline: 1px solid $special_grey;
     border-radius: 3px;
     position: relative;
   }
@@ -61,11 +61,11 @@
   .results__weight,
   .results__time {
     font-size: 30px;
-    line-height: 37px;
+    line-height: 35px;
   }
 
   .results__weight {
-    margin-right: 42px;
+    margin-right: 45px;
     padding: 15px 46px 20px 57px;
 
     &::before {
@@ -92,9 +92,11 @@
     &::before {
       font-size: 14px;
       line-height: 14px;
-      width: 107px;
+      width: 135px;
       top: 63px;
-      padding: 0 3px;
+      padding: 0 5px;
+      white-space: nowrap;
+      left: 7px;
     }
   }
 }

@@ -1,15 +1,15 @@
 @media (min-width: $mobile-width) {
   .radio-inputs {
     &__slimming {
-      margin-bottom: 19px;
+      margin-bottom: 26px;
     }
 
     &__weight-gain {
-      margin-bottom: 18px;
+      margin-bottom: 25px;
     }
 
-    padding-bottom: 21px;
-    padding-top: 26px;
+    padding-bottom: 22px;
+    padding-top: 29px;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
     margin-bottom: 26px;
@@ -32,17 +32,17 @@
     padding: 0;
 
     &__slimming {
-      margin-bottom: 29px;
+      margin-bottom: 23px;
     }
 
     &__weight-gain {
-      margin-bottom: 29px;
+      margin-bottom: 23px;
     }
   }
 
   .radio-inputs__wrapper {
     width: 600px;
-    padding: 34px 0 29px 28px;
+    padding: 29px 0 29px 28px;
   }
 }
 

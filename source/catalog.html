@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
 </head>
 
 <body class="page-body">
@@ -23,7 +24,7 @@
           <img class="header-logo__icon" src="img/cat-energy-text-logo.svg" alt="">
         </a>
       </div>
-      <button class="page-header__nav-toggle nav-toggle">
+      <button class="page-header__nav-toggle nav-toggle nav-toggle--no-js">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="page-header__nav main-nav main-nav--no-js">
@@ -377,9 +378,7 @@
       </h2>
       <p class="address__address">
         ул. Большая Конюшенная, д. 19/8
-        <br>
-        <br>
-        Санкт-Петербург
+        <span class="address__address-city">Санкт-Петербург</span>
       </p>
     </div>
     <div class="page-footer__map map">
@@ -426,6 +425,7 @@
         </ul>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="htmlacademy.ru">
+            <span class="visually-hidden">переход на сайт HTML Academy</span>
             <span class="copyright__link-text">HTML Academy</span>
             <svg class="copyright__logo">
               <use xlink:href="img/social-icons.svg#html-academy-logo"></use>

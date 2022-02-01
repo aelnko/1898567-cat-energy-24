@@ -28,7 +28,7 @@
   }
 
   .example__results {
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 
   .example__spent {
@@ -59,7 +59,7 @@
   .example__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 65px;
   }
 
   .example__title-info-wrapper {
@@ -83,11 +83,15 @@
     line-height: 27px;
     width: 174px;
     text-align: right;
-    margin-top: 9px;
+    margin-top: 7px;
+    position: relative;
   }
 
   .example__spent__wrapper {
-    margin-top: 10px;
+    position: absolute;
+    width: 90px;
+    top: 30px;
+    left: 83px;
   }
 }
 
@@ -119,13 +123,13 @@
   }
 
   .example__spent {
-    margin-top: 23px;
+    margin-top: 24px;
   }
 
   .example__spent__wrapper {
     display: block;
-    margin-top: -28px;
-    margin-right: -153px;
+    left: 237px;
+    top: -1px;
   }
 
   .example__results-wrapper {

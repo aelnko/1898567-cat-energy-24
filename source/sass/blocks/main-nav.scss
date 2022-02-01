@@ -4,45 +4,6 @@
     display: none;
   }
 
-  .nav-toggle {
-    @include button;
-    width: 24px;
-    height: 18px;
-    margin-left: 64px;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: #000000;
-      width: 24px;
-      height: 2px;
-      box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
-      top: 1px;
-      left: -1px;
-    }
-  }
-
-  .nav-toggle--close {
-    &::before {
-      box-shadow: none;
-      transform: rotate(45deg);
-      width: 25px;
-      top: 7px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-color: #000000;
-      width: 25px;
-      height: 2px;
-      transform: rotate(-45deg);
-      left: 0;
-      top: 7px;
-    }
-  }
-
   .main-nav--no-js {
     display: block;
     margin-left: -21px;

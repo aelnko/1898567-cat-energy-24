@@ -39,16 +39,13 @@
   .social-contacts__icon--fb {
     width: 22px;
     height: 22px;
+    stroke: #666666;
+    fill: transparent;
   }
 
   .social-contacts__icon--vk,
   .social-contacts__icon--ig {
     fill: #666666;
-  }
-
-  .social-contacts__icon--fb {
-    stroke: #666666;
-    fill: transparent;
   }
 
   .social-contacts__link:hover .social-contacts__icon--vk,
@@ -108,8 +105,8 @@
   }
 
   .social-contacts__icon--ig {
-   width: 23px;
-   height: 23px;
+    width: 23px;
+    height: 23px;
   }
 
   .social-contacts__icon--fb {

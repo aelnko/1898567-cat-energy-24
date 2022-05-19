@@ -96,6 +96,15 @@ const copy = (done) => {
   done();
 }
 
+const fonts = (done) => {
+  gulp
+    .src(["source/fonts/*.{woff2,woff}"], {
+      base: "source",
+    })
+    .pipe(gulp.dest("build"));
+  done();
+};
+
 // Clean
 
 export const clean = () => {
@@ -136,6 +145,7 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
+  copyImages,
   optimizeImages,
   gulp.parallel(
     styles,
@@ -143,7 +153,8 @@ export const build = gulp.series(
     scripts,
     svg,
     sprite,
-    createWebP
+    createWebP,
+    fonts
   ),
 );
 
@@ -157,7 +168,8 @@ export default gulp.series(
     scripts,
     svg,
     sprite,
-    createWebP
+    createWebP,
+    fonts
   ),
   gulp.series(
     server,

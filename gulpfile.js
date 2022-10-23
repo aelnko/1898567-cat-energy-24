@@ -101,7 +101,7 @@ const fonts = (done) => {
     .src(["source/fonts/*.{woff2,woff}"], {
       base: "source",
     })
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build/fonts"));
   done();
 };
 

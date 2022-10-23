@@ -9,9 +9,15 @@
 
   .name-input__input {
     width: 211px;
-    padding-left: 15px;
-    padding-top: 17px;
-    padding-bottom: 11px;
+    height: 45px;
+    // padding-left: 15px;
+    // padding-top: 17px;
+    // padding-bottom: 11px;
+
+    &::placeholder {
+      // padding-left: 15px;
+      padding-top: 30px
+    }
   }
 }
 

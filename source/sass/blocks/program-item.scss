@@ -40,7 +40,7 @@
     }
 
     &:nth-of-type(1) .program-item__picture {
-      background-image: url("../../img/cat_slimming.svg");
+      background-image: url("../img/cat_slimming.svg");
       width: 50px;
       height: 53px;
       margin-left: 2px;
@@ -48,7 +48,7 @@
     }
 
     &:nth-of-type(2) .program-item__picture {
-      background-image: url("../../img/cat_weight.svg");
+      background-image: url("../img/cat_weight.svg");
       width: 67px;
       height: 50px;
       margin-top: 4px;
@@ -96,7 +96,7 @@
 
     &::after {
       content: "";
-      background-image: url("../../img/icon_arrow.svg");
+      background-image: url("../img/icon_arrow.svg");
       width: 24px;
       height: 12px;
       position: absolute;
@@ -106,7 +106,7 @@
     }
 
     &:hover::after {
-      background-image: url("../../img/icon_arrow-hover.svg");
+      background-image: url("../img/icon_arrow-hover.svg");
       width: 50px;
       background-repeat: no-repeat;
     }
@@ -149,7 +149,7 @@
     }
 
     &:nth-of-type(1) .program-item__picture {
-      background-image: url("../../img/cat_slimming_tablet.svg");
+      background-image: url("../img/cat_slimming_tablet.svg");
       width: 200px;
       height: 211px;
       position: absolute;
@@ -158,7 +158,7 @@
     }
 
     &:nth-of-type(2) .program-item__picture {
-      background-image: url("../../img/cat_weight_tablet.svg");
+      background-image: url("../img/cat_weight_tablet.svg");
       width: 268px;
       height: 200px;
       position: absolute;
@@ -270,7 +270,7 @@
     }
 
     &:nth-of-type(1) .program-item__picture {
-      background-image: url("../../img/cat_slimming_desktop.svg");
+      background-image: url("../img/cat_slimming_desktop.svg");
       width: 100px;
       height: 106px;
       position: static;
@@ -278,7 +278,7 @@
     }
 
     &:nth-of-type(2) .program-item__picture {
-      background-image: url("../../img/cat_weight_desktop.svg");
+      background-image: url("../img/cat_weight_desktop.svg");
       width: 134px;
       height: 100px;
       position: static;
@@ -302,7 +302,7 @@
 
   .program-item__button {
     &:hover::after {
-      background-image: url("../../img/icon_arrow-hover.svg");
+      background-image: url("../img/icon_arrow-hover.svg");
       width: 50px;
       background-repeat: no-repeat;
     }
